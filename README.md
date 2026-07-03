@@ -5,11 +5,14 @@ Sito locale interattivo che aggrega **tutto** quello che 6 fonti diverse hanno d
 (Dog of Wisdom, Raphterra), l'intervista post-Top 8 Mexico di Adam "RayDeospirata",
 le sessioni di coaching di Dog ed Equinby e le ladder session di Impact & Noob.
 
-> ⚠️ **Repo privato**: contiene trascrizioni di guide a pagamento — non renderlo pubblico.
+> ⚠️ Contiene trascrizioni derivate da guide premium Metafy (Dog of Wisdom, Raphterra):
+> materiale a scopo di studio personale. Supporta i creator originali su Metafy.
 
 ## Come si apre
 
-Doppio clic su **`APRI GUIDA.bat`** (oppure apri `site/index.html` nel browser).
+**Online:** https://leobacca.github.io/guida-ug-luffy/
+
+**In locale:** doppio clic su **`APRI GUIDA.bat`** (oppure apri `site/index.html` nel browser).
 Tutto funziona offline, nessun server necessario.
 
 ## Struttura
