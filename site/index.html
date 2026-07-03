@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UG LUFFY // OP16 — La Guida Definitiva</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
+<style>
+/* ============================================================
+   IMPEL DOWN — TACTICAL HUD · design system
+   blu = value/draw · verde = tempo/ramp · oro = Boa/win-con · rosso = pericolo
+   ============================================================ */
+:root{
+  --bg:#06080D; --carbon:#0A1018; --surface:#101A28; --surface2:#152134; --surface3:#1B2A42;
+  --line:#1E2C42; --line2:#2A3B58;
+  --ink:#EAF2FF; --ink2:#9FB2CC; --ink3:#5F7391;
+  --blue:#2E8BFF; --green:#27E08A; --gold:#FFC23D; --danger:#FF5466; --cyan:#3FE0FF; }
+:root{
+  --blue-glow:rgba(46,139,255,.14); --green-glow:rgba(39,224,138,.12); --gold-glow:rgba(255,194,61,.14);
+  --mono:Consolas,"Cascadia Mono","Courier New",monospace;
+  --ui:"Segoe UI",system-ui,-apple-system,sans-serif;
+  --rail:264px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--ui);
+  font-size:15.5px; line-height:1.62; overflow-x:hidden;
+}
+/* fondo: griglia tattica + vignette */
+body::before{content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(1200px 600px at 75% -10%, rgba(46,139,255,.07), transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, rgba(39,224,138,.05), transparent 60%),
+    var(--bg);}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(46,139,255,.03) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(46,139,255,.03) 1px,transparent 1px);
+  background-size:44px 44px;}
+::selection{background:rgba(46,139,255,.35)}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--carbon)}
+::-webkit-scrollbar-thumb{background:var(--line2);border-radius:6px;border:2px solid var(--carbon)}
+::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+
+a{color:var(--cyan);text-decoration:none}
+strong{color:var(--ink);font-weight:600}
+em{color:var(--ink2)}
+
+/* ---------- layout ---------- */
+#rail{position:fixed;top:0;left:0;bottom:0;width:var(--rail);z-index:50;
+  background:linear-gradient(180deg,var(--carbon),#080D14);
+  border-right:1px solid var(--line);display:flex;flex-direction:column;padding:22px 0 14px;}
+#main{margin-left:var(--rail);min-height:100vh;padding:34px 44px 90px;max-width:1280px;}
+@media(max-width:960px){
+  #rail{position:static;width:auto;border-right:none;border-bottom:1px solid var(--line);flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px;padding:12px}
+  #main{margin-left:0;padding:20px 16px 60px}
+  #brand{margin-bottom:0!important;margin-right:12px}
+  .nav-sec{display:none}
+}
+
+#brand{padding:0 22px;margin-bottom:26px}
+#brand .b1{font-family:var(--mono);font-size:21px;font-weight:700;letter-spacing:1px;color:var(--ink)}
+#brand .b1 .slash{color:var(--blue)}
+#brand .b2{font-family:var(--mono);font-size:10.5px;letter-spacing:3.5px;color:var(--ink3);text-transform:uppercase;margin-top:3px}
+#brand .b2 b{color:var(--gold);font-weight:600}
+
+.nav-sec{font-family:var(--mono);font-size:9.5px;letter-spacing:2.5px;color:var(--ink3);
+  text-transform:uppercase;padding:14px 22px 6px}
+.nav-item{display:flex;align-items:center;gap:11px;padding:8px 22px;cursor:pointer;
+  color:var(--ink2);font-size:14px;border-left:2px solid transparent;transition:all .15s;user-select:none}
+.nav-item:hover{color:var(--ink);background:rgba(46,139,255,.06)}
+.nav-item.active{color:var(--ink);border-left-color:var(--blue);
+  background:linear-gradient(90deg,rgba(46,139,255,.12),transparent)}
+.nav-item .ico{width:17px;text-align:center;font-size:13px;opacity:.9}
+.nav-item .k{font-family:var(--mono);font-size:9px;color:var(--ink3);margin-left:auto;letter-spacing:1px}
+#rail .foot{margin-top:auto;padding:14px 22px 0;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:1px;line-height:1.8}
+
+/* ---------- primitives ---------- */
+.view{animation:vin .3s ease both}
+@keyframes vin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:3.5px;text-transform:uppercase;
+  color:var(--blue);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.eyebrow::after{content:"";height:1px;flex:1;max-width:180px;background:linear-gradient(90deg,var(--line2),transparent)}
+h1.title{font-size:34px;font-weight:750;letter-spacing:-.5px;line-height:1.15;margin-bottom:10px}
+h1.title .dim{color:var(--ink3);font-weight:400}
+.lead{color:var(--ink2);max-width:74ch;margin-bottom:26px}
+.h2{font-family:var(--mono);font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink);
+  margin:38px 0 14px;display:flex;align-items:center;gap:12px}
+.h2 .tag{color:var(--blue)}
+.h2::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--line),transparent)}
+.h3{font-size:16px;font-weight:650;margin:20px 0 8px}
+
+.panel{background:linear-gradient(180deg,var(--surface),var(--carbon));
+  border:1px solid var(--line);border-radius:10px;padding:20px 22px;position:relative}
+.panel.corner::before{content:"";position:absolute;top:-1px;left:-1px;width:22px;height:22px;
+  border-top:2px solid var(--blue);border-left:2px solid var(--blue);border-radius:10px 0 0 0}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1100px){.g4{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.g2,.g3,.g4{grid-template-columns:1fr}}
+
+.chip{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:20px;
+  border:1px solid var(--line2);color:var(--ink2);background:rgba(16,26,40,.6)}
+.chip .dot{width:7px;height:7px;border-radius:50%;flex:none}
+.chip.big{font-size:11.5px;padding:5px 13px}
+
+.callout{border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:8px;
+  background:linear-gradient(90deg,var(--blue-glow),rgba(16,26,40,.4));padding:14px 18px;margin:12px 0}
+.callout.gold{border-left-color:var(--gold);background:linear-gradient(90deg,var(--gold-glow),rgba(16,26,40,.4))}
+.callout.green{border-left-color:var(--green);background:linear-gradient(90deg,var(--green-glow),rgba(16,26,40,.4))}
+.callout.red{border-left-color:var(--danger);background:linear-gradient(90deg,rgba(255,84,102,.10),rgba(16,26,40,.4))}
+.callout .ct{font-family:var(--mono);font-size:10px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:6px;color:var(--blue)}
+.callout.gold .ct{color:var(--gold)}.callout.green .ct{color:var(--green)}.callout.red .ct{color:var(--danger)}
+
+p.chicca, .chicca{border:1px dashed var(--gold);border-radius:8px;background:var(--gold-glow);
+  padding:10px 14px;margin:10px 0}
+.chicca::before{content:"◆ CHICCA — ";font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--gold)}
+
+.prose p{margin:9px 0;color:var(--ink2)}
+.prose p strong, .prose li strong{color:var(--ink)}
+.prose ul,.prose ol{margin:9px 0 9px 22px;color:var(--ink2)}
+.prose li{margin:5px 0}
+
+/* badge fonte */
+.src{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:1.2px;text-transform:uppercase;padding:3px 11px;border-radius:4px;font-weight:600;
+  border:1px solid;background:rgba(10,16,24,.65)}
+
+/* ---------- hub matchup ---------- */
+.hub{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.mu-card{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;
+  background:var(--surface);transition:transform .18s,border-color .18s,box-shadow .18s;min-height:150px}
+.mu-card:hover{transform:translateY(-3px);border-color:var(--accent,#2E8BFF);
+  box-shadow:0 10px 34px -12px var(--accent,#2E8BFF)}
+.mu-card .art{position:absolute;inset:0;background-size:cover;background-position:center 22%;
+  opacity:.34;filter:saturate(1.05);transition:opacity .2s}
+.mu-card:hover .art{opacity:.5}
+.mu-card .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,8,13,.25),rgba(6,8,13,.93) 75%)}
+.mu-card .inner{position:relative;padding:16px;display:flex;flex-direction:column;height:100%;min-height:150px}
+.mu-card .sig{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--accent,#2E8BFF);text-transform:uppercase}
+.mu-card .nm{font-size:19px;font-weight:700;margin-top:2px}
+.mu-card .tg{font-size:12.5px;color:var(--ink2);margin-top:auto;padding-top:14px;line-height:1.45}
+.mu-card .vchips{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.mu-card .tile{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:64px;font-weight:700;color:var(--accent,#2E8BFF);opacity:.14}
+.vc{font-family:var(--mono);font-size:9px;letter-spacing:.5px;padding:2px 7px;border-radius:3px;
+  border:1px solid var(--line2);color:var(--ink2)}
+
+/* ---------- pagina matchup ---------- */
+.mu-hero{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  margin-bottom:22px;background:var(--surface)}
+.mu-hero .art{position:absolute;inset:0;background-size:cover;background-position:center 20%;opacity:.28}
+.mu-hero .scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,8,13,.95) 30%,rgba(6,8,13,.55))}
+.mu-hero .inner{position:relative;padding:28px 30px}
+
+/* spettro verdetti */
+.spectrum{margin:6px 0 4px}
+.spec-axis{position:relative;height:34px;margin:0 8px}
+.spec-line{position:absolute;left:0;right:0;top:16px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,#B03A4A,#4A5568 50%,#1E9E63)}
+.spec-tick{position:absolute;top:9px;width:1px;height:16px;background:var(--line2)}
+.spec-lab{position:absolute;top:34px;transform:translateX(-50%);font-family:var(--mono);
+  font-size:8.5px;letter-spacing:1px;color:var(--ink3);text-transform:uppercase;white-space:nowrap}
+.spec-row{display:grid;grid-template-columns:150px 1fr 210px;gap:12px;align-items:center;padding:7px 0;border-top:1px dashed var(--line)}
+.spec-row:first-child{border-top:none}
+.spec-name{text-align:right}
+.spec-track{position:relative;height:22px}
+.spec-track .tline{position:absolute;left:0;right:0;top:10px;height:1px;background:var(--line)}
+.spec-track .mid{position:absolute;left:50%;top:4px;width:1px;height:13px;background:var(--line2)}
+.spec-dot{position:absolute;top:4px;width:14px;height:14px;border-radius:50%;transform:translateX(-50%);
+  border:2px solid var(--carbon);box-shadow:0 0 0 1px var(--line2);cursor:default}
+.spec-val{font-family:var(--mono);font-size:11px;color:var(--ink2)}
+.spec-val b{color:var(--ink);font-weight:600}
+@media(max-width:800px){.spec-row{grid-template-columns:110px 1fr;}.spec-val{grid-column:2;margin-top:-4px}}
+
+/* accordion per fonte */
+.acc{border:1px solid var(--line);border-radius:10px;margin:10px 0;overflow:hidden;background:var(--surface)}
+.acc>.head{display:flex;align-items:center;gap:12px;padding:13px 18px;cursor:pointer;user-select:none;transition:background .15s}
+.acc>.head:hover{background:var(--surface2)}
+.acc>.head .origin{font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:1px;margin-left:auto;text-align:right}
+.acc>.head .car{font-family:var(--mono);color:var(--ink3);transition:transform .2s;font-size:11px}
+.acc.open>.head .car{transform:rotate(90deg)}
+.acc>.body{display:none;padding:6px 20px 18px;border-top:1px solid var(--line)}
+.acc.open>.body{display:block}
+.acc .sec-t{font-family:var(--mono);font-size:10.5px;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--cyan);margin:16px 0 6px;display:flex;align-items:center;gap:10px}
+.acc .sec-t::after{content:"";height:1px;flex:1;background:var(--line)}
+
+/* gameplan fasi */
+.phase{border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.phase .ph-h{padding:10px 16px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:10px;
+  font-family:var(--mono);letter-spacing:1.5px;text-transform:uppercase;font-size:11.5px}
+.phase .ph-h .don{margin-left:auto;font-size:10px;color:var(--ink3)}
+.phase .ph-b{padding:12px 16px;font-size:14px}
+.phase.early .ph-h{color:var(--green);background:linear-gradient(90deg,var(--green-glow),transparent)}
+.phase.mid .ph-h{color:var(--blue);background:linear-gradient(90deg,var(--blue-glow),transparent)}
+.phase.late .ph-h{color:var(--gold);background:linear-gradient(90deg,var(--gold-glow),transparent)}
+
+/* timeline */
+.tl{position:relative;margin:14px 0 6px;padding-left:26px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--blue),var(--green))}
+.tl-item{position:relative;padding:8px 0 14px}
+.tl-item::before{content:"";position:absolute;left:-24px;top:14px;width:12px;height:12px;border-radius:50%;
+  background:var(--carbon);border:3px solid var(--blue)}
+.tl-item .when{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan)}
+.tl-item .pos{font-size:15px;font-weight:700;margin:2px 0}
+.tl-item .why{color:var(--ink2);font-size:13.5px}
+
+/* ---------- board percezione ---------- */
+.perc-row{display:grid;grid-template-columns:170px 1fr;gap:14px;align-items:center;
+  padding:12px 6px;border-top:1px solid var(--line);cursor:pointer;transition:background .15s;border-radius:6px}
+.perc-row:hover{background:rgba(46,139,255,.05)}
+.perc-row:first-of-type{border-top:none}
+.perc-name .pn{font-weight:700;font-size:14.5px}
+.perc-name .ps{font-family:var(--mono);font-size:9.5px;letter-spacing:1.5px;color:var(--ink3);text-transform:uppercase}
+.perc-track{position:relative;height:30px}
+.perc-track .tline{position:absolute;left:0;right:0;top:14px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,rgba(255,84,102,.5),rgba(74,85,104,.6) 50%,rgba(39,224,138,.5))}
+.perc-track .mid{position:absolute;left:50%;top:6px;width:1px;height:18px;background:var(--line2)}
+.perc-dot{position:absolute;top:8px;width:13px;height:13px;border-radius:50%;transform:translateX(-50%);
+  border:2px solid var(--carbon);box-shadow:0 0 0 1px var(--line2)}
+@media(max-width:700px){.perc-row{grid-template-columns:1fr;gap:6px}}
+
+/* ---------- barre (curve costi ecc.) ---------- */
+.bars{display:flex;align-items:flex-end;gap:8px;height:130px;padding:6px 2px 0}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:26px}
+.bar .fill{width:100%;max-width:46px;background:var(--blue);border-radius:4px 4px 0 0;
+  transition:height .4s ease;position:relative}
+.bar .v{font-family:var(--mono);font-size:11px;color:var(--ink2)}
+.bar .l{font-family:var(--mono);font-size:10px;color:var(--ink3);letter-spacing:1px}
+
+/* ---------- decklist ---------- */
+.deck-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:12px}
+.dcard{position:relative;border:1px solid var(--line);border-radius:9px;overflow:hidden;cursor:pointer;
+  background:var(--surface);transition:transform .15s,border-color .15s}
+.dcard:hover{transform:translateY(-3px);border-color:var(--blue)}
+.dcard img{width:100%;display:block;aspect-ratio:.72;object-fit:cover}
+.dcard .noimg{width:100%;aspect-ratio:.72;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:6px;padding:8px;text-align:center;background:linear-gradient(160deg,var(--surface2),var(--carbon))}
+.dcard .noimg .cn{font-size:12px;font-weight:600;line-height:1.3}
+.dcard .noimg .cc{font-family:var(--mono);font-size:9px;color:var(--ink3);letter-spacing:1px}
+.dcard .cnt{position:absolute;top:7px;right:7px;background:rgba(6,8,13,.88);border:1px solid var(--line2);
+  color:var(--gold);font-family:var(--mono);font-weight:700;font-size:13px;border-radius:6px;padding:1px 8px}
+.dcard .base{padding:7px 9px;border-top:1px solid var(--line)}
+.dcard .base .n{font-size:11.5px;font-weight:600;line-height:1.25}
+.dcard .base .r{font-family:var(--mono);font-size:9px;color:var(--ink3);margin-top:2px;letter-spacing:.5px}
+.dtabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.dtab{border:1px solid var(--line2);border-radius:8px;padding:9px 15px;cursor:pointer;background:var(--surface);
+  transition:all .15s}
+.dtab:hover{border-color:var(--blue)}
+.dtab.on{border-color:var(--blue);background:linear-gradient(180deg,rgba(46,139,255,.14),var(--surface))}
+.dtab .dn{font-weight:650;font-size:13.5px}
+.dtab .df{font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:1px;text-transform:uppercase;margin-top:2px}
+
+/* tribunale tech */
+.tech-card{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:16px 18px}
+.tech-card .tn{font-size:16.5px;font-weight:700}
+.tech-card .tq{color:var(--ink3);font-size:12.5px;font-style:italic;margin:2px 0 10px}
+.verdict-row{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-top:1px dashed var(--line)}
+.vbadge{font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:1.5px;border-radius:4px;
+  padding:2px 8px;flex:none;margin-top:2px}
+.vbadge.in{background:rgba(39,224,138,.15);color:var(--green);border:1px solid rgba(39,224,138,.4)}
+.vbadge.out{background:rgba(255,84,102,.13);color:var(--danger);border:1px solid rgba(255,84,102,.4)}
+.vbadge.test{background:rgba(255,194,61,.13);color:var(--gold);border:1px solid rgba(255,194,61,.4)}
+.vbadge.dipende{background:rgba(63,224,255,.1);color:var(--cyan);border:1px solid rgba(63,224,255,.35)}
+.verdict-row .vt{font-size:13px;color:var(--ink2)}
+.trend{margin-top:10px;font-family:var(--mono);font-size:10.5px;letter-spacing:1px;color:var(--cyan);
+  text-transform:uppercase;border-top:1px solid var(--line);padding-top:9px}
+
+/* combo stepper */
+.combo{border:1px solid var(--line);border-radius:11px;background:var(--surface);padding:18px;margin:12px 0}
+.combo .cn{font-size:16px;font-weight:700;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.steps{display:flex;flex-wrap:wrap;gap:0;margin:14px 0 8px;align-items:stretch}
+.step{flex:1;min-width:150px;position:relative;padding:10px 22px 10px 14px;background:var(--surface2);
+  border:1px solid var(--line2);border-radius:8px;margin:4px 14px 4px 0;font-size:12.5px;color:var(--ink2)}
+.step::after{content:"▶";position:absolute;right:-14px;top:50%;transform:translateY(-50%);
+  color:var(--blue);font-size:10px;z-index:1}
+.step:last-child::after{content:""}
+.step .sn{font-family:var(--mono);font-size:9px;color:var(--blue);letter-spacing:2px;display:block;margin-bottom:3px}
+.combo .thumbs{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}
+.combo .thumbs img{height:74px;border-radius:5px;border:1px solid var(--line2)}
+
+/* attacchi visual restand */
+.atk-row{display:flex;gap:4px;flex-wrap:wrap;margin:8px 0}
+.atk{width:22px;height:30px;border-radius:4px;border:1px solid var(--line2);
+  background:linear-gradient(180deg,var(--surface3),var(--surface));position:relative}
+.atk.on{border-color:var(--gold);background:linear-gradient(180deg,rgba(255,194,61,.3),rgba(255,194,61,.08));
+  box-shadow:0 0 8px -2px var(--gold)}
+
+/* card tooltip */
+#ctip{position:fixed;z-index:1000;pointer-events:none;opacity:0;transition:opacity .12s;max-width:280px}
+#ctip.show{opacity:1}
+#ctip img{width:240px;border-radius:10px;box-shadow:0 14px 44px rgba(0,0,0,.75),0 0 0 1px var(--line2);display:block}
+#ctip .txt{background:var(--surface2);border:1px solid var(--line2);border-radius:9px;padding:11px 14px;
+  box-shadow:0 14px 44px rgba(0,0,0,.7)}
+#ctip .txt .n{font-weight:700;font-size:14px}
+#ctip .txt .c{font-family:var(--mono);font-size:10px;color:var(--gold);letter-spacing:1px;margin:2px 0}
+#ctip .txt .r{font-size:12px;color:var(--ink2)}
+.cardlink{color:var(--cyan);border-bottom:1px dotted rgba(63,224,255,.5);cursor:help}
+strong .cardlink, .cardlink strong{color:var(--cyan)}
+
+/* tooltip dati (heatmap/spettro) */
+#dtip{position:fixed;z-index:1001;pointer-events:none;opacity:0;transition:opacity .1s;
+  background:var(--surface2);border:1px solid var(--line2);border-radius:8px;padding:9px 12px;
+  box-shadow:0 12px 36px rgba(0,0,0,.7);font-size:12px;max-width:280px}
+#dtip.show{opacity:1}
+#dtip .v{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--ink)}
+#dtip .l{color:var(--ink2);font-size:11.5px}
+
+/* stat tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+.tile-s{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:linear-gradient(180deg,var(--surface),var(--carbon))}
+.tile-s .tv{font-family:var(--mono);font-size:26px;font-weight:700;color:var(--ink)}
+.tile-s .tv span{color:var(--blue)}
+.tile-s .tl2{font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:var(--ink3);text-transform:uppercase;margin-top:3px}
+
+/* hero home */
+.hero{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:26px}
+.hero .art{position:absolute;inset:0;background-size:cover;background-position:center 18%;opacity:.4}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,8,13,.96) 35%,rgba(6,8,13,.35))}
+.hero .inner{position:relative;padding:46px 40px;max-width:640px}
+.hero h1{font-size:44px;line-height:1.05;font-weight:800;letter-spacing:-1px}
+.hero h1 .g{color:transparent;background:linear-gradient(90deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text}
+.hero .sub{color:var(--ink2);margin-top:12px;font-size:16px;max-width:56ch}
+.hero .cta{display:inline-flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:8px;padding:10px 18px;cursor:pointer;
+  font-size:14px;font-weight:600;border:1px solid var(--line2);color:var(--ink);background:var(--surface2);transition:all .15s}
+.btn:hover{border-color:var(--blue);transform:translateY(-1px)}
+.btn.primary{background:linear-gradient(90deg,var(--blue),#1E6FE0);border-color:transparent;color:#03101F}
+.btn.primary:hover{box-shadow:0 8px 26px -8px var(--blue)}
+
+.imgframe{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--carbon);margin:12px 0}
+.imgframe img{width:100%;display:block}
+.imgframe .cap{font-family:var(--mono);font-size:10px;color:var(--ink3);letter-spacing:1px;padding:8px 12px;border-top:1px solid var(--line)}
+
+.empty{border:1px dashed var(--line2);border-radius:10px;padding:26px;text-align:center;color:var(--ink3);
+  font-family:var(--mono);font-size:12px;letter-spacing:1px}
+
+.crumb{font-family:var(--mono);font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:14px;cursor:pointer}
+.crumb:hover{color:var(--cyan)}
+table.simple{width:100%;border-collapse:collapse;font-size:13px}
+table.simple th{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3);
+  text-align:left;padding:8px 10px;border-bottom:1px solid var(--line2)}
+table.simple td{padding:9px 10px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top}
+table.simple td:first-child{color:var(--ink);font-weight:600}
+</style>
+</head>
+<body>
+
+<nav id="rail">
+  <div id="brand">
+    <div class="b1">UG<span class="slash">//</span>LUFFY</div>
+    <div class="b2">OP16 · <b>PRISON BREAK</b> · GUIDA DEFINITIVA</div>
+  </div>
+  <div class="nav-sec">Briefing</div>
+  <div class="nav-item" data-r="home"><span class="ico">⌂</span> Home</div>
+  <div class="nav-item" data-r="meta"><span class="ico">◈</span> Meta OP16</div>
+  <div class="nav-sec">Arsenale</div>
+  <div class="nav-item" data-r="decklist"><span class="ico">▦</span> Decklist</div>
+  <div class="nav-item" data-r="tech"><span class="ico">⚖</span> Tech · Il Tribunale</div>
+  <div class="nav-item" data-r="fondamentali"><span class="ico">✦</span> Fondamentali</div>
+  <div class="nav-sec">Operazioni</div>
+  <div class="nav-item" data-r="matchup"><span class="ico">⚔</span> Matchup Hub</div>
+  <div class="nav-item" data-r="dibattiti"><span class="ico">☍</span> Dibattiti aperti</div>
+  <div class="nav-item" data-r="fonti"><span class="ico">✎</span> Fonti</div>
+  <div class="foot">IMPEL DOWN TACTICAL HUD<br>6 fonti · 13 matchup · offline</div>
+</nav>
+
+<main id="main"><div id="app"></div></main>
+
+<div id="ctip"></div>
+<div id="dtip"></div>
+
+<!-- ============ DATI ============ -->
+<script src="data/sources.js"></script>
+<script src="data/cards.js"></script>
+<script src="data/meta.js"></script>
+<script src="data/decklists.js"></script>
+<script src="data/tech.js"></script>
+<script src="data/fond.js"></script>
+<script src="data/mu-mirror-teach.js"></script>
+<script src="data/mu-nami-enel.js"></script>
+<script src="data/mu-rosinante-yamato.js"></script>
+<script src="data/mu-field.js"></script>
+
+<script>
+/* ============================================================
+   APP — router, viste, componenti
+   ============================================================ */
+const D = window.DATA || {};
+const ASSETS = "../assets";
+const PROC = ASSETS + "/cards/proc";
+const IMG  = ASSETS + "/IMG";
+
+// colori marks (palette validata, ordine fisso serie)
+const CHART = { dog:"#BC8A22", impactnoob:"#2196B5", adam:"#E86A3C", equinby:"#9C79E8", raphterra:"#1FB06C", dogcoach:"#B0813A" };
+const SRC_ORDER = ["dog","raphterra","adam","dogcoach","impactnoob","equinby"];
+const MU_ORDER = ["mirror","teach","rosinante","nami","yamato","enel","lucy","rbace","shanks","sengoku","redace","mihawk","kalgara"];
+
+const $ = s => document.querySelector(s);
+const app = $("#app");
+const esc = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+/* normalizza le varianti di schema prodotte dai diversi trascrittori */
+function normalizeData(){
+  Object.values(D.matchups||{}).forEach(m=>{
+    (m.perFonte||[]).forEach(pf=>(pf.sezioni||[]).forEach(s=>{
+      s.t = s.t || s.titolo || ""; s.c = s.c || s.html || s.contenuto || "";
+    }));
+    m.consenso = (m.consenso||[]).map(c=> typeof c==="string" ? c : (c.testo || c.punto || ""));
+    (m.dibattiti||[]).forEach(d=>(d.posizioni||[]).forEach(p=>{ p.testo = p.testo || p.posizione || ""; }));
+    (m.timeline||[]).forEach(t=>{ t.tappa = t.tappa || t.quando || ""; t.motivo = t.motivo || t.perche || ""; });
+  });
+}
+
+const SHORT = { dog:"Dog", raphterra:"Raphterra", adam:"Adam", dogcoach:"Dog·Coach", impactnoob:"Impact", equinby:"Equinby" };
+function fonte(id){ return (D.fonti && D.fonti[id]) || { nome:id, colore:"#9FB2CC", sotto:"" }; }
+function corto(id){ return SHORT[id] || fonte(id).nome; }
+function srcBadge(id, small){
+  const f = fonte(id);
+  return `<span class="src" style="color:${f.colore};border-color:${f.colore}55">${small?"":"● "}${esc(f.nome)}</span>`;
+}
+function cardImg(key, kind){ return `${PROC}/${key}__${kind||"full"}.png`; }
+function leadArt(key){ return `${PROC}/${key}__art.png`; }
+
+/* ---------- tooltip carte ---------- */
+const ctip = $("#ctip");
+function showCardTip(key, x, y){
+  const c = D.carte && D.carte[key];
+  if(!c) return;
+  ctip.innerHTML = c.img
+    ? `<img src="${cardImg(key,"full")}" alt="">`
+    : `<div class="txt"><div class="n"></div><div class="c"></div><div class="r"></div></div>`;
+  if(!c.img){
+    ctip.querySelector(".n").textContent = c.nome;
+    ctip.querySelector(".c").textContent = (c.code||"") + " · costo " + (c.costo||"?");
+    ctip.querySelector(".r").textContent = c.ruolo||"";
+  }
+  positionTip(ctip, x, y); ctip.classList.add("show");
+}
+function positionTip(el, x, y){
+  const w = el.offsetWidth||250, h = el.offsetHeight||340;
+  let left = x+18, top = y-20;
+  if(left+w > innerWidth-14) left = x-w-18;
+  if(top+h > innerHeight-14) top = innerHeight-h-14;
+  if(top<10) top = 10;
+  el.style.left=left+"px"; el.style.top=top+"px";
+}
+function hideCardTip(){ ctip.classList.remove("show"); }
+
+/* auto-linkify nomi carta nei testi renderizzati */
+let aliasRe = null, aliasMap = {};
+function buildAliasRe(){
+  if(!D.cardAliases) return;
+  const keys = Object.keys(D.cardAliases).sort((a,b)=>b.length-a.length);
+  aliasMap = {}; keys.forEach(k => aliasMap[k.toLowerCase()] = D.cardAliases[k]);
+  aliasRe = new RegExp("\\b(" + keys.map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/ /g,"[ \\u00A0]")).join("|") + ")\\b","gi");
+}
+function linkifyCards(root){
+  if(!aliasRe) return;
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(n){
+      if(!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      const p = n.parentElement;
+      if(!p || p.closest(".cardlink, script, style, .hm, .spec-track")) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  const nodes = [];
+  while(walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(node=>{
+    const text = node.nodeValue;
+    aliasRe.lastIndex = 0;
+    if(!aliasRe.test(text)) return;
+    aliasRe.lastIndex = 0;
+    const frag = document.createDocumentFragment();
+    let last = 0, m;
+    while((m = aliasRe.exec(text))){
+      const key = aliasMap[m[1].toLowerCase()];
+      if(!key || !(D.carte && D.carte[key])){ continue; }
+      frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+      const sp = document.createElement("span");
+      sp.className = "cardlink"; sp.dataset.card = key; sp.textContent = m[1];
+      frag.appendChild(sp); last = m.index + m[1].length;
+    }
+    if(last===0) return;
+    frag.appendChild(document.createTextNode(text.slice(last)));
+    node.parentNode.replaceChild(frag, node);
+  });
+}
+document.addEventListener("pointerover", e=>{
+  const cl = e.target.closest(".cardlink"); if(cl){ showCardTip(cl.dataset.card, e.clientX, e.clientY); }
+});
+document.addEventListener("pointermove", e=>{
+  const cl = e.target.closest(".cardlink"); if(cl){ positionTip(ctip, e.clientX, e.clientY); } else hideCardTip();
+});
+document.addEventListener("pointerout", e=>{ if(e.target.closest && e.target.closest(".cardlink")) hideCardTip(); });
+
+/* tooltip dati generico */
+const dtip = $("#dtip");
+function showDTip(html, x, y){ dtip.innerHTML = html; positionTip(dtip,x,y); dtip.classList.add("show"); }
+function hideDTip(){ dtip.classList.remove("show"); }
+
+/* ---------- componenti ---------- */
+function favLabel(pos){
+  const s = (D.favScale||[]).slice().sort((a,b)=>Math.abs(a.pos-pos)-Math.abs(b.pos-pos))[0];
+  return s ? s.label : "";
+}
+function spectrum(verdetti){
+  if(!verdetti || !verdetti.length) return "";
+  const ticks = [-2,-1,0,1,2].map(p=>{
+    const x = (p+2)/4*100;
+    return `<div class="spec-tick" style="left:${x}%"></div>` +
+      (p===-2?`<div class="spec-lab" style="left:${x}%">Sfavorito</div>`:
+       p===0 ?`<div class="spec-lab" style="left:${x}%">Even</div>`:
+       p===2 ?`<div class="spec-lab" style="left:${x}%">Favorito</div>`:"");
+  }).join("");
+  const rows = verdetti.map(v=>{
+    const f = fonte(v.fonte); const x = ((v.pos??0)+2)/4*100;
+    const col = CHART[v.fonte] || f.colore;
+    return `<div class="spec-row">
+      <div class="spec-name">${srcBadge(v.fonte)}</div>
+      <div class="spec-track" data-tip="${esc(f.nome)}: ${esc(v.label)}${v.nota? " — "+esc(v.nota):""}">
+        <div class="tline"></div><div class="mid"></div>
+        <div class="spec-dot" style="left:${x}%;background:${col}"></div>
+      </div>
+      <div class="spec-val"><b>${esc(v.label)}</b>${v.winrate?`<br>${esc(v.winrate)}`:""}</div>
+    </div>`;
+  }).join("");
+  return `<div class="spectrum panel corner">
+    <div class="eyebrow" style="margin-bottom:2px">Verdetti a confronto</div>
+    <div class="spec-axis"><div class="spec-line"></div>${ticks}</div>
+    <div style="margin-top:26px">${rows}</div>
+  </div>`;
+}
+function accordion(items, openFirst){
+  return items.map((it,i)=>{
+    const f = fonte(it.fonte);
+    const secs = (it.sezioni||[]).map(s=>`<div class="sec-t">${esc(s.t)}</div><div class="prose">${s.c||""}</div>`).join("");
+    return `<div class="acc ${i===0&&openFirst?"open":""}">
+      <div class="head">
+        <span class="car">▶</span>
+        ${srcBadge(it.fonte)}
+        <span style="font-size:12.5px;color:var(--ink3)">${esc(f.sotto||"")}</span>
+        <span class="origin">${esc(it.origine||"")}</span>
+      </div>
+      <div class="body">${secs}</div>
+    </div>`;
+  }).join("");
+}
+function bindAccordions(root){
+  root.querySelectorAll(".acc>.head").forEach(h=>{
+    h.addEventListener("click",()=>h.parentElement.classList.toggle("open"));
+  });
+}
+function bindDataTips(root){
+  root.querySelectorAll("[data-tip]").forEach(el=>{
+    el.addEventListener("pointermove", e=>showDTip(`<div class="l">${esc(el.dataset.tip)}</div>`, e.clientX, e.clientY));
+    el.addEventListener("pointerleave", hideDTip);
+  });
+}
+
+/* ---------- VISTE ---------- */
+const views = {};
+
+/* HOME */
+views.home = () => {
+  const nMu = Object.keys(D.matchups||{}).length;
+  const nDeck = (D.decklists||[]).length;
+  const nTech = (D.tech||[]).length;
+  const srcChips = SRC_ORDER.map(id=>{
+    const f=fonte(id);
+    return `<div class="panel" style="padding:14px 16px">
+      <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">${srcBadge(id)}<span class="chip">${esc(f.tipo||"")}</span></div>
+      <div style="font-size:12.5px;color:var(--ink2);margin-top:8px">${esc(f.credenziali||"")}</div>
+      <div style="font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:8px;letter-spacing:1px">${esc(f.copre||"")}</div>
+    </div>`;
+  }).join("");
+  return `<div class="view">
+    <div class="hero">
+      <div class="art" style="background-image:url('${leadArt("leader")}')"></div>
+      <div class="scrim"></div>
+      <div class="inner">
+        <div class="eyebrow">Impel Down Tactical Ops Manual</div>
+        <h1>L'AGGRO KING<br>È <span class="g">TORNATO</span></h1>
+        <div class="sub">Tutto quello che 6 voci diverse — 2 guide premium, un top 8 regional, 3 coach — hanno detto su <strong>Blue/Green Monkey D. Luffy (OP16-022)</strong>. Ordinato, attribuito, con i disaccordi in bella vista.</div>
+        <div class="cta">
+          <div class="btn primary" onclick="location.hash='#/matchup'">⚔ Matchup Hub</div>
+          <div class="btn" onclick="location.hash='#/fondamentali'">✦ Fondamentali</div>
+          <div class="btn" onclick="location.hash='#/dibattiti'">☍ Dibattiti</div>
+        </div>
+      </div>
+    </div>
+    <div class="tiles">
+      <div class="tile-s"><div class="tv">${nMu||13}</div><div class="tl2">Matchup coperti</div></div>
+      <div class="tile-s"><div class="tv">6</div><div class="tl2">Fonti indipendenti</div></div>
+      <div class="tile-s"><div class="tv">${nDeck||4}</div><div class="tl2">Decklist a confronto</div></div>
+      <div class="tile-s"><div class="tv">${nTech||"20+"}</div><div class="tl2">Tech a processo</div></div>
+      <div class="tile-s"><div class="tv">12<span>×</span></div><div class="tl2">Attacchi max col restand</div></div>
+    </div>
+    <div class="h2"><span class="tag">//</span> Il mazzo in una riga</div>
+    <div class="grid g3">
+      <div class="callout green"><div class="ct">Identità</div>Aggro a <strong>valore sostenuto</strong>: va wide, ricicla tutto, e ogni turno il Leader rimette in piedi 2 DON!!. Non un glass cannon — un motore che non si ferma.</div>
+      <div class="callout gold"><div class="ct">Win condition</div><strong>Boa Hancock</strong> (9k Unblockable + freeze) e <strong>Let's Go! To the Navy HQ</strong>: con 5 nomi diversi sul campo, restand totale → fino a <strong>12 attacchi</strong> in un turno.</div>
+      <div class="callout"><div class="ct">Il principio (Equinby)</div>«Luffy non perde prendendo danni. Perde quando muore la board o quando finisce il gas.» <strong>Prendi il danno, tieni le carte.</strong></div>
+    </div>
+    <div class="h2"><span class="tag">//</span> Le sei voci</div>
+    <div class="grid g3">${srcChips}</div>
+  </div>`;
+};
+
+/* META */
+views.meta = () => {
+  const M = D.meta;
+  if(!M) return `<div class="view"><div class="empty">DATI META NON DISPONIBILI</div></div>`;
+  const perDeck = (M.perDeck||[]).map(d=>`<div class="panel" style="padding:13px 16px">
+      <div style="font-weight:700;font-size:14px">${esc(d.nome)}</div>
+      <div style="font-size:12.5px;color:var(--ink2);margin-top:4px">${esc(d.nota)}</div>
+    </div>`).join("");
+  // board percezione: costruita dai verdetti dei matchup (fonte unica di verità)
+  const MU = D.matchups||{};
+  const percRows = MU_ORDER.filter(id=>MU[id] && (MU[id].verdetti||[]).length).map(id=>{
+    const m = MU[id];
+    const seen = {};
+    const dots = (m.verdetti||[]).map(v=>{
+      const x = ((v.pos??0)+2)/4*100;
+      const f = fonte(v.fonte);
+      const k = Math.round(x); seen[k]=(seen[k]||0)+1;
+      const dy = (seen[k]-1)*5;
+      return `<div class="perc-dot" style="left:${x}%;top:${8-dy>0?8-dy:3}px;background:${CHART[v.fonte]||f.colore}"
+        data-tip="${esc(corto(v.fonte))}: ${esc(v.label)}${v.winrate? " · "+esc(v.winrate):""}"></div>`;
+    }).join("");
+    const labs = (m.verdetti||[]).map(v=>`<span class="vc" style="color:${CHART[v.fonte]||"#9FB2CC"}">${esc(corto(v.fonte))}: ${esc(v.label)}</span>`).join(" ");
+    return `<div class="perc-row" onclick="location.hash='#/matchup/${id}'">
+      <div class="perc-name"><div class="pn">vs ${esc(m.nome)}</div><div class="ps">${esc(m.sigla||"")}${m.tier==="field"?" · field":""}</div></div>
+      <div><div class="perc-track"><div class="tline"></div><div class="mid"></div>${dots}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:2px">${labs}</div></div>
+    </div>`;
+  }).join("");
+  return `<div class="view">
+    <div class="eyebrow">Capitolo intel</div>
+    <h1 class="title">Meta OP16 <span class="dim">— la giungla</span></h1>
+    <div class="lead prose">${M.intro||""}</div>
+
+    <div class="h2"><span class="tag">//</span> La percezione dei pro, matchup per matchup</div>
+    <div class="callout"><div class="ct">Perché niente winrate?</div>${esc(M.notaPercezione||"")}</div>
+    <div class="panel corner" style="margin-top:12px">
+      <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--ink3);text-transform:uppercase;padding:0 6px 8px">
+        <span style="color:var(--danger)">◄ Sfavorito</span><span>Even</span><span style="color:var(--green)">Favorito ►</span>
+      </div>
+      ${percRows || `<div class="empty">DATI MATCHUP IN ELABORAZIONE</div>`}
+      <div style="font-family:var(--mono);font-size:10px;color:var(--ink3);letter-spacing:.5px;margin-top:10px">
+        OGNI PUNTO = LA VALUTAZIONE DI UNA FONTE · passa sopra per i dettagli · clicca la riga per il dossier</div>
+    </div>
+
+    <div class="h2"><span class="tag">//</span> I sei mazzi visti da Dog</div>
+    <div class="grid g3">${perDeck}</div>
+
+    <div class="h2"><span class="tag">//</span> Tier list a confronto</div>
+    <div class="grid g3">
+      <div class="panel"><div class="h3" style="margin-top:0;color:var(--gold)">${esc(M.tierlist.dog.titolo)}</div><div class="prose">${M.tierlist.dog.c}</div></div>
+      <div class="panel"><div class="h3" style="margin-top:0;color:var(--green)">${esc(M.tierlist.raphterra.titolo)}</div><div class="prose">${M.tierlist.raphterra.c}</div></div>
+      <div class="panel"><div class="h3" style="margin-top:0;color:#E86A3C">${esc(M.tierlist.adam.titolo)}</div><div class="prose">${M.tierlist.adam.c}</div></div>
+    </div>
+    <div class="imgframe"><img src="${IMG}/ch2_tierlist_op16.png" alt="Tier list OP16 dei pro giapponesi" loading="lazy">
+      <div class="cap">TIER LIST OP16 DEI PRO GIAPPONESI — mostrata da Dog nel cap. 2 («riflette grossomodo la realtà, ma non sono del tutto d'accordo»)</div></div>
+    <div class="prose">${M.conclusione||""}</div>
+  </div>`;
+};
+/* DECKLIST */
+let deckSel = 0;
+views.decklist = () => {
+  const DL = D.decklists;
+  if(!DL || !DL.length) return `<div class="view"><div class="eyebrow">Arsenale</div><h1 class="title">Decklist</h1><div class="empty">DATI DECKLIST IN ELABORAZIONE — ricarica tra poco</div></div>`;
+  if(deckSel>=DL.length) deckSel=0;
+  const dk = DL[deckSel];
+  const tabs = DL.map((d,i)=>`<div class="dtab ${i===deckSel?"on":""}" data-i="${i}">
+      <div class="dn">${esc(d.nome)}</div><div class="df">${esc(fonte(d.fonte).nome)} · ${esc(d.quando||"")}</div></div>`).join("");
+  const tot = (dk.carte||[]).reduce((s,c)=>s+(c.copie||0),0);
+  const cards = (dk.carte||[]).filter(c=>c.copie>0).map(c=>{
+    const info = (D.carte||{})[c.key] || {nome:c.key, img:false};
+    const img = info.img ? `<img src="${cardImg(c.key,"full")}" alt="${esc(info.nome)}" loading="lazy">`
+      : `<div class="noimg"><div class="cn">${esc(info.nome)}</div><div class="cc">${esc(info.code||"")}</div><div class="cc">COSTO ${esc(info.costo||"?")}</div></div>`;
+    return `<div class="dcard" data-k="${c.key}"><div class="cnt">×${c.copie}</div>${img}
+      <div class="base"><div class="n">${esc(info.nome)}</div><div class="r">${esc(info.ruolo||"")}</div></div></div>`;
+  }).join("");
+  const note = (dk.carte||[]).filter(c=>c.nota).map(c=>{
+    const info=(D.carte||{})[c.key]||{nome:c.key};
+    return `<div class="acc" data-deckcard="${c.key}"><div class="head"><span class="car">▶</span>
+      <strong>${esc(info.nome)}</strong><span class="chip">×${c.copie}</span>
+      <span class="origin">${esc(info.code||"")}</span></div>
+      <div class="body prose">${c.nota}</div></div>`;
+  }).join("");
+  let statsHtml = "";
+  if(dk.stats && dk.stats.curva){
+    const cv = dk.stats.curva; const maxv = Math.max(...Object.values(cv));
+    statsHtml = `<div class="h2"><span class="tag">//</span> Statistiche lista</div>
+    <div class="grid g2">
+      <div class="panel"><div class="h3" style="margin-top:0">Curva dei costi</div>
+        <div class="bars">${Object.entries(cv).map(([k,v])=>`<div class="bar">
+          <div class="v">${v}</div><div class="fill" style="height:${Math.max(4,v/maxv*100)}px"></div><div class="l">${k}c</div></div>`).join("")}</div></div>
+      <div class="panel"><div class="h3" style="margin-top:0">Distribuzione counter</div>
+        <div class="bars" style="height:130px">${Object.entries(dk.stats.counter||{}).map(([k,v])=>{
+          const mx2=Math.max(...Object.values(dk.stats.counter));
+          return `<div class="bar"><div class="v">${v}</div><div class="fill" style="height:${Math.max(4,v/mx2*100)}px;background:var(--green)"></div><div class="l">${k==="0"?"nessuno":"+"+k}</div></div>`;}).join("")}</div>
+        <div style="font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:6px">${dk.stats.tipi?`${dk.stats.tipi.personaggi} PERSONAGGI · ${dk.stats.tipi.eventi} EVENTI`:""}</div></div>
+    </div>`;
+  }
+  return `<div class="view">
+    <div class="eyebrow">Arsenale</div>
+    <h1 class="title">Decklist <span class="dim">— ${DL.length} liste a confronto</span></h1>
+    <div class="dtabs">${tabs}</div>
+    <div class="panel corner" style="margin-bottom:16px">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:8px">
+        ${srcBadge(dk.fonte)}<span class="chip big">${tot} carte</span>${dk.quando?`<span class="chip">${esc(dk.quando)}</span>`:""}
+      </div>
+      <div class="prose">${dk.filosofia||""}</div>
+      ${dk.diff?`<div class="callout gold" style="margin-top:10px"><div class="ct">Differenze</div><div class="prose">${dk.diff}</div></div>`:""}
+      ${dk.note?`<div class="callout" style="margin-top:10px"><div class="ct">Note</div><div class="prose">${dk.note}</div></div>`:""}
+    </div>
+    <div class="deck-grid">${cards}</div>
+    ${statsHtml}
+    ${note?`<div class="h2"><span class="tag">//</span> Card by card — le motivazioni</div>${note}`:""}
+  </div>`;
+};
+
+/* TECH */
+views.tech = () => {
+  const T = D.tech;
+  if(!T || !T.length) return `<div class="view"><div class="eyebrow">Arsenale</div><h1 class="title">Il Tribunale delle Tech</h1><div class="empty">DATI TECH IN ELABORAZIONE — ricarica tra poco</div></div>`;
+  const cards = T.map(t=>{
+    const info=(D.carte||{})[t.key]||{};
+    const rows=(t.verdetti||[]).map(v=>`<div class="verdict-row">
+      <span class="vbadge ${esc(v.verdetto)}">${v.verdetto==="in"?"IN":v.verdetto==="out"?"OUT":v.verdetto==="test"?"TEST":"DIPENDE"}</span>
+      <div><div style="margin-bottom:2px">${srcBadge(v.fonte)}</div><div class="vt">${v.testo||""}</div></div></div>`).join("");
+    const img = info.img?`<img src="${cardImg(t.key,"art")}" style="width:64px;height:64px;object-fit:cover;border-radius:8px;border:1px solid var(--line2)" loading="lazy">`:"";
+    return `<div class="tech-card">
+      <div style="display:flex;gap:13px;align-items:center">${img}<div>
+        <div class="tn">${esc(t.nome||info.nome||t.key)}</div>
+        <div class="tq">${esc(t.domanda||"")}</div></div></div>
+      ${rows}
+      ${t.trend?`<div class="trend">▸ ${esc(t.trend)}</div>`:""}
+    </div>`;
+  }).join("");
+  return `<div class="view">
+    <div class="eyebrow">Arsenale</div>
+    <h1 class="title">Il Tribunale delle Tech <span class="dim">— chi le gioca, chi le taglia</span></h1>
+    <div class="lead">Ogni tech card con il verdetto di ogni fonte. <span class="vbadge in">IN</span> la gioca ·
+      <span class="vbadge out">OUT</span> la taglia · <span class="vbadge test">TEST</span> in prova ·
+      <span class="vbadge dipende">DIPENDE</span> dal meta.</div>
+    <div class="grid g2">${cards}</div>
+  </div>`;
+};
+
+/* FONDAMENTALI */
+views.fondamentali = () => {
+  const F = D.fond;
+  if(!F) return `<div class="view"><div class="eyebrow">Dottrina</div><h1 class="title">Fondamentali</h1><div class="empty">DATI IN ELABORAZIONE — ricarica tra poco</div></div>`;
+  const ident = (F.identita&&F.identita.punti||[]).map(p=>`<div class="panel">
+    <div style="margin-bottom:6px">${srcBadge(p.fonte)}</div><div class="prose">${p.c}</div></div>`).join("");
+  const carat = (F.leader&&F.leader.caratteristiche||[]).map((c,i)=>`<div class="panel" style="padding:14px 16px">
+    <div style="font-family:var(--mono);color:var(--blue);font-size:11px;letter-spacing:2px">0${i+1}</div>
+    <div style="font-weight:700;margin:3px 0 5px">${esc(c.t)}</div>
+    <div style="font-size:13px;color:var(--ink2)" class="prose">${c.c}</div></div>`).join("");
+  const fasi = (F.fasi||[]).map(f=>{
+    const lg=(f.lineeGuida||[]).map(l=>`<div class="acc"><div class="head"><span class="car">▶</span>${srcBadge(l.fonte)}</div>
+      <div class="body prose">${l.c}</div></div>`).join("");
+    return `<div class="phase ${f.id}">
+      <div class="ph-h">${esc(f.titolo)}<span class="don">${esc(f.don)}</span></div>
+      <div class="ph-b"><div class="prose">${f.sintesi||""}</div>${lg}</div>
+    </div>`;
+  }).join("");
+  const boards = `<div class="grid g3">
+    <div class="imgframe"><img src="${IMG}/ch4_board_early.png" loading="lazy"><div class="cap">EARLY — board di Dog</div></div>
+    <div class="imgframe"><img src="${IMG}/ch4_board_mid.png" loading="lazy"><div class="cap">MID — setup su Hancock</div></div>
+    <div class="imgframe"><img src="${IMG}/ch4_board_endgame.png" loading="lazy"><div class="cap">LATE — il prompt del restand</div></div>
+  </div>`;
+  const regole=(F.regoleDoro||[]).map(r=>`<div class="panel" style="padding:14px 16px">
+    <div style="display:flex;gap:9px;align-items:center;flex-wrap:wrap"><strong style="font-size:14px">${esc(r.nome)}</strong>${srcBadge(r.fonte)}</div>
+    <div class="prose" style="font-size:13px;margin-top:5px">${r.c}</div></div>`).join("");
+  const mull = F.mulligan ? `
+    <div class="grid g2">${(F.mulligan.regole||[]).map(r=>`<div class="panel"><div style="margin-bottom:6px">${srcBadge(r.fonte)}</div><div class="prose">${r.c}</div></div>`).join("")}</div>
+    ${(F.mulligan.esempi&&F.mulligan.esempi.length)?`<div class="h3">I 4 esempi di Dog</div><div class="grid g2">${F.mulligan.esempi.map(e=>`
+      <div class="callout ${/NO/i.test(e.verdetto)?"red":"green"}"><div class="ct">${esc(e.titolo)} → ${esc(e.verdetto)}</div>
+      <div style="font-size:13px"><em>${esc(e.mano||"")}</em></div><div style="font-size:13.5px;margin-top:5px">${e.motivo||""}</div></div>`).join("")}</div>`:""}` : "";
+  const combos=(F.combo||[]).map(c=>{
+    const steps=(c.passi||[]).map((s,i)=>`<div class="step"><span class="sn">STEP ${i+1}</span>${esc(s)}</div>`).join("");
+    const thumbs=(c.carte||[]).filter(k=>D.carte&&D.carte[k]&&D.carte[k].img).map(k=>`<img src="${cardImg(k,"full")}" loading="lazy" alt="">`).join("");
+    return `<div class="combo"><div class="cn">${esc(c.nome)} ${srcBadge(c.fonte)}</div>
+      <div class="steps">${steps}</div>
+      <div class="prose" style="font-size:13.5px">${c.perche||""}</div>
+      <div class="thumbs">${thumbs}</div></div>`;
+  }).join("");
+  let restand="";
+  if(F.restand){
+    const scen=(F.restand.scenari||[]).map(s=>{
+      const atk=Array.from({length:12},(_,i)=>`<div class="atk ${i<s.attacchi?"on":""}"></div>`).join("");
+      return `<div class="panel">
+        <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><strong style="font-size:15px">${esc(s.titolo)}</strong>
+        <span class="chip big" style="color:var(--gold);border-color:rgba(255,194,61,.4)">${s.attacchi} ATTACCHI</span></div>
+        <div class="atk-row" data-tip="${s.attacchi} attacchi potenziali su 12 max">${atk}</div>
+        <div class="prose" style="font-size:13.5px">${s.piano||""}</div></div>`;
+    }).join("");
+    restand = `<div class="h2"><span class="tag">//</span> La matematica del restand</div>
+      <div class="callout gold"><div class="ct">Requisiti</div>${esc(F.restand.requisiti||"")}</div>
+      <div class="grid g3" style="margin-top:12px">${scen}</div>
+      <div class="grid g2" style="margin-top:12px">
+        <div class="panel"><div class="h3" style="margin-top:0;color:var(--cyan)">Il «5 DON Concept»</div><div class="prose">${F.restand.concetto5don||""}</div></div>
+        <div class="panel"><div class="h3" style="margin-top:0;color:var(--cyan)">Quando usarlo (e quando no)</div><div class="prose">${F.restand.quando||""}${F.restand.quandoNo||""}</div></div>
+      </div>
+      ${(F.restand.concetti||[]).length?`<div class="grid g2" style="margin-top:12px">${F.restand.concetti.map(c=>`<div class="panel" style="padding:13px 16px"><strong>${esc(c.nome)}</strong><div class="prose" style="font-size:13px">${c.c}</div></div>`).join("")}</div>`:""}`;
+  }
+  const trap=(F.regoleTrappola||[]).map(r=>`<div class="callout red"><div class="ct">⚠ ${esc(r.t)}</div>
+    <div style="font-size:13.5px">${r.c}</div><div style="margin-top:6px">${srcBadge(r.fonte)}</div></div>`).join("");
+  const avanzati=[F.ricerca,F.handReads,F.pivotDifensivo].filter(Boolean).map(x=>`<div class="panel">
+    <div style="display:flex;gap:9px;align-items:center;flex-wrap:wrap"><strong style="font-size:14.5px">${esc(x.titolo||"")}</strong>${srcBadge(x.fonte)}</div>
+    <div class="prose" style="font-size:13.5px;margin-top:6px">${x.c||""}</div></div>`).join("");
+  const trucchi=(F.trucchiCarte||[]).map(t=>{
+    const info=(D.carte||{})[t.carta]||{};
+    const img=info.img?`<img src="${cardImg(t.carta,"art")}" style="width:58px;height:58px;object-fit:cover;border-radius:8px;border:1px solid var(--line2);flex:none" loading="lazy">`:"";
+    return `<div class="panel" style="padding:14px 16px"><div style="display:flex;gap:12px;align-items:center">${img}
+      <div><strong style="font-size:14.5px">${esc(t.nome||"")}</strong> ${srcBadge(t.fonte)}</div></div>
+      <div class="prose" style="font-size:13px;margin-top:8px">${t.c||""}</div></div>`;
+  }).join("");
+  const to = F.turnOrder ? `<div class="grid g2">
+    <div class="panel"><div class="h3" style="margin-top:0;color:var(--green)">Scegli di andare PRIMO vs</div>
+      <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:6px">${(F.turnOrder.primo||[]).map(m=>`<span class="chip big" style="color:var(--green);border-color:rgba(39,224,138,.4)">${esc(m)}</span>`).join("")}</div></div>
+    <div class="panel"><div class="h3" style="margin-top:0;color:var(--blue)">Scegli di andare SECONDO vs</div>
+      <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:6px">${(F.turnOrder.secondo||[]).map(m=>`<span class="chip big" style="color:var(--blue);border-color:rgba(46,139,255,.4)">${esc(m)}</span>`).join("")}</div></div>
+  </div>
+  <div class="callout" style="margin-top:10px"><div class="ct">Default</div>${esc(F.turnOrder.default||"")} <em>(${esc(fonte(F.turnOrder.fonte).nome)})</em>
+  <div class="prose">${F.turnOrder.note||""}</div></div>`:"";
+  return `<div class="view">
+    <div class="eyebrow">Dottrina</div>
+    <h1 class="title">Fondamentali <span class="dim">— come si pilota</span></h1>
+
+    <div class="h2"><span class="tag">//</span> Identità</div>
+    <div class="grid g3">${ident}</div>
+
+    <div class="h2"><span class="tag">//</span> Il Leader</div>
+    <div class="panel corner" style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap">
+      <img src="${cardImg("leader","full")}" style="width:190px;border-radius:10px;border:1px solid var(--line2)" loading="lazy">
+      <div style="flex:1;min-width:260px">
+        <div class="prose"><p>${esc(F.leader&&F.leader.testo||"")}</p></div>
+        <div class="callout green" style="margin-top:10px"><div class="ct">Regola mentale</div>${esc(F.leader&&F.leader.regola||"")}</div>
+        ${F.leader&&F.leader.flessibilita?`<div class="prose" style="margin-top:10px;font-size:13.5px">${F.leader.flessibilita.c||""}</div>`:""}
+      </div>
+    </div>
+    ${carat?`<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-top:14px">${carat}</div>`:""}
+
+    <div class="h2"><span class="tag">//</span> Il piano partita</div>
+    <div class="grid g3">${fasi}</div>
+    ${boards}
+
+    <div class="h2"><span class="tag">//</span> Regole d'oro</div>
+    <div class="grid g2">${regole}</div>
+
+    <div class="h2"><span class="tag">//</span> Mulligan</div>
+    ${mull}
+
+    <div class="h2"><span class="tag">//</span> Le combo firmate</div>
+    ${combos}
+
+    ${restand}
+
+    ${avanzati?`<div class="h2"><span class="tag">//</span> Concetti avanzati</div><div class="grid g3">${avanzati}</div>`:""}
+    ${trucchi?`<div class="h2"><span class="tag">//</span> Trucchi carta per carta</div><div class="grid g2">${trucchi}</div>`:""}
+
+    <div class="h2"><span class="tag">//</span> Turn order</div>
+    ${to}
+
+    <div class="h2"><span class="tag">//</span> Regole trappola (vissute in torneo)</div>
+    <div class="grid g2">${trap}</div>
+  </div>`;
+};
+
+/* MATCHUP HUB */
+views.matchup = () => {
+  const MU = D.matchups||{};
+  const ids = MU_ORDER.filter(id=>MU[id]).concat(Object.keys(MU).filter(id=>!MU_ORDER.includes(id)));
+  if(!ids.length) return `<div class="view"><div class="eyebrow">Operazioni</div><h1 class="title">Matchup Hub</h1><div class="empty">DATI MATCHUP IN ELABORAZIONE — ricarica tra poco</div></div>`;
+  const mk = id => {
+    const m = MU[id];
+    const art = m.leaderImg?`<div class="art" style="background-image:url('${PROC}/${m.leaderImg}__art.png')"></div>`:`<div class="tile">${esc((m.sigla||m.nome||"?").slice(0,2).toUpperCase())}</div>`;
+    const chips=(m.verdetti||[]).slice(0,4).map(v=>`<span class="vc" style="color:${CHART[v.fonte]||"#9FB2CC"}">${esc(corto(v.fonte))}: ${esc(v.label)}</span>`).join("");
+    return `<div class="mu-card" style="--accent:${m.colorHex||"#2E8BFF"}" onclick="location.hash='#/matchup/${id}'">
+      ${art}<div class="scrim"></div>
+      <div class="inner">
+        <div class="sig">${esc(m.sigla||"")} · ${esc(m.colore||"")}</div>
+        <div class="nm">${esc(m.nome)}</div>
+        <div class="tg">${esc(m.tagline||"")}</div>
+        <div class="vchips">${chips}</div>
+      </div></div>`;
+  };
+  const meta = ids.filter(id=>MU[id].tier!=="field");
+  const field = ids.filter(id=>MU[id].tier==="field");
+  return `<div class="view">
+    <div class="eyebrow">Operazioni</div>
+    <h1 class="title">Matchup Hub <span class="dim">— ${ids.length} dossier</span></h1>
+    <div class="lead">Ogni dossier aggrega TUTTO quello che le fonti dicono su quel matchup: verdetti a confronto, consenso, dibattiti, piano di gioco e le sezioni integrali di ogni voce.</div>
+    <div class="h2"><span class="tag">//</span> I sei del meta</div>
+    <div class="hub">${meta.map(mk).join("")}</div>
+    ${field.length?`<div class="h2"><span class="tag">//</span> Il field</div><div class="hub">${field.map(mk).join("")}</div>`:""}
+  </div>`;
+};
+
+/* PAGINA MATCHUP */
+views.matchupDetail = (id) => {
+  const m = (D.matchups||{})[id];
+  if(!m) return `<div class="view"><div class="crumb" onclick="location.hash='#/matchup'">← MATCHUP HUB</div><div class="empty">DOSSIER "${esc(id)}" NON ANCORA DISPONIBILE</div></div>`;
+  const art = m.leaderImg?`<div class="art" style="background-image:url('${PROC}/${m.leaderImg}__art.png')"></div>`:"";
+  const dadi = (m.verdetti||[]).filter(v=>v.dado).map(v=>`<span class="chip big" data-tip="${esc(fonte(v.fonte).nome)}">
+    <span class="dot" style="background:${CHART[v.fonte]||"#9FB2CC"}"></span>${esc(fonte(v.fonte).nome)}: <b style="color:var(--ink)">${esc(v.dado)}</b></span>`).join("");
+  const cons = (m.consenso||[]).length?`<div class="callout green"><div class="ct">✓ Dove tutti concordano</div>
+    <ul style="margin:4px 0 0 18px">${m.consenso.map(c=>`<li style="margin:4px 0">${c}</li>`).join("")}</ul></div>`:"";
+  const deb = (m.dibattiti||[]).map(d=>`<div class="callout gold"><div class="ct">☍ Dibattito — ${esc(d.tema)}</div>
+    ${(d.posizioni||[]).map(p=>`<div style="display:flex;gap:9px;margin:7px 0;align-items:flex-start">
+      <div style="flex:none;margin-top:1px">${srcBadge(p.fonte)}</div><div style="font-size:13.5px">${p.testo}</div></div>`).join("")}</div>`).join("");
+  const tl = m.timeline?`<div class="h2"><span class="tag">//</span> L'evoluzione della posizione</div><div class="tl">
+    ${m.timeline.map(t=>`<div class="tl-item"><div class="when">${esc(t.tappa)}</div>
+      <div class="pos">${esc(t.posizione)}</div><div class="why">${t.motivo||""}</div></div>`).join("")}</div>`:"";
+  const gp = m.gameplan?`<div class="h2"><span class="tag">//</span> Piano di gioco</div><div class="grid g3">
+    <div class="phase early"><div class="ph-h">Early<span class="don">0-4 DON</span></div><div class="ph-b prose">${m.gameplan.early||""}</div></div>
+    <div class="phase mid"><div class="ph-h">Mid<span class="don">5-8 DON</span></div><div class="ph-b prose">${m.gameplan.mid||""}</div></div>
+    <div class="phase late"><div class="ph-h">Late<span class="don">9+ DON</span></div><div class="ph-b prose">${m.gameplan.late||""}</div></div>
+  </div>`:"";
+  const carte=(m.carteAvversarie||[]).length?`<div class="h2"><span class="tag">//</span> Le loro carte da rispettare</div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(230px,1fr))">${m.carteAvversarie.map(c=>`
+      <div class="panel" style="padding:11px 14px"><strong style="color:var(--danger)">${esc(c.nome)}</strong>
+      <div style="font-size:12.5px;color:var(--ink2);margin-top:3px">${c.nota||""}</div></div>`).join("")}</div>`:"";
+  const lt = m.leaderText?`<div class="callout" style="margin-top:12px"><div class="ct">Abilità del loro Leader</div><div style="font-size:13.5px">${m.leaderText}</div></div>`:"";
+  const pf=(m.perFonte||[]).length?`<div class="h2"><span class="tag">//</span> Il dossier completo, fonte per fonte</div>
+    <div class="lead" style="margin-bottom:10px;font-size:13.5px">Tutto quello che ogni voce dice su questo matchup — integrale, tradotto, ordinato.</div>
+    ${accordion(m.perFonte,true)}`:"";
+  return `<div class="view">
+    <div class="crumb" onclick="location.hash='#/matchup'">← MATCHUP HUB</div>
+    <div class="mu-hero" style="--accent:${m.colorHex||"#2E8BFF"}">
+      ${art}<div class="scrim"></div>
+      <div class="inner">
+        <div class="eyebrow" style="color:${m.colorHex||"var(--blue)"}">${esc(m.sigla||"")} · ${esc(m.colore||"")}</div>
+        <h1 class="title" style="margin-bottom:6px">vs ${esc(m.nome)}</h1>
+        <div style="color:var(--ink2);max-width:60ch">${esc(m.tagline||"")}</div>
+        ${dadi?`<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"><span class="chip" style="border:none;color:var(--ink3)">DADO →</span>${dadi}</div>`:""}
+      </div>
+    </div>
+    ${spectrum(m.verdetti)}
+    <div style="margin-top:14px">${cons}${deb}</div>
+    ${tl}${gp}${lt}${carte}${pf}
+  </div>`;
+};
+
+/* DIBATTITI */
+views.dibattiti = () => {
+  const DB = D.dibattiti||[];
+  if(!DB.length) return `<div class="view"><div class="empty">NESSUN DIBATTITO CARICATO</div></div>`;
+  const cards = DB.map(d=>{
+    const pos = (d.posizioni||[]).map(p=>`<div class="verdict-row" style="border-top:1px dashed var(--line)">
+      <div style="flex:none;min-width:150px">${srcBadge(p.fonte)}${p.quando?`<div style="font-family:var(--mono);font-size:9px;color:var(--ink3);margin-top:3px;letter-spacing:1px">${esc(p.quando)}</div>`:""}</div>
+      <div class="vt" style="font-size:13.5px">${p.testo}</div></div>`).join("");
+    return `<div class="tech-card">
+      <div class="tn">☍ ${esc(d.tema)}</div>
+      <div class="tq">${esc(d.contesto||"")}</div>
+      ${pos}
+      ${d.takeaway?`<div class="trend">▸ TAKEAWAY: ${esc(d.takeaway)}</div>`:""}
+    </div>`;
+  }).join("");
+  return `<div class="view">
+    <div class="eyebrow">Operazioni</div>
+    <h1 class="title">Dibattiti aperti <span class="dim">— dove le fonti non sono d'accordo</span></h1>
+    <div class="lead">La parte più preziosa di avere 6 voci: i punti dove divergono. Ogni posizione è riportata con la sua fonte e il suo momento — decidere sta a te.</div>
+    <div class="grid" style="grid-template-columns:1fr">${cards}</div>
+  </div>`;
+};
+
+/* FONTI */
+views.fonti = () => {
+  const cards = SRC_ORDER.map(id=>{
+    const f=fonte(id);
+    return `<div class="panel corner">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">${srcBadge(id)}<span class="chip">${esc(f.tipo||"")}</span></div>
+      <div style="font-weight:700;font-size:17px;margin:10px 0 2px">${esc(f.sotto||"")}</div>
+      <div style="font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.5px">${esc(f.persona||"")}</div>
+      <div class="callout" style="margin:10px 0"><div class="ct">Credenziali</div><div style="font-size:13px">${esc(f.credenziali||"")}</div></div>
+      <div class="prose" style="font-size:13.5px">${esc(f.descr||"")}</div>
+      <div style="font-family:var(--mono);font-size:10.5px;color:var(--cyan);margin-top:10px;letter-spacing:.5px">⌁ ${esc(f.link||"")}</div>
+      <div style="font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:6px;letter-spacing:1px">COPRE: ${esc(f.copre||"")}</div>
+    </div>`;
+  }).join("");
+  return `<div class="view">
+    <div class="eyebrow">Bibliografia</div>
+    <h1 class="title">Le fonti <span class="dim">— chi parla in questa guida</span></h1>
+    <div class="lead">Due guide premium Metafy trascritte capitolo per capitolo, un tournament report dal Top 8 di Mexico City, e tre serie di coaching/gameplay commentato. Ogni affermazione sul sito è attribuita.</div>
+    <div class="grid g2">${cards}</div>
+  </div>`;
+};
+
+/* ---------- router ---------- */
+function route(){
+  const h = location.hash.replace(/^#\/?/,"") || "home";
+  const [r, arg] = h.split("/");
+  document.querySelectorAll(".nav-item").forEach(n=>n.classList.toggle("active", n.dataset.r===r));
+  let html;
+  if(r==="matchup" && arg) html = views.matchupDetail(arg);
+  else if(views[r]) html = views[r]();
+  else html = views.home();
+  app.innerHTML = html;
+  window.scrollTo({top:0});
+  // post-process
+  linkifyCards(app);
+  bindAccordions(app);
+  bindDataTips(app);
+  if(r==="decklist"){
+    app.querySelectorAll(".dtab").forEach(t=>t.addEventListener("click",()=>{deckSel=+t.dataset.i; route();}));
+    app.querySelectorAll(".dcard").forEach(dc=>{
+      dc.addEventListener("click",()=>{
+        const target = app.querySelector(`[data-deckcard="${dc.dataset.k}"]`);
+        if(target){ target.classList.add("open"); target.scrollIntoView({behavior:"smooth",block:"center"}); }
+      });
+    });
+  }
+}
+document.querySelectorAll(".nav-item").forEach(n=>n.addEventListener("click",()=>location.hash="#/"+n.dataset.r));
+window.addEventListener("hashchange", route);
+normalizeData();
+buildAliasRe();
+route();
+</script>
+</body>
+</html>

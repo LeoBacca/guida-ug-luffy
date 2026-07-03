@@ -1,0 +1,19 @@
+{
+  "leader":       {"code":"OP16-022", "name":"Monkey D. Luffy",          "short":"Leader UG",     "cost":"L"},
+  "luffy1c":      {"code":"OP16-034", "name":"Monkey D. Luffy (1c)",      "short":"Searcher",      "cost":"1"},
+  "mr1":          {"code":"OP16-054", "name":"Mr.1 (Daz Bonez)",          "short":"Core 2-cost",   "cost":"2"},
+  "mr2":          {"code":"OP16-055", "name":"Mr.2 Bon Kurei",            "short":"Core 2-cost",   "cost":"2"},
+  "ivankov":      {"code":"OP16-026", "name":"Emporio Ivankov",           "short":"Searcher 4c",   "cost":"4"},
+  "crocodile":    {"code":"OP16-045", "name":"Crocodile",                 "short":"Blocker/bounce","cost":"4"},
+  "mr3":          {"code":"OP16-056", "name":"Mr.3 (Galdino)",            "short":"Powerhouse",    "cost":"4"},
+  "buggy":        {"code":"OP16-048", "name":"Buggy",                     "short":"Body / +1",     "cost":"5"},
+  "prisoner":     {"code":"OP16-042", "name":"Prisoner of Impel Down",    "short":"2k counter",    "cost":"6"},
+  "hancock":      {"code":"OP16-032", "name":"Boa Hancock",               "short":"Win condition", "cost":"7"},
+  "samurai":      {"code":"OP01-055", "name":"You Can Be My Samurai!!",   "short":"Value Event",   "cost":"1"},
+  "navyhq":       {"code":"OP16-038", "name":"Let's Go! To The Navy HQ!", "short":"Finisher",      "cost":"E"},
+  "gumgumrain":   {"code":"OP02-068", "name":"Gum-Gum Rain",              "short":"Unbrick",       "cost":"0"},
+  "jinbe":        {"code":"OP16-027", "name":"Jinbe",                     "short":"Tech 2k",       "cost":"2"},
+  "mr3_2c":       {"code":"ST30-014", "name":"Mr.3 (Galdino) 2c",         "short":"Tech rest",     "cost":"2"},
+  "brook":        {"code":"OP15-032", "name":"Brook",                     "short":"Tech",          "cost":"6"},
+  "iknow":        {"code":"OP13-040", "name":"I Know You're Strong...",   "short":"Tech freeze",   "cost":"E"}
+}

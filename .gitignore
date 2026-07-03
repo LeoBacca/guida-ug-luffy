@@ -1,0 +1,10 @@
+# Materiale pesante non necessario al sito
+output/
+assets/slices/
+assets/IMG/FireShot*
+*.pptx
+
+# File temporanei
+~$*
+*.tmp
+Thumbs.db

@@ -1,0 +1,899 @@
+kind of homework for Wednesday after this session and then on Wednesday we can check. Maybe what I will do on Wednesday is to have some recordings of your games. That would be good to refine the details.
+
+And then today we can cover maybe the matchups, as many matchups as we can, I guess. So yeah, my question would be, which matchups do you think you struggled the most with? So, like, I see, I'm with you on how you feel about Blue-Green and Toonami, about it being like a lot more even than people think. I think there's like probably some small decisions that I think I'm still making incorrectly, but the general idea that I found that has been helpful has been kind of abusing the Green Crocodile re-stand with the Mr. Tube Enclaves for advantage.
+
+And with that, it's like that's made it a lot more manageable. But I can't really figure out what's, like, what you're doing that's making a Nell feel more even to you. I don't have a good idea of, like, how to manage my small characters to force them to use resources versus, you know, when to play a Boa.
+
+Because that's what a lot of that matchup feels like. It's like you have to force them to use things when they don't want you to or when they don't want to. So you can kind of force them to have to draw into the resource to get rid of, like, your win condition.
+
+But I feel like I'm still doing that incorrectly. I don't really know what the idea would be for that. I see. 
+
+I see. Okay. I would say, yeah, it really depends on the matchup, to be honest.
+
+Because, of course, Nami and Nell are quite different ones. But the general, I think the deck can go two ways, basically. Either you go super wide or you try to be a bit taller.
+
+Against Nami, it's probably the only matchup where, like, you want to be super tall. I think also Ace, a little bit. I don't think there are going to be many Aces, so I wouldn't bother about that matchup so much.
+
+Against Nell, it's kind of tough because it really depends on them most of the times and how they open, basically. And if they started the matchup very well. Because I think it's kind of even, probably, it's easier from Nell because they have less things to accomplish.
+
+And your resource management has to be much better than them because they can just throw random stuff at you and still win. I would say we can focus on those matchups. What I want you to have is a clear idea of, let's say, the six matchups by Wednesday.
+
+Maybe today we can cover all of them, at least slightly. And then for the next time, I can see if you practice a little bit of games and I can see if there are some problems connected to Fundamentals or it's just a deck. What I will start with is the decklist, for sure.
+
+I've been testing the other one. I'm probably checking Discord for the other list that I have mentioned. Yeah, the one with the four cost lupi.
+
+Or the one without it, but with the Strongers. Yeah, with the events to freeze. I think those could help also against Nell, kind of.
+
+Yeah, that's closer to the list that I ended up with after deciding that I'm making more mistakes with the Samurai than using them properly. So I took those out, swapped them for one Brook, two of the Stronger, and then one Luna. I don't really like the Luna either, but it felt kind of better just to have it in case I need it against Rosinante because that feels like that might be more useful there.
+
+But I still don't know if it's even worth including or just putting in another Stronger and going to three. Yeah, I see what you mean. I mean, it really depends which decks you expect, honestly, because the main reason why I wanted to play that card was that I felt like Rosie was much easier with that in my deck.
+
+And the other thing that I've noticed is that I think the Samurai is really strong, but at the same time, I have tried to play without it and I didn't really feel like I was missing something. So in the end, most of the times, when I was playing the Samurai, I was ego winning because I had too many cards in my hand, but then there were some games where I lost because I didn't have enough to just delay my opponent from pressuring the board. So basically, I think at least in this meta for now, the Stronger feels better than the Luna just because you have very rare scenarios where actually there are more than two pieces pressed.
+
+Because actually, you already play other freeze cards in the deck. Most of the times, you can just freeze one of the other characters and free two more, and then again, you freeze three. It's very rare that you need to freeze four characters, actually.
+
+That's the main reason. If you can share your screen, we can see the decklist and talk about it. Not joking, give me one second.
+
+So this was where I ended up. Yeah, same as me, but you're one of my new friends. Yesterday night, I tested more and I started to like the group more.
+
+Because I felt like in some matchups, where you cannot actually go wide with restand events, the group was very useful. Especially if you're struggling against Nami, I think it's a card that could help you a lot. The other card that I wanted to try was the DMG.
+
+But I think at least for now, it's fine. If you're going to a very genetic field, it's better to stay as genetic as possible. Yeah, that's kind of where I was as well.
+
+It's either keep the Luna or swap it out to either a DMG or even a second Brook. I'm not even sure if I would keep this without the rain, or just a way to get rid of it. Because like you said, there's not very many spots where people are going to have more than two things rested.
+
+So I don't really know how useful it is. The other thing that I think I'm kind of doing wrong in some matchups is I feel like I'm not using the Ivankov correctly. Because it doesn't ever feel good when it's six on the board, because it's a one Dawn for five, as opposed to one for six with every other character.
+
+So I'm kind of having a hard time of how to really use it at this stage. I see what you mean. I think that's because also some of my friends that were testing the deck were struggling with this card.
+
+I think it's a card that could go down to three copies. Some of them are cutting it down to two. But the main reason why we want to play this card is, first of all, we don't want to miss our four Dawn turn, either four or five.
+
+I mean, if you have five Dawn, it's very difficult to miss because you have so many options. But there are games where you don't start with two costs on board. So playing the croc without any target, it's usually pretty bad.
+
+And having Ivankov as a backup plan is usually very nice. In addition to that, I think Ivankov can open up to some turns where you can actually win with a restand event, especially if you have two guys on board and you can just play the Ivankov for four and then just play a guy out of him and then restand two Dawns. And then you have five characters on board.
+
+That's usually at least the main usage for me. Some other scenarios were like you could crocodile, but actually sometimes the Ivankov could actually find something like Baguio on five or a boa to follow up. So it's more like an extra searcher in the deck.
+
+Because if we got the Ivankov, we would have only one searcher in the deck. But yeah, I don't feel like this card is a four off must-have. It can go down to three copies for sure.
+
+It could go down to two as well, but for now I'm comfortable with that amount. What I've noticed is a lot of people cut one for like second brook, for example, or just another event. I would avoid cutting the counters for brick cards.
+
+Because even if the event is plus three, it's not really a plus three because sometimes it's brick. At least most of the times. And also if you look at your deck, you don't really have so many 1k counters that you want to discard, at least in the early game.
+
+Because you want to play them. And discarding the Misstep 3, for example, as a 1k counter is always... It feels bad most of the times. Yeah, I think I've only used it for counter like maybe once or twice.
+
+Yeah, yeah. Just wasted my time. But okay, I guess we have time until Friday to figure out the decklist.
+
+I would say you can switch around the scores. I think the flex slots here are like... Probably that you're strong will end up playing at least two. I think you will see a lot of Roses and a lot of Miramatch.
+
+So that card is good for sure. I think one Eva, one Aluna. The rest is kind of mandatory.
+
+So yeah, maybe the rookies flex. But yeah, I like it at least to have one. So you have more or less two slots still.
+
+Also, the 2k ratio feels very good like this. I don't know if you noticed any difference. You know, I was playing 12 of the Prisoners.
+
+But I don't know. Do you guys have the SD available in the tournament or not? Yeah, it should be. It should be legal because it came out a week before.
+
+So it will be playable. And yeah, I like the ratio here too. The green Misstep 3 is actually... I like it a lot more than I expected just because some of the lethal lines that it can set up on that last turn with the restand event.
+
+Yeah, I've noticed especially with the Ivanka blind that I was telling you. And a lot of times you will have four characters. And I mean, these guys that you won't have on the board 100% is good because most of the times you won't have either Jinba or Misstep 3 on the board.
+
+So they can just basically enable your five characters board. And yeah, just go for the restands. But okay, I would say we can play some games.
+
+So let's start with... Which one is the most important for you? Enel or Nami? I think there would probably be more Nami than Enel. Okay, so we can start. We can practice a little bit.
+
+So I will play Nami against you so it's easier. So if we queue up, we're going to face just random. Yeah.
+
+Okay, of course, first we want to steal the curve. That's lower. So what do you think about this one? I'm not sure if this is a greedy mulligan or not.
+
+Like it doesn't feel good to not have a play for three and then kind of gamble that we'll find something for five. But there could be worse hands that you get potentially. Like this could be three prisoners and you know, Boa in event.
+
+What do you look for when you play against Nami most of the time? For Nami, I try to look for a Crocodile, a Bonclay. The one drop is not super important. But Crocodile, Bonclay, and then maybe some type of follow-up for the seven turn or a search.
+
+What do you like to do on five, Tom? It kind of depends on if I have Bonclay or not. With Bonclay, I like swinging twice with Crocodile. Like swinging once, playing a Crocodile, to re-sand the Bonclay.
+
+Without Bonclay, probably Buggy. Buggy swing seven. Yeah, yeah, I see.
+
+I mean, this hand is kind of for like... I would say it's not a great hand, but like... If I would get this after Mulligan, I wouldn't be so sad. So again, if you think about it, if you search with the Luffy and you find a Buggy... I mean, your three down turn is not really a great turn against Nami. Because even if you develop, let's say, Mr. One, it's not really doing anything, right? So like, of course, this hand has already like three dead cards.
+
+So we kind of want a Mulligan. But it's not so like instant Mulligan. Because if you think about it on three down, you don't get plays.
+
+The most important thing is that you develop your six game on five, Tom. But yeah, you can Mulligan if you want. Yeah, everybody else is fine.
+
+So you see, like, it's almost the same. But of course, it's okay to Mulligan if you're looking for something else. Yeah, that's fair.
+
+It won't do much anyways. And then here, I don't really get much value from playing with Jinbe. So it feels like just swing eight.
+
+So the only reason to play Jinbe would be to enable the clock. But to be honest, I don't think it makes sense now. Yeah.
+
+So yeah, I gotta just go eight beats. And also because I don't really want to counter out with any of the other cards. Yeah, it makes sense.
+
+So probably I'll just go nine. So of course, it depends how they open now. I didn't have any plays.
+
+The eight I couldn't counter. So they could decide to counter that eight. Of course, it changes if you do eight or seven because you ask for more cards.
+
+It's not gonna go. The only play we have. And then here, would it be better to swing the seven to take two cards or just swing five to take a card and play the Mr. Two? So the question you should ask yourself is if you swing seven, okay, what happens? He discards two, okay? He's gonna discard one.
+
+So he goes to six cards. What is his best play next turn? Best play next turn? Probably a Nami. Okay, so he's just gonna play Nami and swing again.
+
+So if he swings now seven, that swing you're gonna lose from the bunk play next, okay? Because the question you should ask yourself, okay, he's gonna go Nami. So his next turn is gonna be Nami seven lead. Probably you block two K, so that's fine.
+
+And then your turn, what's your turn gonna be? Turn after that. If I swing seven this turn? Yeah, let's say you wanna play... Because basically, the only thing you're gonna... If you play the bunk play now, you have two... So what you need to think now is if I play bunk play now, what am I achieving? Because you should ask yourself, what is gonna be my next turn? Why is this? Because this bunk play makes sense only if he's gonna do something in the later turns. Because here, you're basically giving the one free card to your opponent, yes, but you're also developing a body that is gonna ask for that cutback eventually, okay? So you're not really losing anything here.
+
+You have the option to play the bunk play. I don't think it's bad. So of course, it depends also on how many cards your opponent has.
+
+Now, in this scenario, he has eight. So it doesn't really matter because if he goes seven, he goes to six. And then if he plays Nami, he goes to six.
+
+If you swing five, he's gonna go to seven. Then he probably goes to eight. And then he plays the Nami, goes to seven.
+
+So he's gonna still draw. So it doesn't matter. The only thing that changes here is that you're gonna see the extra card with bunk play now.
+
+And eventually, if next turn, you wanna play the board that is currently your only play, because the question you should ask yourself here is like, is Bob what I wanna do next turn? Yes or no? If the answer is no, I wanna keep it for, for example, Robin. Just another example. Then it would make sense to play bunk play.
+
+Why? Because I'm looking for another play. Because you're drawing an extra card with bunk play. You're drawing an extra card with the life that he's gonna inflict thanks to the Nami.
+
+And then you draw another card of either. So the question you should ask yourself is like, does it make sense to play the bunk play now? Now, he doesn't really have board either. So developing the bunk play early is not that bad, in my opinion.
+
+Also, because he cannot really chase it. Because if he needs to use one swing on the bunk play, for example, it would be very annoying for them. Also, what you can think is like, okay, let's say he plays the Nami next turn.
+
+He's gonna swing. And then you go block two K. And then on your turn, you will be at seven down. What you can do is gonna be, for example, play the ball on the Nami.
+
+And then go seven lead with a buggy. And then you go eight lead with a bunk play. And that's that.
+
+So you actually have an extra swing next turn. So that's when you will get back. But that would be one of the lines.
+
+I think playing the bunk play now is fine. But this thought process that took like five minutes, you should do it yourself, of course. Yeah, constantly.
+
+Yeah, these should be the questions you should ask yourself. Because it's important to also think up front. And since Nami is also a very predictable deck, it's nice to always have this.
+
+Like, the more you think like this, the easier it will get. Because you will, like, it's very predictable, right? Yeah, yeah, yeah. Gotcha.
+
+So yeah, I think it's fine to swing five and then just develop the bunk play. Okay, that's fine. So now they will just go with Nami.
+
+And then swing seven eventually. Oh, shit. Whoops.
+
+Okay, that's... Let me switch to my mouse here. Yeah, no worries. I will try to rebuild the situation and swings later.
+
+And sadly, we don't have any full decks. My mouse is really sensitive. No worries.
+
+Okay, that and then... Okay, so basically, you have a 2K and a 1K lands. Hopefully, that's a Mr. 1. It's not going to be crucial. Yeah, I don't really like the idea of playing with Nami here.
+
+Okay, so... So we need to think now, if we want to see established board and pressure, or if we want to do something else. If you actually don't play the ball, your only next play will be... For example, here, if you would have Crocodile, it would be interesting because what you could do is, like, play the bunk play... Sorry, the Mr. 3. Freeze the Nami and then re-stand. And then swing with a bunk play.
+
+And then just play the Frog to re-stand. But you lose a lot of swings. Actually, playing the Boa now... Because Boa is the only character that they cannot deal with.
+
+So the sooner you play it, the better. Because she's going to gain value for you for free. And she's actually stopping your opponent.
+
+Because the question that I'm going to ask you now is... What do you expect your opponent to do next turn? Next turn, yes. Would probably be a Robin. Okay, so he goes Robin, 6 leads.
+
+If you play the Boa, you can swing 7 and 8. Keep the blocker up. So actually, you could just block with the Prisoner and just discard the Mr. 1 that we should have in hand, technically. And that would leave you with a Boa on board that can swing next turn.
+
+And actually, if you then want to freeze the Robin, you will have your Mr. 3 to do so. So actually, playing the Boa here is not terrible. Because you still apply pressure.
+
+If they try to trigger something, you're still going to have the swing from your leader and the Prisoner as well. Also, counting that actually, you should have another 2K and 1K in hand. Even if you're going to swing with the Prisoner, he's just going to have a 6K lead.
+
+And you can just discard either the Prisoner or the Jinba that we should have in hand. So it's not terrible. So against Nami, it's one of those matchups where like... Actually, you already have the Boa that you want, okay? Because we don't need to over-develop.
+
+Like, the only thing better than this is having another Boa, basically. Because everything we actually do against all the other matchups doesn't work against Nami, okay? So it's important to put out this Boa as soon as possible. So you can start with the Boa, freeze, and you restand.
+
+And then you always start with the Buggy. Why the Buggy? Because he's the weakest. Because if he triggers the Teach on that, you cry.
+
+If he triggers Teach on the Bonkley, then it's okay. At least that we spawned already with the Buggy. But honestly, in this scenario, they will always counter this one.
+
+They need to counter this. They cannot take this with 18 hands. So they need to counter this one.
+
+So I'll just do this. And then you have the 8 for free. That's fine.
+
+And still, they will need to invest their leader swing on the Bonkley, okay? So actually, if they're not... It's very rare that Nami is going to have a body on board that can actually take this Bonkley, unless they place it very early. But that's not so common. Okay, so this is a good example, like I have this.
+
+But it's fine, because we already did this job. Okay, so now, not many plays here. I'll just do this.
+
+What I could do is 6-on-1. Because if I go 6-lead, maybe you just take the 6-on-1. And you can still block.
+
+You can block, right? Yeah, that's fine. Yeah, because in my mind, I didn't think of this. Okay, but technically, they need to trade that, because they have too much pressure on board.
+
+Because if he doesn't trade this Bonkley, the problem that's going to happen here is that next turn, you might even put him at 0 life. So it's very dangerous. Yeah, that makes sense.
+
+So the Bonkley is very annoying for them. If you're going to... So see, this Bonkley already blocked the damage and inflicted the damage. Okay, that's a really interesting draw.
+
+So what is the first thing we should do here? Probably... So I'm going to end up freezing the Robin no matter what. So this Robin we freeze, we already know, okay? Yeah, so we'll do that just to get the new cards. Yeah, you can do it if you want.
+
+So let's pretend we start with that. Okay, and we stand the two don'ts. So now the question you should ask yourself is, how do I swing, and which characters do I want to develop here? Let's see.
+
+So I don't think there's any trigger that could affect either of the two characters. Well, I guess Perona. So I'd probably swing... So technically, that's the... Swing the Prisoner first for 7. Yes, I will start with 7. There is no trigger that is going to affect Boa.
+
+So you can remember that, Boa. I don't know if you played an L against Nami in the past. But with an L, we usually started with the bigger swings.
+
+In this matchup, it's not needed to start with Boa, because there is not really any trigger that affects her. While with an L, the problem was that they could Perona on the L. So that was the main difference. So just keep that in mind.
+
+You don't need to start with Boa. But also, the triggers that are going to affect the Prisoner are very few. So that's also one of the things you need to keep in mind.
+
+Okay. So now, of course, we still have a lot of don'ts. We can decide what to do.
+
+You'd rather... So we need to remember you have a 2K and a 1K in hand as well. Yeah. Actually.
+
+I would just bug you again, probably 10 with a Boa. Do you think it matters if you go 9 or 10? Not particularly. And I guess they're only going to have one target.
+
+So I'm not really going to likely to use this for freeze next turn. So it's probably better to have it open. It doesn't really matter very much either way.
+
+So I would just go 9. I would always start 9. Actually, what is important here is that if you remember, they took the 8 from Volpain. So they're not really full of 2Ks in hand. If you remember, they took 8 and 7. So this is a tell that you should always pay attention to.
+
+Especially against Nami, it's really important to understand how to count. Because that changes a lot. Okay, so now you can buggy.
+
+Yeah. And then you can just pass. But this don't open is very useful because... Let's pretend now he goes... Because the question I'm going to ask again is like, which swings do we expect this turn? He could go, for example, Robin, 7 lead, 7 leads.
+
+And you can also decide to just block 2K and plus lead. It's an option. Or maybe he just goes each.
+
+And then he goes 7 lead with Nami. And then maybe you can use the plus lead. It's just an example.
+
+And on the 6, you can just block and 1K. So always keep in mind that you always need to visualize as well which combination of cards they could do. That's really important.
+
+So let's say... I think this is the safest. Probably I'm going to play this. So I'm just thinking how to swing.
+
+I'm not going to swing because I know you have counters. You don't have actually an answer. We can think about how to do this.
+
+So here, the Nami player could do different things. They could go either full face or try to trade the prisoner you have there. Honestly, it really depends on the player.
+
+But like, let's pretend I go face. So I will go 6 lead first. I would just counter with one of the 2Ks.
+
+Probably not the Galdino. Just the prisoner or the Jinbei that I misclicked on. Okay, so we just give away the Jinbei, let's say.
+
+So this 6 is gone. We can do like this. And then he could have the 8. So this 8, for example, you could do on the prisoner because then he wants to play this.
+
+All right, so here you could think about it because you could say, okay, either I let it go but I get two cards. You should actually understand if it makes sense to save this guy or we don't care about this. We should have still a 4K counter.
+
+The question is, I'm not, I'm really... Well, I don't know. I'm not sure if I'm going to play a restand event. Like if I... Could this be worth saving with... Well, no, no.
+
+I don't think I'd ever discard this Mr. 3. This version of it. I need to keep this. Actually, I think you still have a Mr. 1 in your hand, technically.
+
+Yeah. You still have a Mr. 1. So... And I've got these. I think I would just counter with this and the other one.
+
+Do you think it's more important to have that? Because we have the interesting combo with that Galdino the next turn. Yeah, no. That's kind of what I was mulling over was... Do I counter with this or potentially the two 1Ks? But we need to freeze one of the Robins.
+
+So I'm never going to get rid of this. So yeah. Actually, if you just let it go.
+
+What you can do next turn is just to play the Galdino and then play the other guy. Like you play the 4Ks and you freeze and then you play the 2Ks, rest, give the dance to the guys. Then you play the Kroppi, you bounce back, and you play another guy.
+
+So you actually have now the 8K swingers instead of 7. And you still did the alternate. You still develop the blockers. So normally we still have that.
+
+Yeah, so you can always start with that. Okay. You can restance.
+
+You could think here. You could think here. So... Still do have options.
+
+Here, of course, it depends whether you want to go for the aggression or you want to draw more cards. I think just kind of based on the countering, I probably want to be more aggressive. But the scary thing is just like how many bricks I have in hand.
+
+So it feels like we both might be kind of bricked. And I'll have a blocker potentially. Because next turn, you can freeze this board, basically.
+
+Yeah, yeah. But also we want to put some kind of pressure now, right? Yeah. So once Ming is going to go through, there is the board.
+
+You know what I'm saying, okay? Yeah, for sure. But then we do it as last turn because you need to play around the figures. Remember that.
+
+Yeah. So now the main question should be like, either you play that, you bounce it back, and then you just bring out the ball play that is not very good, actually. Yeah, that's what I was leaning towards.
+
+Okay, let's start with that. You can just play that guy. Double gone.
+
+You can always start with the swing first and see what happens. It's a very long swing for them. Let's get rid of this.
+
+So now the question would be either would it have been better to go with 9s or 8, 8, 7? Or just keep that on. Or 8, 9. 8, 9, 9. And then you keep 1, 1, open for the freeze events, which that's the main question. Because of course, we don't need to develop more, right? Because this copy is going to put us on five characters, right? Yeah, yeah.
+
+No, I think I don't mind the 8 for the first one, especially when I think that they're low on 2Ks because that kind of forces that. I think I can keep going 8s here. Or at least see.
+
+That's the answer that would be useful. Because here you have to decide if you want it on open or not. Yeah.
+
+Because if you don't want it on open, you just go 7, 8, 9. If you want it on open, you just go 9, 9, right? It's basically the same thing. But then the other question I would ask yourself is what is your objective? Do you want to inflict damage now or discard cards? I think I probably want to do damage now. Because they played through three Robins, and their next turn they probably have to go for board.
+
+And with the card advantage and the three crocodiles to just keep drawing stuff in the next turns, it doesn't feel that bad to save this event and just let the stuff on the board go and then freeze twice while kind of poking with the other stuff that's on the board. So I'll probably swing 7 and then 8. So you want to go 7, 8 to save that. Okay, that's fine.
+
+Yeah. I would have still swung first. Oh, yeah. 
+
+Swung with the bow first. Okay, so I lost count of how many counters you still had from that. So you used the one of the 2k's, right? Yeah, I used the 2k.
+
+So I only have one 1k more counter. Okay. From the Dazbones.
+
+You have an extra 1k now. Okay, so here, of course, your opponent cannot just go face because if they do and you just do an hour strong, they just lose the game. So they need to understand what is the best approach here.
+
+Most of the times, what they will start with will be an 8 on 6. That's very common. So, of course, now you need to visualize in your head, okay, which combination of, yeah, which combination of cards they could do. They can play Robin, Tiege, Porcellino, Galdino, whatever.
+
+And a lot of annoying stuff they could do. Yeah, I think Tiege is probably more likely, or if you're playing some of the Thriller slop, could Gecko potentially. Gecko is an option as well.
+
+So that, because you've got two boars and trash. So let's say the combinations we have, because the only thing we care about now is which swings are we going to receive. Yeah.
+
+So we know this is an 8, and then they will follow up with either 8 and 6, or maybe 6-7, or maybe just 6-6. So it's going to be 6-6, 6-7, 6-8. Probably those are the combinations.
+
+So if you have counter now, because I think the main problem here is that a lot of people make the mistake of over-countering on 6-8 bodies that they can just redevelop next turn while they keep using the board. So for example, in this scenario, even if they kill this bug, it's not going to be at the end of the war, because next turn you probably plan to play another proc, right? Because you're going to swing with everything, and then you swing with the bonk lane, and then you bounce back, and you re-send, and then you freeze this board, right? So that's not good. But the only thing that we really care about is that if they don't actually inflict damage to us, they're not going to draw.
+
+So they might run out of resources, and that's really important for us. So this should always, like all these thought processes that I'm doing with you is like what you should always think against Nami. It's not easy, because sometimes it's counterintuitive to just let go a piece.
+
+Of course, if you have a lot of resources and you can say this guy makes sense, but always keep in mind that you can always redevelop, okay? Yeah. So as long as you keep training his hand and you redevelop, you're going to be fine. So then is it better to let the buggy die or block with the crocodile to keep the buggy? I would keep the croc because it's just a blocker.
+
+The buggy doesn't really accomplish anything. Because now if he wants to trade also the other 6k, then you can think about countering. But he already committed this stance, right? It's of course different.
+
+So let's say... So my combination would be to go 6 on the 6. So probably you just discard the Mr. 1 that you have in trash. So I can just do 6 on the 9. And let's say you have it in trash, so that's fine. So now our hand should be correct.
+
+Correct, yeah. And then I just go, for example, 7 on 6. And then you can give a 2k, for example, here. That reason I probably wouldn't need anymore.
+
+So I'll just let it go. I'll just play this guy. I don't even know what's best here.
+
+His stack is canceled. Okay. So now same principle as before.
+
+So we already know three dawns are off limits, right? Yep, yeah. So we need to play around triggers, which is the worst trigger of all. Well, probably a teach.
+
+Okay, so what's the first swing here? It would either be the crocodile or the bonk play. But a bonk play cannot swing first, because his leader is 5, right? Yeah, but if it's a teach trigger, he can nullify the bonk play. He can deny it, that's fine.
+
+But if you swing 7 and he takes it, is that fine for you? No, not really. He's going to deny the bonk play, that's fine. You can just bounce it back with your croc, right? Yeah, I guess it's true, yeah.
+
+So we cannot really play around that, because even if you start... Let's say you start with a bonk play, then it just kills the croc, and then it's the same, right? Yeah, it doesn't matter. So I would always start with the croc, because he's the, let's say, car that gets punished the least. Yeah, for a swing.
+
+So example here. So what is the plan now? Did you already count how many dawns you have for everything? Since you had four cards in hand, I think it was correct to always start with 7. But now you need to think how many dawns you need to do everything you want to do. So what is our plan for this turn? I mean, I'll need 7 dawns total.
+
+You need 7 dawns to invest, but you have 2 dawns extra. So you actually have to still think about it. Yeah, I had 11.
+
+Yeah, I think it's probably 7 leader. But your leader is the only thing that cannot receive anything from your opponent, right? They cannot do anything. Yeah, I don't know.
+
+I guess it's always a bit of a corona. Yeah, I think the prisoner is fine. Yeah.
+
+Okay, so now they are finally an 8, so we can think about asking with the bonk play if we want. How much would you swing for? I could probably go, well, 8 quits. Let's swing for 10.
+
+I've got 10 dawn left. We want to play the croc into a bounce pack, freeze. Probably we're going to play the luna, right? Because the positive is better.
+
+So we just do that for 2 dawn, and then we do that. So we still have 3 dawns left. So the question you should ask yourself is whether you want to be more aggressive and not stay with the dawn open for the strong.
+
+Or if you want to be a bit safer, then that would mean that you go 9-9. You don't swing with the leader, but you can have an extra one to save. Yeah.
+
+But I feel like this is kind of similar to last turn too, right? Where they can't just leave the board like that? Yes. Otherwise, they die. So I'm not super worried about needing to keep that dawn up to protect my leader.
+
+If they go, for example, Zeus on your croc and they try to go for leader, can you block everything? Just out of the question. Because doing 7-8-9 is a bit more greedy, I can tell you. Because if you go 9-9, you still get the same number of cards.
+
+But still, there are less figures that are going to affect you. That's true. This is probably a trash check time.
+
+One Zeus. Yeah, that's pretty like, that's more possible than... Yeah, I think I just go 9. The bonk plays, yeah, the 2 dawns becomes 9, so that's fine. Because this is very annoying, because discarding 2 in this spot for them is very, very bad.
+
+Okay? Yeah. Because basically, they just have, they don't have resources, right? Just go 9 again. Just need to take this as well.
+
+Um, I don't even know. It's over. What's that? Play that, bounce back.
+
+Yep. And yeah, nothing. Okay.
+
+I think I can just let this one go. So what is their best play on this turn? I don't think they really have a way to win, so they probably try to clear board. Yeah, 8d6 down left, what are they going to do? Probably Borsalino, but they've got 2 in trash.
+
+So I don't know how likely that is. So let's always think about the worst case. So they have Borsalino here, right? Yeah, that's true.
+
+Okay, so yeah, if they play Borsalino, then I probably want to defend this. Well, not sure. Can we go for a little next turn, yes or no? I think so.
+
+They're going to have 6 cards in hands. Well, you're right, 6 in hand. We have another turn of time.
+
+Because the teacher is going to take one of the 6s, right? So you actually have only 4 swings. And the Borsalino is on board. Yeah, Borsalino is on board.
+
+Don't have a way to rest it. So yeah, so I might just let this go then. Well, either you let go of both, and you still try to pressure them, and you freeze 2 Robins while you free up the hand, and you rebuild the board.
+
+Because that's all we were doing since the start of the game, right? Yeah, just rebuild the board. Yeah, so I think in this scenario, we're going to go for game, right? Of course, if we had a different board, and we could think about the wrist and the band, let's see what we do. So I think you can let this go.
+
+It's going to go 10 on 6 as well. And then we let it go as well. We just rebuild the pile.
+
+We keep training his hands. Then it's going to go 6 probably, because you can just block and counter if you want. Okay.
+
+Now, of course, the question would be, what is the best approach? So we need to freeze 2 Robins, so this is for sure. Yeah, for sure. So we've got 9 down left.
+
+How do we want to rest these 9 downs? So the swings we need to do, because we need to advance our game plan. Yeah, so probably still just start 7 with the Krog. So let's start with the 7. So now the question would be, which combination of cards do we want to do? Are we going to fit this 1-cost Luffy in or not? Oh, what could the Luffy really grab that would change the way we play the turn? And would we play that first? What is the best card you can get here? Uh, not the Luffy, but the left.
+
+Like, I initially thought Boa, but that feels kind of like bait, because then I wouldn't really have Dawnlocked to swing and stuff. Yeah, Boa wouldn't be insane. So we really want to bounce back this long play with the Krog.
+
+The Krog you have on board is going to die, probably. Probably Restand Event, I guess, for the next turn. Can we get to that point? Because you're going to have 4 guys, then you can play the Galvino.
+
+Yeah, technically, yes. But yeah, that doesn't seem super advantageous, again. I mean, you're going to have, like, 7, 7. Because now, yes, he doesn't have so many cards, so that card would be good.
+
+But you will have, then, let's see. Yeah, not so many swings, I don't think. Like, 8, 8. So we play that, we Restand.
+
+So we play that, we assign 2,000 for 8. Then we'll swing with long play, 8 as well. So it'll be 8, 8, 9. Restand, 8, oh, sorry, 8, 9. Then Restand, then it will be 9, 10, 10 or something. It's not terrible.
+
+It could be an option. So let's start with Event Freeze, so we get to move to events. Of course, this will be the last thing you do in the turn.
+
+Yeah, yeah. So now you can Restand. So we have 4, 8 dawns left.
+
+So if you play this, so the long play will swing here. But what is the amount that we want to swing for? 9 you want to go, right? How much would it be? Because now the main difference is whether you want to go, like, 8 and 7 and play the Luffy. Or just go 9 with a long play.
+
+And then 7, it'd be 7, 9. And then Restand, but you don't play the Luffy. Is there ever a situation that you think the Nami would just take this 9? I don't think they would take it. I mean, they can just block it for some of it.
+
+But they need to do another 9 next turn. 7, 8 as well is kind of fine, I think. If they give me 2 cards, I'm OK with that.
+
+Yeah, that's kind of... Yeah, you get to switch. Yeah, I guess you import that. OK, so of course, they're going to go for lethal, so they'll just do it.
+
+What will you do here? I think I just take... Then they'll draw an extra card, right? Which you take. Oh, that's true. Do you need Ivankov and the Luffy? Not really.
+
+OK, so we can just go 2. Because now... So if he swings with the Borsal, of course, he's good for us. Like, we don't care about that. Yeah.
+
+But now the main difference here is that... Because I will show you. Because here, I want to play Borsaline, OK? So I will play Borsaline. But then I have 4 down left.
+
+If you take this damage, maybe I draw another blocker and it just waits, OK? So it changes it. Yes. So here it matters.
+
+So now I just go 9. Let's say, for instance, I still want to draw... There is nothing I can do. And this, of course, we got to take. And we draw an extra card.
+
+Then just pass. OK. So now it's time for the magical lethal.
+
+It's going to be very difficult. So yeah, we play that, of course. So it's... Yeah, you don't 3-stand because you need to use that first.
+
+What is the best combination here? So what is the smallest swing we have? Probably an 8. So you have 8 with Croc, right? Yes. Let's see if you can use the Gauldino, right? Yep. Let's start with the 8s.
+
+Let's go 8s. There it goes. OK.
+
+And here... Because the boa, they would just take it, probably. Can't really go 7 with the lupi. Because then I won't have enough for the 3-stand.
+
+And a 6 feels kind of wasted. So what do I swing the boa next here? Yeah, this is really good. This is weird.
+
+Two pronas in trash. Is there a way to force their leader to become a 7? I guess probably just swing with the lupi. Yeah, I got that earlier.
+
+It doesn't matter, I think. Yeah, it doesn't really matter. I think it's better with the lupi.
+
+Yeah, just play around the trigger. Then it didn't change, yeah? Because you should have swung with... If it's not, you lose points, yeah? Because the boa didn't swing. You could have swung 5 with your leader.
+
+If they use the voxel, we are fine with that. Oh, gotcha. Yeah, that makes sense.
+
+So let's pretend... OK, you can still win, easily. You just play that. 3-stand.
+
+3-stand the daunce. And you can assign to the croc. Yeah.
+
+And the croc swings. So here, is it... You can do either 7, 8, 9 or 9, 9. Those are the two options. Because you lost the swing.
+
+Otherwise, it would have been mathematical. Yeah. So you go 7, 8. So 9, 9. If they have double 1k in hand, they just die.
+
+If they get a brick. If they have 2k, I think we lose no matter what. Yeah, I think so.
+
+Just keep doing 9, 9. I got a 2k yard of life. But I would have lost. Yeah, if I didn't mess up with the leader.
+
+So you see, you need to be very precise. The whole matchup is... You need to be very precise. But this is the way you play against this deck with every deck.
+
+The problem with Nami is that the deck is stupid. And sometimes, you just lose because they figure something. Because this game, I think I teach.
+
+Otherwise, I would have lost easily. Because with the buggy on board, it would have been a different game. Because your pressure would be much higher.
+
+So that changes a lot. Also, which triggers they actually do. Which combinations they can do.
+
+If they actually play everything on curve, that's really important. But you can see from this game how the ball is very important in this matchup. Because without the ball, we wouldn't have had enough pressure to kill them.
+
+But also, you can see that the freeze event is very useful here. And you can still rely on the restand events. If you see here, most of the times, the easiest way to combo with the restand event is if you have a buggy plus prisoner plus boa.
+
+Like most of the times. That's the easiest. Because those you can pair with the Mystic Tree.
+
+For example, I think if we actually see a big representation of Nami, we might just switch the Jinbes for more Mystic Trees. So we play four. That might happen.
+
+But for now, I think having both is nice. Because in the mirror match, the Jinbe is nice. And having variety with mains is sometimes more important.
+
+Even though it's rare that you can have a Mystic Tree on board. Do not use that one. And you will need Jinbe.
+
+But anyways, I think it's what I would recommend for this matchup. I don't want you to have two hours of Nami. Unless you want to have two hours of Nami.
+
+No, no. I kind of get it. That was enough to sort of give me the idea.
+
+I'm also recording, so you can recheck this afterwards. And just try to study it. But now, I'm just going to check.
+
+Yeah, okay. I can check now. But I mean, the summary of the matchup is just try to stick to 6K bodies as much as possible.
+
+And then just order of swings is really important. Do not give too much of your hands to save your characters. Because you always need to understand that you can always rebuild.
+
+So I think this is the most common mistake that a lot of people is doing with this deck. They have saved their board without realizing that in one turn they only really need all those daunts. And they can actually... Like, sometimes you have too many daunts.
+
+That's a good problem to have. And sometimes you can just refill the board. But still everything you have against the swing.
+
+So you need to slowly... Let's say it's like you just run and your opponent is running. But you're trained to do 10 kilometers. And at the beginning, they're ahead.
+
+But then slowly you go deeper into the game. And the more they will be tired. And then it's going to get easier.
+
+Okay, so Enel, first seconds. It doesn't matter which one you want to practice. I'll practice going second.
+
+Okay. It doesn't really matter so much against Enel, to be honest. The most important thing for them is to eat several one-costs early game.
+
+For example, if they miss the one-cost and they just play the four-cost. You're going to have a good time. That's usually the easiest.
+
+What do you think about this hand? I'm not super big on it. Because there's only just the buggy. But I do have two searches.
+
+And I'm going second. So I'll get to see a couple of other cards. So I think this might be worth keeping.
+
+Yeah, I think the hand is good enough. Usually, if you have two-cost and the Luffy, the hand is good enough. Because you can build towards it.
+
+Because the Luffy can find almost everything. So I'll start with this. Two parrots, good.
+
+Yeah, you can start with the Pong play. Which one do you think is more useful? I mean, you have both in hand. But which one would you like to have here? I mean, I guess they remove enough stuff that we're having the second buggy.
+
+It kind of guarantees a board refill. But if they stick multiple six-costs, then I wouldn't really feel that bad grabbing the second Galvino. Do you think they have enough time to just play an L into an L? I don't think that they have enough time to play three.
+
+They could get away with two, maybe. But yeah, that's usually better. Yeah, they're more likely to remove stuff.
+
+If they go so aggressively early on, you can always take the damage. Yeah, we're going to end up having to take a seven either way. It's just taking the first one.
+
+But their swings are going to be symmetrical. So it's OK. If you want, you can also take double damage here.
+
+Because we don't really have follow-up. They won't scale with swings unless they play an NL. And even if they play an NL, you will have enough time to just play the mistletoe and face it forever.
+
+It's very difficult for them to swing with an NL. Actually, if you face a good NL, they won't even play the NL. That's going to be nice for you.
+
+So then here, it feels like it's just Ivankov, search, put it down on Luffy, kill this. Since this can just get popped anyway, realistically. So let's start with the Ivankov and see what we get.
+
+The bunkley is not terrible. You see why I established four? Because you need to put pressure on them. You cannot play a war of one constant.
+
+You will win, no matter what. Because now, even if you kill this pudding, is something going to change? No, not really. So it's just a race.
+
+Then just seven to lead after this. Can you do better than that? Oh, I guess five. Are you talking in terms of swings or alternative play? I guess, yeah, of course.
+
+We don't have anything to develop here. So it's not a choice for life. Do you think it's better to go seven or five-five? Probably five-five.
+
+They're going to take the first life no matter what. The 1Ks are either things they want to play or 2K events. So it's yeah, five-five.
+
+Since this likely won't survive a turn anyway. I opened the nuts. If they do like this, it's going to be very difficult to steal.
+
+You can still try to win. Now, of course, we've got to counter this. Probably be one of the bogeys.
+
+It's going to be a bogey counter. So the Jima, we don't need probably, so we're going to give it away. Then, yeah.
+
+Actually, is it better to counter with the Van Gogh or the bogey? It's going to be a next turn. Next turn is probably going to be bogey prisoner. Should we take board? Then I can have two Dawn that I'm not really doing much with.
+
+See, because I feel like I'm not sure if I need to just keep swinging at leader or if I need to kill the... No, if you start going on the board, you will lose one of the things. The only things you need to chase are the full cost. Gotcha, okay.
+
+So then... I think it's okay to give away one bogey. Van Gogh is also nice. Okay, then we stand.
+
+Now, of course, if you had something to play, you would do it and just six lead, but we don't, sadly, so I'll just go eight lead. Because again, if you look at the resources, they don't really have much more than you, right? So actually, you can see in this turn how much the die roll is important. Because if you would have went first, this would have looked much different because now they still need to develop an elf and you already have two six face on board, right? And they have one less wing, but they wouldn't flip that to you.
+
+So it's... Sadly, the die roll is irrelevant here. I can't do anything about it. That's probably why I chose second because I... Yeah, yeah, it's more difficult, of course.
+
+Yeah. Then here, I kind of just have to let it go. Yeah, just let it go.
+
+As long as your board is blocking the damage, that's fine. Yeah. And I need to counter out of this because I'm not going to get out of the ten.
+
+So I'd say... Would this be an event or Galdino broke? I will keep the event for now. You don't have to, so... Unless you plan to not play the boa. No, I think all next turn I don't really have enough to... Yes, you need to decide now whether you want to Galdino and play something else or play the boa.
+
+The scary part is if I play the boa, my hand still feels kind of small for the bodies that they have, especially if they swing the rager too. But what could the Ivankov get that would be helpful if I go Galdino-Ivankov next turn? The only thing that the Ivankov could do is to just further develop, to try and establish in two turns a 3-stand event. Yeah, but they have so much life.
+
+That's such a big hand that it's probably not... I mean, next turn you're going to swing a little bit more. Yeah, I get what you mean. But you need to try and see to the win con that you might have.
+
+Playing the boa is... I mean, playing the boa is quite borderline, but at the same time, if they don't have an answer to that, you can enable lethal. If you say, I don't want to go that way, then I'd rather just rain on this side of the boa and die. That's it.
+
+Yeah. That's fine if you want to do that. I'd rather go white.
+
+You already used a lot of cards. Okay. So we already know we need to freeze an L, so you can start with that.
+
+Draw, see what happens. Okay, we have a guy to play off cats. Then question here would be, how do we swing here? I feel like the restand event now is kind of our win condition, so I won't be able to counter with it.
+
+I don't think so. I don't need to leave a don up, so then it's just a question of, is it going to be 6-7, or should I swing 8 with the buggy and then 5? Or you can just go 7. It depends if you want to expose the buggy or not. 7 or 3. Yeah, I don't think I would want to expose the buggy.
+
+Okay. I have enough 2k's to deal with this. So here, you could have thought about swinging with the buggy, just because he blocked with that.
+
+Whether he swings now or afterwards, it doesn't matter. In my opinion, so you could have thought about that. But this is the way you play this matchup.
+
+You need to be glass cannon, basically. Because actually, if you realize now, even if you have one life, because your start was very weak and their start was insane. I mean, your start was okay, but their start was insane.
+
+So in that case, even if now they still have a lot of pressure, you can still delay the game quite a lot. Even if you don't see that now. But they cannot really do much, because for example, if this would have been something else instead of the Ranger, it would have been much more difficult for them to divide.
+
+Yeah. I'm just 2k, 1k again like this. Yeah, correct.
+
+At least we can take some. Damn. Does it make sense? You can rest the Ranger, it's not that bad.
+
+Yeah, because I don't think I have another turn after this one. Are you sure you don't have another turn? Well, maybe now. Do you think your chances to draw into this Crocodile were low? No, not really.
+
+You only saw one Crocodile, and we still have to draw off the Galgenos. Yeah. Okay, that's interesting.
+
+The question would be, what is the best way here to deal with setting up Lethal but not dying? So we need to kill this Frankie, right? Yeah, yeah, yeah. Because he's blocking and he's also tightening Lethal, so he's the worst. So how do you swing at this Frankie? Probably a six, just because most lists don't play a natural 2k that can work on non-NLs.
+
+But the question is, do I want to expose the Buggy to a Lightning Dragon, or do I want to spend the Dawn on the Bon Clay? We still need to pressure them anyway, so it doesn't matter. I will just go six and five. They will most likely let it go.
+
+Then the question here would be, how do we do this? Because we chase the board, we go face, we ignore this Araiju, which means can he do how many things? We need to stick on the board. What is our approach here? Yeah, that's kind of a concern. So this Bon Clay is going to swing, right? Yeah, yeah.
+
+Just a matter of at what. I think it feels almost... We still have Leader and Ivankov if you want to swing on the board. So if we trade both of the one cost bodies, if they have a Shura, they play how many Shuras now? One.
+
+So if they have a Shura, it doesn't make sense to swing on these guys, right? Yeah. And we still need to set up a Lethal. So I guess we cannot go on these guys anymore, because we are on the board.
+
+So we can always start with six leads, and then bounce it back to see what we got. Okay, that's... We can bounce back. Okay.
+
+So one down, we want to play the Luffy, I guess. Yeah. Let's see what we get.
+
+Probably 2k. Another question would be, how do we swing? Do we go 5-5? We go only six. Could we play the guys there? We still need to set up a Lethal.
+
+Yeah, I'm still sure about that. I just don't... I guess swinging into the Satori is not super important. Like, that's kind of the thing that I'm stuck on right now.
+
+Because I don't think the... Like what you said about Shura makes the Pudding feel not super important, but it's a question of how impactful... Like what card could they stack and then draw into with a one drop that could make the rest of the game a problem? I mean, the problem here is that if you trade both guys and they have Shura in hand, it's not going to change. Because you should think about which split they can actually do with these guys. But we can think about it.
+
+So let's see. What if we don't kill these guys? What is the split that they can actually do? Because now you have 2k, 2k, 2k, 2k. Okay.
+
+Gotcha. Because my question is, if you trade now next turn, are you guaranteed to lethal? No, not really. I think I need to go 5-5.
+
+Because if we bait them into going face, we might create a lethal scenario. Because even if we need to sacrifice the Crocodile for some reason, we can play still the Satori and try to win. Then we have a 5-5, 6-6, 5-5, 6-6.
+
+Actually, yeah, the buggy will be even worse. I think you need to go like this. Of course, if they know how to play.
+
+Yeah. I guess here it doesn't really matter at this point. I mean, you can still do it.
+
+Give 2k, 2k. Okay, I think at this point it's just... Yeah, this game I really saw the nuts. Yeah, just go.
+
+You can still... No, probably not. Yeah, I was thinking about it. Yeah.
+
+But I think this match-up is dial-dependent, for sure. Yeah. But it really depends on how many Altors they see.
+
+If they don't see Altor early game, it's much easier to win this. You can play another one. Unless you want to see another match-up.
+
+This is very similar to a mirror match, but it's kind of asymmetrical because they have them also. But it really depends on which characters they see early game. I think this is probably Mulligan.
+
+Yeah, it's not Mulligan. Here, this is... I think I would just take this for the draw. To try to play into the buggy next turn.
+
+Because I don't really... I guess, how important is the flea turn if they can just remove things? You always need to develop. Okay. It's... If you don't, you lose.
+
+Because at least you force them to Altor. Use it. Yeah, that's true.
+
+And they're probably going to take the first swing, whether it's a 5 or an 8, most of the time. Yeah, that's good. Wait, wait, wait.
+
+So this is wrong, yeah? Because you don't know what you're going to... There is no trigger that is going to affect your board. So you always develop, develop. If you don't, you lose.
+
+Yeah, that's true. But just keep it in mind for the future. First swing, they might just take anyways.
+
+Okay, it wouldn't have mattered, but like, it's just for the future. Yeah, for the idea, yeah. Let's see.
+
+So of course, Mammoragon is the most annoying one, but if they give one of your guys with Altor, you're going to be fine. Because it's like, that guy's 1 for 6. Okay? So you're okay if they Altor. Just keep that in mind.
+
+6-6, so you're going to always take the first swing. First damage against an A, you're going to take the first swing. And here, I think I just counter.
+
+Normally, you would like to counter this, but not having the prisoner is being... Yeah. So here, do we just buggy and hope that it hits a prisoner, or play the 4-drop? I would just play the Evangel at this point. Oh, I would have hit.
+
+Oh my god. Yes, but you can't think that way. Okay, that's good.
+
+Yeah, you can search first. You have the choice between having the buggy radiant go 7, or just redevelop. I think having the buggy radiant is not critical.
+
+Let me just push 7. Yeah. This is kind of interesting. I really don't know if the rager would swing next, and that kind of affects whether or not I would counter on this.
+
+Do you think that under pressure now, they need to block that? No, no, they're not. They're going to swing it, yeah. So I need to counter this, but the question is, with what? Yeah, it's painful because we don't want to counter.
+
+Yeah. But if you plan to use the rain, then I'd rather just take this and then wait for the 7. Yeah. I don't think they're going to go 8. Okay, we should have countered.
+
+Yeah. I don't know. I'll probably use this.
+
+They like chasing their weenies is, in my opinion, a gamble. Because if you chase the weenies, then you don't know how many they have. On this list that I'm playing against, you have way a lot.
+
+Because it's just a new build that I was trying. But sometimes they might not have so many. If they start with only one weenie, I will chase it.
+
+But if they start with multiple, it's already too late. Gotcha, okay. So kind of same like with the Null, right? Like if you can clear the Null.
+
+Yeah, it's like a mirror match, basically, yeah. If you haven't played the Null mirror match, it's pretty much the same. Okay.
+
+Okay. So which combination do we have now? I mean, I still think Buggy Prisoners. It's just a matter of do I follow that up with Yvonne Cobb? Do we need to block a Null? Kind of, yeah, probably.
+
+Okay, so. Given the ranger on the board. So we have a... Yeah, that play is obvious.
+
+So we're going to do that into Buggy. And then our swing is going to be how much? I'll leave that how much it's going to swing for. So that's nine dominoes, seven plus two.
+
+It's going to be five. Yeah, it's going to be five. So five first.
+
+Because we don't need the information. Of course, if Pudding would have been the only character on World 1 cost, we could have thought about trading this. But since now they're wide, it doesn't matter.
+
+So now you can do that. You draw. This.
+
+This turns to Buggy. Because even if their board looks full, as from this point on, you can basically deny the Null every turn and still develop and still pressure. So this should be your objective.
+
+So you can see now, again, the board doesn't seem... Even if you missed one turn and you had to over-counter because your hand was rigged, still the situation doesn't look so bad. You have two 6k's, they have a 7k and a 10k, but that 10k is not going to swing so much. You still can find with Luffy another MrT, for example.
+
+Then next turn, you can start swinging with everyone. Because, for example, let's say you start with a Bunkley next turn. What you can do is, like, you play Bunkley, you go 5, 5, 5, 6, 6. It's a lot of swings.
+
+And then you redevelop over those guys. And then you just try to play for the Aristan event. You try to delay the NL as much as possible.
+
+Let's see what I can do. I only really have two Mr3's left, though. Yes, but that's fine.
+
+Worst case, you can play the boss, though. Yeah, it's just a minus in your turn. Does it really matter if we save it here? Because you're going to probably swing another 7. And whether that's at the prisoners or at life, like, I'm still going to end up having to counter 2 and a 1, I think.
+
+If you know that another 7 is coming and that you will let it go in that 7, then would you... Yeah, it doesn't make sense. Yeah. Yeah, it doesn't make sense because of Lightning Dragon.
+
+Yeah, me neither. Also. And then this one.
+
+Okay, the last one could be either a 6 or a 7, as well. Yeah. Then I would ask the same question, does it make sense? Or we can just re-establish next turn.
+
+Because basically now you're getting time, eh? If you think about it. Yeah, yeah, yeah. It's the same thing that we were saying before.
+
+You can just re-develop every turn. Re-put the turn in. And this, I don't have a way to counter out of that.
+
+I'll just save it. And then here. Is it worth swinging into the Ohm with one of the Luffy's? I would just ignore it at this point.
+
+So now we are already in the phase where we actually need to set up the board for the last turn. For lethal, okay. What would be the best starting points? Probably just... Well, so I've got 11 done and I'm going to need to spend 9. So probably just swing 7 to lead.
+
+But we don't know yet which combination of cards we want yet. Oh, well, yeah. Well, I was assuming it was going to be a Ivankov buggy.
+
+Probably the buggy first for the draw to have more information on the Ivankov decision. But I don't really have a way to... What is the best target to play off the Ivankov? Maybe one of the bricks. But actually, I guess I probably need to search first just to see if we can find anything to slow down the NL.
+
+Ivankov can search. So we want to develop and search. And he's doing both.
+
+So I think he's the first one. Because you can play Ivankov, search three, and then play the pumpkin. So there is no solution here to what we are trying to do.
+
+So you can just get a counter. Okay. Now the question would be, Danny, what is our backup plan? I'll probably just cry.
+
+No, try to not. So we kind of want to set up the lethal, but we don't want to die either. Yeah.
+
+I don't think that there's a world where they fall for a free block and just get punished with this. So I think... You cannot freeze them, unless he's originally close to an elevated target. Oh, yeah. 
+
+No, don't be angry. I can stop the rangers. Yes, it doesn't matter.
+
+So now what we will need to do with this turn is to understand what is the best board we can build while still setting up the lethal for next turn and not exposing too much, because now you have, let's say... So you know you want to play the buggy, right? There is no other option to that. So you can simply play that. Play the buggy.
+
+Play the prisoner. Another question would be, if we survive next turn without daunts, probably we need at least one daunt, right? Yeah. So my question would be, does it make sense to go five lead and then if he blocks, you can go six with the Luffy? Probably.
+
+Yeah, we kind of have to. I think it's just fine. Because the turn that they have with all the mamoragans and trash, I guess they probably have to just gabonite top floor.
+
+Yeah. I will still try to do that, because if you do this wing now or later, it doesn't matter. So I would go five and see what happens.
+
+Probably they will block, and then you can go six with the Luffy. At least you advance your game plan. So if they go like this... So I'm just... I don't think we can save this guy.
+
+Yeah. Not worth it. Depends if you want to bait him into swinging here.
+
+So if you take this, you can go 11, 7, 11 and 7. Yeah, I just don't think that I really have a very good lethal option next turn. Like, just barely. Yeah, we can still try to play that.
+
+Yeah, if we bait at least one, we can try. You gotta take this. Okay, that doesn't change.
+
+Probably they will be immediately the edges to this. Yeah, of course, the only lethal here is just go... What is the best combination here? So you play the Luffy, you play... So you start with the Luffy, and then if you get the Galdina, it's better. No Galdina, so you just take whatever.
+
+But actually, here it's funny, because if you didn't have that Aegis... Because in this turn, you can actually still play double blocker, for example, and just, like if, for example, you missed a 3, you will miss the 3 and play blocker, you will still be alive, probably. Yeah. So it's not that you always need to go... Yeah, here you have 5, 5, 5, 6, 6, 5, 5, 6, 6. Of course, it's not gonna be... No, okay.
+
+Okay, at least you can create the defense. Yeah, but actually, if they don't see the... How's it called? If they don't see the El Tor early, it's gonna be much more difficult for them to accomplish this. Yeah.
+
+Okay, that's why you need to put pressure, because if you chase the board, it's gonna be the same shit. And then, of course, it's... Yeah, it's a good deal. Okay.
+
+But you could have thought about countering as well this turn. I don't think you're guaranteed death. I don't know much, because you need to still think that an El is only 6 down.
+
+Because if you, for example, if you play the boa, and you stay with 3 down, it's open. I don't know how much counter you have, actually. No, it's with... If these were not events, I'd be more likely to do that, but with this little counter... Yeah, I think... Because you can go, like, 9, 9, 8, 9, 9. So it goes 9, 3k, 2k, 9 again, 3k, 2k, 8. Yeah, it's still bad.
+
+But with the Galdino, I think you could have delayed the game one extra turn as well. Yeah, yeah. But basically, I think this matchup... Because I wouldn't say... Like, it really depends heavily on how many 1-drops they see, and if they see the Rage.
+
+I think the Rage really helps them a lot, because she can block a lot of things, and it's very annoying. And if they don't see the El Torcer, at least, it's gonna be much easier. But also, these two games, you missed a lot of things that you wanted to see.
+
+But it's always better to just go as wide as possible. So, like, the Buggy and the Ivankov are usually the best cards. The freeze events, in my opinion, are not insane if they play the Rage gameplay.
+
+If they do play the Rage gameplay, they're basically useless. But if they don't, sometimes they're useful. But as you saw, most of the times, you want to freeze TNL with the Pong play.
+
+Sorry, with the Galdino. So actually, you never have a spot to actually freeze it. I'm not sure about that.
+
+But yeah, usually, your game plan is like, you just establish board, then you swing with everything, and then they need to kill your board. So they swing on the board, and then you re-establish, and then they push at you, you counter, then externally push with everything, and so on, so on, right? It's just last hand on strategy play. You go face, and they go on your board.
+
+That's usually because your board is actually generating value when you play it. So that's the important thing to look at. I would say, we still have a couple minutes.
+
+Is there any match-up that you would like me to explain to you, so that for Wednesday, you can study all the matches, and we can go through all of them in two hours? The other one would just be Teach. Teach, okay. Teach, I think, is going to be one of the most popular matches.
+
+Yeah, and it's one of those things that seems like it's kind of favored, but if they go, if they discard San Juan Wolf into trash, and then just keep Shiryu, the San Juan Wolf, play a Vasco shot, that kind of makes it difficult to go wide. Mm-hmm, I see. Just keep recurring that over and over.
+
+I mean, that's a match-up where it really depends on what they play on turn, but if they miss even one piece of those combos, it gets pretty easy. I think I have a lot of videos of how to play that match-up. I can show you briefly some games.
+
+Oh, in the testing videos? Yes, but I can explain a little bit my thought process behind it. I probably already saw those, but I also finished the guide, so I'm going to release it today. I haven't had much of a chance to watch the testing videos yet.
+
+Okay, those are good examples of things, but people, it's not always super good, but you're not going to face all the regional champions in there. Yeah, that's fair. I just recorded.
+
+Let me know if you can see. Yeah, I do. Okay, so actually, this guy went to third place at boards, so it's not bad.
+
+So, of course, you want to go second because they want to go second as well. I don't need to explain that. So early game, the most important thing is that you go wide as wide as possible.
+
+It doesn't matter which character, because Teach suffers wide boards. So even Ivankov on four is totally fine. They don't really have a way to deal with your board because they need to play on turn, so they want that bounce to assign to the characters.
+
+So, for example, I'm going second. This hand is already nice because I can play this on two, and then on four, I can play this guy, so I have several things I can do. As you can see, I don't really try to look for insane stuff.
+
+Usually, if I have a decent hand that allows me to play on curve, I just keep it. And eventually, you will draw into a lot of cards, and your searchers can find other searchers, so it's kind of like this snowball-ish mindset that you should have. So, of course, okay, that's a really good draw.
+
+Against most decks, doing this into this when you go even, it's, of course, much better than this because it's very annoying for most decks, and you just draw. So, of course, this is a good draw, but this is a good example to tell you that if you go second, you have these two guys, for example, or miss the one o'clock, it's already good enough to keep. I don't even have to be saying it, it doesn't matter.
+
+If they start with a stage or not, it matters a lot. If they miss the stage, if they go second and they miss stage on turn one, they won't be able to play it until 18, so probably they will play the whole game without it. When they go first, at least they have the advantage of having time to play it every turn.
+
+You can easily take first damage against this, it doesn't matter. Yeah, as you can see, they play the Lafitte. If you have small swings, I would always take it, especially in this spot.
+
+This card is better for us because this card is meaningful for five minutes, basically. So it's good to start with this and they cannot miss that act because otherwise they won't even pick it anyway. So probably just let it go, but you can go five.
+
+We still need to play around Teach. If he destroys this, at least we have this play, this into a copy of that. And if we play this first, I mean, if he gets Teach, we just die, so we won't avoid that.
+
+So it's, of course, one of the best cards we can have. We just play it out of two costs. We can go with that.
+
+Might just play Burgess. Dig in, ask for shots. Yeah, this is usually the best start.
+
+And if you see here, also having the copy early, he's going to deny the swing most of the times. You don't really care about life. I try to stay between two and three life range against Teach.
+
+So it's usually good enough to survive because then you can gain more turns because when they start playing the big guys, they will need at least three turns to set up the lethal. So now, for example, we don't really care about... Because in this scenario, you have several things you can do, but the only thing you care is to put pressure. It's like Nami, basically.
+
+The best combination to put pressure and play around triggers is what you want to do. So for example, you start with a six here to play around the Teach. All right, I just try to enter my own mind.
+
+Yes, start with a six. And if you think on these guys, it's going to be fine. You see, like, I want them to discard.
+
+Then you can go six with that. Then you can go six again. Then you bounce back.
+
+You play another two costs. So you try to stay as wide as possible as long as you ask for one card. The only thing you care about is card advantage.
+
+You don't care about inflicting damage. You just want to discard as much as possible. And as you can see, I can just put a bounce back, bring back, and then play that.
+
+You won't chase the board at all. So if you ask this, it doesn't matter. Like, it's not going to change.
+
+Sometimes you will be able, especially if you go first to play on the seven on the boa. It's usually very good. But it depends what they have on board.
+
+Most of the time, they might have a Burgess into Shiryu. And then if you want to play boa, face the Shiryu. It's good.
+
+But it really depends on what they can accomplish with this. So for example, here, it's interesting because what we could do here is just block in one game. So we save our character.
+
+And I don't care about dressing this because you could trade these enemies. As you can see, I could counter this one as well. I'm still keeping up with the pressure.
+
+If you would like to let this go, it would be OK. Because you need to play another guy next turn, OK? But since it's very low on resources, I want to have this extra character. Because next turn, what I can do is I'm going to be at 8 dawn.
+
+And what I can do is just start with a six lead. I go 6, 6, 6, 5. Play the boa over this guy. We stand 6, 6. So I have a lot of swings, actually.
+
+And anyways, next turn, we'll need to deal with one of these guys. But here, I start with a 5 and not with a 6. Why? Because it doesn't matter if I start with a 6. He's going to freeze the other one. So I'd rather start with my smallest swing because then I need to ask for one card.
+
+I'm OK with that. Now I just follow the same pattern. I want to play around with each.
+
+Start with that. Then I go 6 again. Then I can play my boa, freeze the Burgess.
+
+That, of course, is bigger. Then freeze them. And then swing again.
+
+And it doesn't matter if they have leader effect or misdirect here. The important thing is that they just missed that one card. See? You keep them in this loop of chasing your board.
+
+And you just go face. And they cannot do anything about it. Just let it go.
+
+It's fine. See? Now he's even scared. He doesn't go on the 6 because he's afraid that I just missed that 2 card.
+
+Take the turn, yeah. Here, they will just go teach probably. Yeah, boa.
+
+It's the same. Same shit. But that's why you want to stay out here.
+
+Because, for example, if he would have taken an extra damage here, we could have been in a tough spot. So this turn, we could double freeze as well. Because we have one play.
+
+So I mean, any Galdino into boa. As long as you can delay, you want to do it. In this match-up, boa, you can always keep one for the 10 cost each.
+
+Because you deny also the blocker effect. So just keep that in mind. In this case, we are pulling so much pressure that even if we don't play around that, we're going to be fine.
+
+Same principle here. You cannot take the 5. It's too long life. It's this one.
+
+I want them to misdirect. I just misdirect here. So a good thing you would do here.
+
+It's interesting because you can go 10 instead of 9. If they want to misdirect, either you kill something or they need to discard 2 cards. So normally, I would like to keep this open. But I'm OK with doing this.
+
+Yeah. And now he just died. But anyways, he couldn't have done anything.
+
+Because now we freeze-freeze. Now he only has the Shiryu to swing with. Next turn, even if he goes Stitch, he doesn't have hands.
+
+He's going to have one card. And if he wants to heal, he has to do Porcelaino. And the problem with Porcelaino is that they're still not going to have enough cards in hand.
+
+And still, we're going to have time to keep dragging the game for longer. Because we can just rely on these blockers here. You see, it won't push our face.
+
+So it's going to be easy. But Stitch is very easy, just because if you stay wide, you will win. The gains you lose against Stitch are either they half trigger like crazy, or you miss the whole early game.
+
+So the early game, you want to play one cost, two cost, whatever. And if you miss out on that early part of the game, of course, it's going to be more difficult. Because then, yeah, the problem is that you start playing on five Don.
+
+And then they can already. They are basically in a better spot to stabilize. But that's usually, this is the phase where you want to end the game.
+
+Like maximum, let's say they can play two Teach, two 10-cost Teach. If they get to play three turns on 10 Don, it's going to become very difficult. So also remember that Teach doesn't have any interaction to deal with your board.
+
+So if you stay healthy, you can always play a turn where you just establish full board. They push you. And then next turn, you just swing with everything, withstand, and win.
+
+Wide swings are the pain of Teach. If you go wide, you just lose. So like 5-6, 5-6, 5-6.
+
+Or 5-7, 5-7-6 is usually what you need to do. Now, you can play one more. I mean, it's usually good enough.
+
+Gotcha, okay. So yeah, this is the easiest matchup. So I wouldn't bother.
+
+You need to be prepared for this. But I would focus more on the Nami, I would say. And then I think it's going to be not so popular.
+
+Because people got fed up with the deck. But the Nami players are very hardcore. So they will stick to the deck probably.
+
+Outside of that, I would say what you have left is Rosie. Next time, we can see Rosie as well. That is really important.
+
+And then you have Yamato. But he's quite simple, to be honest. And then what is left is the Mirror Match.
+
+That is, of course, important. We can check that. I think main focus on the next time is going to be Rosie Mirror Match.
+
+And just maybe a review of the two matchups that we saw today. If you have time to record your games, that usually speeds up things. Because you see, if we have to play the games, it takes a long time.
+
+Gotcha. For the recorded games, do you want it to be the new matchups that we would be going over or the review portion? Whatever you think is useful for you. Even the matchups that we didn't cover today can be a form of explanation.
+
+If I see you playing, I can tell you, OK, this is the wrong things that you did. And then you should fix this, this, and that. Of course, we have a limited time frame.
+
+But I think that's usually the fastest way to learn. I will release a guide today as well. So you can study that as well.
+
+I will try to include those in the videos. Basically, what I just did with Teach, I will do with every matchup. So you can check those out even before you play the games.
+
+So yeah, that's that. Any last questions for today? No, no, no. I think we've got a pretty good game plan.
+
+And everything that you said makes sense. I think one of the biggest issues that I've had has been with Teach. Seeing the bodies, I don't need to swing for board.
+
+Yeah, just go face. Just go face on that one. And then some of the sequencing, the sequencing to deny information.
+
+That's probably the biggest takeaway to practice. I will try to train that. It's not so difficult, actually.
+
+You should always just think up front, OK, what is my plan? I already know what I want to do. Are there cards that are going to change my plan? Yes or no? If not, then you just do everything in the cheapest way possible. OK, good.
+
+Then I'll send you the recording. I hope to share the guides in one hour. I need to record these games.
+
+But it shouldn't take so long. So you will see that. OK, sounds good.
+
+And we keep in touch for Wednesday. Any questions, just let me know. And yeah, gotcha.
