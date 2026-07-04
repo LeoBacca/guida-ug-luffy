@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UG LUFFY // OP16 — La Guida Definitiva</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0A1018">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
 <style>
 /* ============================================================
    IMPEL DOWN — TACTICAL HUD · design system
@@ -365,6 +368,89 @@ strong .cardlink, .cardlink strong{color:var(--cyan)}
 
 .crumb{font-family:var(--mono);font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:14px;cursor:pointer}
 .crumb:hover{color:var(--cyan)}
+
+/* ---------- griglia rapida "contro chi giochi?" ---------- */
+.quick{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:10px;margin:14px 0 6px}
+.ql{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 8px 12px;border:1px solid var(--line);
+  border-radius:11px;background:var(--surface);cursor:pointer;transition:all .15s;text-align:center}
+.ql:hover{transform:translateY(-3px);border-color:var(--accent,#2E8BFF);box-shadow:0 8px 26px -12px var(--accent,#2E8BFF)}
+.ql .qa{width:58px;height:58px;border-radius:50%;background-size:cover;background-position:center 22%;
+  border:2px solid var(--line2);box-shadow:0 0 0 2px rgba(6,8,13,.8)}
+.ql .qa.txt{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;
+  font-size:19px;color:var(--accent,#2E8BFF);background:linear-gradient(160deg,var(--surface3),var(--carbon))}
+.ql .qn{font-size:12px;font-weight:650;line-height:1.2}
+.ql .qs{font-family:var(--mono);font-size:8.5px;letter-spacing:1.5px;color:var(--ink3);text-transform:uppercase}
+
+/* ---------- bigino ---------- */
+.big-head{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.big-head .ba{width:74px;height:74px;border-radius:14px;background-size:cover;background-position:center 20%;
+  border:1px solid var(--line2);flex:none}
+.big-actions{display:flex;gap:9px;margin-left:auto;flex-wrap:wrap}
+.big-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:820px){.big-grid{grid-template-columns:1fr}}
+.big-card{border:1px solid var(--line);border-radius:11px;background:linear-gradient(180deg,var(--surface),var(--carbon));padding:14px 16px}
+.big-card .bt{font-family:var(--mono);font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--cyan);
+  margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.big-card .bt::after{content:"";height:1px;flex:1;background:var(--line)}
+.big-card.span2{grid-column:1/-1}
+.big-list{list-style:none;margin:0}
+.big-list li{position:relative;padding-left:24px;margin:8px 0;font-size:13.5px;color:var(--ink2)}
+.big-list li strong{color:var(--ink)}
+.big-list.do li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+.big-list.dont li::before{content:"✕";position:absolute;left:0;color:var(--danger);font-weight:700}
+.big-resp{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.big-resp .r{border:1px solid rgba(255,84,102,.3);border-radius:8px;padding:8px 11px;background:rgba(255,84,102,.06)}
+.big-resp .r b{color:var(--danger);font-size:12.5px}
+.big-resp .r span{display:block;font-size:11.5px;color:var(--ink2);margin-top:2px}
+.big-line{font-size:14px;color:var(--ink)}
+
+/* ---------- glossario ---------- */
+.glossterm{border-bottom:1px dotted rgba(39,224,138,.55);cursor:help}
+
+/* ---------- mobile: topbar + drawer ---------- */
+#burger{display:none;margin-left:auto;background:var(--surface2);border:1px solid var(--line2);color:var(--ink);
+  border-radius:8px;padding:7px 13px;font-size:17px;cursor:pointer}
+@media(max-width:960px){
+  #burger{display:block;flex:none}
+  #brand .b2{display:none}
+  #rail{position:sticky;top:0;z-index:60;flex-direction:column;padding:10px 0 0;max-height:none}
+  #rail .railtop{display:flex;align-items:center;width:100%;padding:0 14px 10px;gap:10px}
+  #rail .navwrap{display:none;width:100%;border-top:1px solid var(--line);padding-bottom:10px}
+  body.navopen #rail .navwrap{display:block}
+  #rail .foot{display:none}
+  .hero .inner{padding:28px 20px}
+  .hero h1{font-size:31px}
+  h1.title{font-size:26px}
+  .keycards{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x mandatory}
+  .keycards img{scroll-snap-align:start;height:96px}
+  .mu-hero .inner{padding:20px 18px}
+  .big-actions{margin-left:0}
+}
+
+/* ---------- stampa (bigino A4) ---------- */
+@media print{
+  body{background:#fff!important;color:#111}
+  body::before,body::after{display:none}
+  #rail,.crumb,.big-actions,#ctip,#dtip{display:none!important}
+  #main{margin:0;padding:0;max-width:none}
+  .big-card,.panel{background:#fff!important;border:1px solid #bbb!important;break-inside:avoid}
+  .big-card .bt{color:#333!important}
+  .big-card .bt::after{background:#ddd}
+  .big-list li,.big-line,.prose p,.prose li{color:#222!important}
+  .big-list li strong,strong{color:#000!important}
+  .big-list.do li::before{color:#0a7d43}
+  .big-list.dont li::before{color:#b3202f}
+  .big-resp .r{background:#fff;border-color:#c99}
+  .big-resp .r b{color:#a11}
+  .big-resp .r span{color:#333}
+  .big-head .ba{display:none}
+  .keycards img{height:70px;border-color:#ccc}
+  .cardlink{color:#000;border-bottom:none}
+  .cardlink .ci{display:none}
+  .glossterm{border-bottom:none}
+  .eyebrow{color:#555}.eyebrow::after{display:none}
+  h1.title{color:#000}h1.title .dim{color:#666}
+}
 table.simple{width:100%;border-collapse:collapse;font-size:13px}
 table.simple th{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3);
   text-align:left;padding:8px 10px;border-bottom:1px solid var(--line2)}
@@ -375,21 +461,27 @@ table.simple td:first-child{color:var(--ink);font-weight:600}
 <body>
 
 <nav id="rail">
-  <div id="brand">
-    <div class="b1">UG<span class="slash">//</span>LUFFY</div>
-    <div class="b2">OP16 · <b>PRISON BREAK</b> · GUIDA DEFINITIVA</div>
+  <div class="railtop">
+    <div id="brand">
+      <div class="b1">UG<span class="slash">//</span>LUFFY</div>
+      <div class="b2">OP16 · <b>PRISON BREAK</b> · GUIDA DEFINITIVA</div>
+    </div>
+    <button id="burger" aria-label="menu">☰</button>
   </div>
-  <div class="nav-sec">Briefing</div>
-  <div class="nav-item" data-r="home"><span class="ico">⌂</span> Home</div>
-  <div class="nav-item" data-r="meta"><span class="ico">◈</span> Meta OP16</div>
-  <div class="nav-sec">Arsenale</div>
-  <div class="nav-item" data-r="decklist"><span class="ico">▦</span> Decklist</div>
-  <div class="nav-item" data-r="tech"><span class="ico">⚖</span> Tech · Il Tribunale</div>
-  <div class="nav-item" data-r="fondamentali"><span class="ico">✦</span> Fondamentali</div>
-  <div class="nav-sec">Operazioni</div>
-  <div class="nav-item" data-r="matchup"><span class="ico">⚔</span> Matchup Hub</div>
-  <div class="nav-item" data-r="dibattiti"><span class="ico">☍</span> Dibattiti aperti</div>
-  <div class="nav-item" data-r="fonti"><span class="ico">✎</span> Fonti</div>
+  <div class="navwrap">
+    <div class="nav-sec">Briefing</div>
+    <div class="nav-item" data-r="home"><span class="ico">⌂</span> Home</div>
+    <div class="nav-item" data-r="meta"><span class="ico">◈</span> Meta OP16</div>
+    <div class="nav-sec">Arsenale</div>
+    <div class="nav-item" data-r="decklist"><span class="ico">▦</span> Decklist</div>
+    <div class="nav-item" data-r="tech"><span class="ico">⚖</span> Tech · Il Tribunale</div>
+    <div class="nav-item" data-r="fondamentali"><span class="ico">✦</span> Fondamentali</div>
+    <div class="nav-sec">Operazioni</div>
+    <div class="nav-item" data-r="matchup"><span class="ico">⚔</span> Matchup Hub</div>
+    <div class="nav-item" data-r="regole"><span class="ico">⭐</span> Regole d'oro</div>
+    <div class="nav-item" data-r="dibattiti"><span class="ico">☍</span> Dibattiti aperti</div>
+    <div class="nav-item" data-r="fonti"><span class="ico">✎</span> Fonti</div>
+  </div>
   <div class="foot">IMPEL DOWN TACTICAL HUD<br>6 fonti · 13 matchup · offline</div>
 </nav>
 
@@ -409,6 +501,8 @@ table.simple td:first-child{color:var(--ink);font-weight:600}
 <script src="data/mu-nami-enel.js"></script>
 <script src="data/mu-rosinante-yamato.js"></script>
 <script src="data/mu-field.js"></script>
+<script src="data/bigini.js"></script>
+<script src="data/glossario.js"></script>
 
 <script>
 /* ============================================================
@@ -624,6 +718,15 @@ views.home = () => {
       <div style="font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:8px;letter-spacing:1px">${esc(f.copre||"")}</div>
     </div>`;
   }).join("");
+  const MU = D.matchups||{};
+  const quick = MU_ORDER.filter(id=>MU[id]).map(id=>{
+    const m = MU[id];
+    const qa = m.leaderImg
+      ? `<div class="qa" style="background-image:url('${PROC}/${m.leaderImg}__art.png')"></div>`
+      : `<div class="qa txt">${esc((m.sigla||m.nome||"?").slice(0,2).toUpperCase())}</div>`;
+    return `<div class="ql" style="--accent:${m.colorHex||"#2E8BFF"}" onclick="location.hash='#/matchup/${id}/bigino'">
+      ${qa}<div class="qn">${esc(m.nome)}</div><div class="qs">${esc(m.sigla||"")}</div></div>`;
+  }).join("");
   return `<div class="view">
     <div class="hero">
       <div class="art" style="background-image:url('${leadArt("leader")}')"></div>
@@ -635,10 +738,13 @@ views.home = () => {
         <div class="cta">
           <div class="btn primary" onclick="location.hash='#/matchup'">⚔ Matchup Hub</div>
           <div class="btn" onclick="location.hash='#/fondamentali'">✦ Fondamentali</div>
-          <div class="btn" onclick="location.hash='#/dibattiti'">☍ Dibattiti</div>
+          <div class="btn" onclick="location.hash='#/regole'">⭐ Regole d'oro</div>
         </div>
       </div>
     </div>
+    ${quick?`<div class="h2" style="margin-top:8px"><span class="tag">//</span> ⚡ Contro chi giochi?</div>
+    <div style="font-size:13px;color:var(--ink3);margin:-8px 0 4px">Un tap → il bigino da 30 secondi del matchup.</div>
+    <div class="quick">${quick}</div>`:""}
     <div class="tiles">
       <div class="tile-s"><div class="tv">${nMu||13}</div><div class="tl2">Matchup coperti</div></div>
       <div class="tile-s"><div class="tv">6</div><div class="tl2">Fonti indipendenti</div></div>
@@ -973,6 +1079,77 @@ function leadsFromConsenso(m, n){
   }).filter(Boolean).slice(0, n||5);
 }
 
+/* BIGINO */
+views.bigino = (id) => {
+  const m = (D.matchups||{})[id];
+  const b = (D.bigini||{})[id];
+  if(!m) return `<div class="view"><div class="crumb" onclick="location.hash='#/matchup'">← MATCHUP HUB</div><div class="empty">MATCHUP "${esc(id)}" NON DISPONIBILE</div></div>`;
+  const art = m.leaderImg?`<div class="ba" style="background-image:url('${PROC}/${m.leaderImg}__art.png')"></div>`:"";
+  if(!b) return `<div class="view"><div class="crumb" onclick="location.hash='#/matchup'">← MATCHUP HUB</div>
+    <div class="big-head">${art}<div><div class="eyebrow" style="margin:0">${esc(m.sigla||"")}</div>
+    <h1 class="title" style="margin:0">⚡ Bigino — ${esc(m.nome)}</h1></div></div>
+    <div class="empty">BIGINO IN PREPARAZIONE — <span style="color:var(--cyan);cursor:pointer" onclick="location.hash='#/matchup/${id}'">apri il dossier completo</span></div></div>`;
+  const kc = keyCards(m, 6);
+  const resp = (b.rispetta||[]).map(r=>`<div class="r"><b>${esc(r.nome)}</b><span>${r.perche||""}</span></div>`).join("");
+  return `<div class="view">
+    <div class="crumb" onclick="location.hash='#/matchup'">← MATCHUP HUB</div>
+    <div class="big-head">
+      ${art}
+      <div>
+        <div class="eyebrow" style="margin-bottom:2px;color:${m.colorHex||"var(--blue)"}">${esc(m.sigla||"")} · bigino 30 secondi</div>
+        <h1 class="title" style="margin:0;font-size:28px">⚡ vs ${esc(m.nome)}</h1>
+      </div>
+      <div class="big-actions">
+        <div class="btn" onclick="location.hash='#/matchup/${id}'">📚 Dossier completo</div>
+        <div class="btn" onclick="window.print()">🖨 Stampa</div>
+      </div>
+    </div>
+    <div class="big-grid">
+      <div class="big-card"><div class="bt">🎲 Dado</div><div class="big-line">${b.dado||"—"}</div></div>
+      <div class="big-card"><div class="bt">🃏 Mulligan</div><div class="big-line">${b.mulligan||"—"}</div></div>
+      <div class="big-card"><div class="bt">✅ Fai</div><ul class="big-list do">${(b.fai||[]).map(x=>`<li>${x}</li>`).join("")}</ul></div>
+      <div class="big-card"><div class="bt">⛔ Non fare</div><ul class="big-list dont">${(b.nonFare||[]).map(x=>`<li>${x}</li>`).join("")}</ul></div>
+      ${resp?`<div class="big-card span2"><div class="bt">⚠️ Rispetta</div><div class="big-resp">${resp}</div></div>`:""}
+      <div class="big-card"><div class="bt">💀 Come si perde</div><div class="big-line">${b.lossCondition||"—"}</div></div>
+      <div class="big-card"><div class="bt">🎯 Linea di chiusura</div><div class="big-line">${b.lineaLethal||"—"}</div></div>
+      ${kc.length?`<div class="big-card span2"><div class="bt">🗝️ Le tue carte chiave</div>
+        <div class="keycards">${kc.map(k=>`<img src="${cardImg(k,"full")}" alt="${esc(D.carte[k].nome)}" title="${esc(D.carte[k].nome)}" loading="lazy">`).join("")}</div></div>`:""}
+    </div>
+  </div>`;
+};
+
+/* REGOLE D'ORO */
+views.regole = () => {
+  const F = D.fond||{};
+  const regole=(F.regoleDoro||[]).map(r=>`<div class="panel" style="padding:14px 16px">
+    <div style="display:flex;gap:9px;align-items:center;flex-wrap:wrap"><strong style="font-size:14px">${esc(r.nome)}</strong>${srcBadge(r.fonte)}</div>
+    <div class="prose" style="font-size:13px;margin-top:5px">${r.c}</div></div>`).join("");
+  const MU = D.matchups||{};
+  const perMu = MU_ORDER.filter(id=>MU[id]).map(id=>{
+    const m = MU[id];
+    const leads = leadsFromConsenso(m, 4);
+    if(!leads.length) return "";
+    return `<div class="panel" style="padding:13px 16px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+        <strong style="font-size:14.5px">vs ${esc(m.nome)}</strong>
+        <span class="chip">${esc(m.sigla||"")}</span>
+        <span style="margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--cyan);cursor:pointer;letter-spacing:1px"
+          onclick="location.hash='#/matchup/${id}'">DOSSIER →</span>
+      </div>
+      <ul class="prose" style="margin:0">${leads.map(l=>`<li>${esc(l)}</li>`).join("")}</ul>
+    </div>`;
+  }).join("");
+  return `<div class="view">
+    <div class="eyebrow">Operazioni</div>
+    <h1 class="title">⭐ Regole d'oro <span class="dim">— quelle che decidono le partite</span></h1>
+    <div class="lead">I principi universali del mazzo + la regola numero uno di ogni matchup, in una pagina sola.</div>
+    <div class="h2"><span class="tag">//</span> 💡 I principi universali</div>
+    <div class="grid g2">${regole||'<div class="empty">DATI IN CARICAMENTO</div>'}</div>
+    <div class="h2"><span class="tag">//</span> ⚔️ La regola n.1 di ogni matchup</div>
+    <div class="grid g2">${perMu}</div>
+  </div>`;
+};
+
 /* PAGINA MATCHUP */
 views.matchupDetail = (id) => {
   const m = (D.matchups||{})[id];
@@ -1022,6 +1199,7 @@ views.matchupDetail = (id) => {
         <div class="eyebrow" style="color:${m.colorHex||"var(--blue)"}">${esc(m.sigla||"")} · ${esc(m.colore||"")}</div>
         <h1 class="title" style="margin-bottom:6px">vs ${esc(m.nome)}</h1>
         <div style="color:var(--ink2);max-width:60ch">${esc(m.tagline||"")}</div>
+        <div style="margin-top:14px"><div class="btn primary" onclick="location.hash='#/matchup/${id}/bigino'">⚡ Bigino 30 secondi</div></div>
       </div>
     </div>
     ${cheat}
@@ -1076,19 +1254,71 @@ views.fonti = () => {
   </div>`;
 };
 
+/* ---------- glossario: linkify (dopo le carte) ---------- */
+let glossRe = null;
+function buildGlossRe(){
+  const G = D.glossario||{};
+  const keys = Object.keys(G).sort((a,b)=>b.length-a.length);
+  if(!keys.length) return;
+  glossRe = new RegExp("\\b(" + keys.map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/ /g,"[ \\u00A0]")).join("|") + ")\\b","i");
+}
+function linkifyGloss(root){
+  if(!glossRe || !D.glossario) return;
+  const done = new Set();  // max 1 occorrenza per termine per vista
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(n){
+      if(!n.nodeValue || n.nodeValue.length < 3) return NodeFilter.FILTER_REJECT;
+      const p = n.parentElement;
+      if(!p || !p.closest(".prose, .callout, .vt, .ph-b, .big-list, .big-line")) return NodeFilter.FILTER_REJECT;
+      if(p.closest(".cardlink, .glossterm, script, style")) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  const nodes = [];
+  while(walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(node=>{
+    let text = node.nodeValue, m = glossRe.exec(text);
+    while(m && done.has(m[1].toLowerCase())){
+      const rest = text.slice(m.index + m[1].length);
+      const m2 = glossRe.exec(rest);
+      m = m2 ? { 1: m2[1], index: m.index + m[1].length + m2.index } : null;
+    }
+    if(!m) return;
+    const term = m[1].toLowerCase();
+    done.add(term);
+    const frag = document.createDocumentFragment();
+    frag.appendChild(document.createTextNode(text.slice(0, m.index)));
+    const sp = document.createElement("span");
+    sp.className = "glossterm"; sp.dataset.gloss = term; sp.textContent = m[1];
+    frag.appendChild(sp);
+    frag.appendChild(document.createTextNode(text.slice(m.index + m[1].length)));
+    node.parentNode.replaceChild(frag, node);
+  });
+}
+document.addEventListener("pointermove", e=>{
+  const g = e.target.closest && e.target.closest(".glossterm");
+  if(g && D.glossario && D.glossario[g.dataset.gloss]){
+    showDTip(`<div class="v" style="font-size:12.5px;text-transform:uppercase;letter-spacing:1px">${esc(g.dataset.gloss)}</div><div class="l">${esc(D.glossario[g.dataset.gloss])}</div>`, e.clientX, e.clientY);
+  }
+});
+document.addEventListener("pointerout", e=>{ if(e.target.closest && e.target.closest(".glossterm")) hideDTip(); });
+
 /* ---------- router ---------- */
 function route(){
   const h = location.hash.replace(/^#\/?/,"") || "home";
-  const [r, arg] = h.split("/");
+  const [r, arg, sub] = h.split("/");
   document.querySelectorAll(".nav-item").forEach(n=>n.classList.toggle("active", n.dataset.r===r));
+  document.body.classList.remove("navopen");
   let html;
-  if(r==="matchup" && arg) html = views.matchupDetail(arg);
+  if(r==="matchup" && arg && sub==="bigino") html = views.bigino(arg);
+  else if(r==="matchup" && arg) html = views.matchupDetail(arg);
   else if(views[r]) html = views[r]();
   else html = views.home();
   app.innerHTML = html;
   window.scrollTo({top:0});
   // post-process
   linkifyCards(app);
+  linkifyGloss(app);
   bindAccordions(app);
   bindDataTips(app);
   if(r==="decklist"){
@@ -1102,10 +1332,18 @@ function route(){
   }
 }
 document.querySelectorAll(".nav-item").forEach(n=>n.addEventListener("click",()=>location.hash="#/"+n.dataset.r));
+const burger = document.getElementById("burger");
+if(burger) burger.addEventListener("click", ()=>document.body.classList.toggle("navopen"));
 window.addEventListener("hashchange", route);
 normalizeData();
 buildAliasRe();
+buildGlossRe();
 route();
+
+/* service worker: solo su https/localhost (in locale via file:// è già offline) */
+if("serviceWorker" in navigator && (location.protocol==="https:" || location.hostname==="localhost")){
+  navigator.serviceWorker.register("sw.js").catch(()=>{});
+}
 </script>
 </body>
 </html>
