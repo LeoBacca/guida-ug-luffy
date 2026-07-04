@@ -122,8 +122,30 @@ p.chicca, .chicca{border:1px dashed var(--gold);border-radius:8px;background:var
 
 .prose p{margin:9px 0;color:var(--ink2)}
 .prose p strong, .prose li strong{color:var(--ink)}
-.prose ul,.prose ol{margin:9px 0 9px 22px;color:var(--ink2)}
-.prose li{margin:5px 0}
+.prose ul{list-style:none;margin:10px 0;color:var(--ink2)}
+.prose ul li{position:relative;padding-left:19px;margin:7px 0}
+.prose ul li::before{content:"▸";position:absolute;left:2px;top:0;color:var(--blue);font-family:var(--mono);font-size:12px}
+.prose ol{margin:10px 0 10px 6px;padding-left:22px;color:var(--ink2)}
+.prose ol li{margin:7px 0;padding-left:4px}
+.prose ol li::marker{color:var(--gold);font-family:var(--mono);font-weight:700}
+.prose li>ul{margin:5px 0}
+
+/* chip carta inline con mini-artwork */
+.cardlink .ci{width:21px;height:21px;border-radius:50%;object-fit:cover;object-position:center 25%;
+  vertical-align:-5px;margin:0 4px 0 1px;border:1px solid var(--line2);box-shadow:0 0 0 1px rgba(63,224,255,.25)}
+
+/* cheat-sheet matchup */
+.cheat{display:grid;grid-template-columns:1fr 1.4fr;gap:14px;margin-bottom:16px}
+@media(max-width:900px){.cheat{grid-template-columns:1fr}}
+.cheat .zone{border:1px solid var(--line);border-radius:11px;background:linear-gradient(180deg,var(--surface),var(--carbon));padding:14px 16px}
+.cheat .zt{font-family:var(--mono);font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--cyan);
+  margin-bottom:9px;display:flex;align-items:center;gap:8px}
+.cheat .zt::after{content:"";height:1px;flex:1;background:var(--line)}
+.keycards{display:flex;gap:8px;flex-wrap:wrap}
+.keycards img{height:104px;border-radius:7px;border:1px solid var(--line2);transition:transform .15s;cursor:help}
+.keycards img:hover{transform:translateY(-4px) scale(1.04);border-color:var(--gold)}
+.inbreve li{font-size:13px}
+.sec-ico{font-size:13px;filter:saturate(.8)}
 
 /* badge fonte */
 .src{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;
@@ -419,6 +441,20 @@ function normalizeData(){
 }
 
 const SHORT = { dog:"Dog", raphterra:"Raphterra", adam:"Adam", dogcoach:"Dog·Coach", impactnoob:"Impact", equinby:"Equinby" };
+
+/* icone automatiche per argomento */
+const ICONS = [
+  [/mulligan|keep/i,"🃏"], [/overview|verdetto|introduz|numeri/i,"🎯"],
+  [/early|apertur/i,"🌱"], [/late|chiusur|lethal|blueprint/i,"👑"], [/mid\b|mid game|mid-game/i,"⚔️"],
+  [/tip|consig|chicch|regol/i,"💡"], [/swing|attac|ordine|pression/i,"🗡️"],
+  [/freeze|luna|stall|congel/i,"🧊"], [/counter|difes|block|protegg/i,"🛡️"],
+  [/risors|card advantage|mano|pesca|draw|search|ricerca/i,"📈"],
+  [/dado|turn order|primo|secondo/i,"🎲"], [/trigger/i,"⚡"],
+  [/restand|navy/i,"🔄"], [/leader/i,"👑"], [/board|corpi|campo|weenie/i,"🧩"],
+  [/gravity|removal|rimozion/i,"🌪️"], [/combo|sequenz|linea/i,"🔗"],
+  [/read|bluff|psicolog/i,"🧠"], [/race|clock|tempo/i,"⏱️"], [/vite|life|danno/i,"❤️"]
+];
+function iconFor(t){ for(const [re,ic] of ICONS){ if(re.test(t||"")) return ic; } return "▸"; }
 function fonte(id){ return (D.fonti && D.fonti[id]) || { nome:id, colore:"#9FB2CC", sotto:"" }; }
 function corto(id){ return SHORT[id] || fonte(id).nome; }
 function srcBadge(id, small){
@@ -485,7 +521,14 @@ function linkifyCards(root){
       if(!key || !(D.carte && D.carte[key])){ continue; }
       frag.appendChild(document.createTextNode(text.slice(last, m.index)));
       const sp = document.createElement("span");
-      sp.className = "cardlink"; sp.dataset.card = key; sp.textContent = m[1];
+      sp.className = "cardlink"; sp.dataset.card = key;
+      if(D.carte[key].img){
+        const im = document.createElement("img");
+        im.className = "ci"; im.loading = "lazy"; im.alt = "";
+        im.src = cardImg(key, "art");
+        sp.appendChild(im);
+      }
+      sp.appendChild(document.createTextNode(m[1]));
       frag.appendChild(sp); last = m.index + m[1].length;
     }
     if(last===0) return;
@@ -541,7 +584,7 @@ function spectrum(verdetti){
 function accordion(items, openFirst){
   return items.map((it,i)=>{
     const f = fonte(it.fonte);
-    const secs = (it.sezioni||[]).map(s=>`<div class="sec-t">${esc(s.t)}</div><div class="prose">${s.c||""}</div>`).join("");
+    const secs = (it.sezioni||[]).map(s=>`<div class="sec-t"><span class="sec-ico">${iconFor(s.t)}</span>${esc(s.t)}</div><div class="prose">${s.c||""}</div>`).join("");
     return `<div class="acc ${i===0&&openFirst?"open":""}">
       <div class="head">
         <span class="car">▶</span>
@@ -603,13 +646,13 @@ views.home = () => {
       <div class="tile-s"><div class="tv">${nTech||"20+"}</div><div class="tl2">Tech a processo</div></div>
       <div class="tile-s"><div class="tv">12<span>×</span></div><div class="tl2">Attacchi max col restand</div></div>
     </div>
-    <div class="h2"><span class="tag">//</span> Il mazzo in una riga</div>
+    <div class="h2"><span class="tag">//</span> 🧬 Il mazzo in una riga</div>
     <div class="grid g3">
       <div class="callout green"><div class="ct">Identità</div>Aggro a <strong>valore sostenuto</strong>: va wide, ricicla tutto, e ogni turno il Leader rimette in piedi 2 DON!!. Non un glass cannon — un motore che non si ferma.</div>
       <div class="callout gold"><div class="ct">Win condition</div><strong>Boa Hancock</strong> (9k Unblockable + freeze) e <strong>Let's Go! To the Navy HQ</strong>: con 5 nomi diversi sul campo, restand totale → fino a <strong>12 attacchi</strong> in un turno.</div>
       <div class="callout"><div class="ct">Il principio (Equinby)</div>«Luffy non perde prendendo danni. Perde quando muore la board o quando finisce il gas.» <strong>Prendi il danno, tieni le carte.</strong></div>
     </div>
-    <div class="h2"><span class="tag">//</span> Le sei voci</div>
+    <div class="h2"><span class="tag">//</span> 🗣️ Le sei voci</div>
     <div class="grid g3">${srcChips}</div>
   </div>`;
 };
@@ -647,7 +690,7 @@ views.meta = () => {
     <h1 class="title">Meta OP16 <span class="dim">— la giungla</span></h1>
     <div class="lead prose">${M.intro||""}</div>
 
-    <div class="h2"><span class="tag">//</span> La percezione dei pro, matchup per matchup</div>
+    <div class="h2"><span class="tag">//</span> 🎯 La percezione dei pro, matchup per matchup</div>
     <div class="callout"><div class="ct">Perché niente winrate?</div>${esc(M.notaPercezione||"")}</div>
     <div class="panel corner" style="margin-top:12px">
       <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--ink3);text-transform:uppercase;padding:0 6px 8px">
@@ -658,10 +701,10 @@ views.meta = () => {
         OGNI PUNTO = LA VALUTAZIONE DI UNA FONTE · passa sopra per i dettagli · clicca la riga per il dossier</div>
     </div>
 
-    <div class="h2"><span class="tag">//</span> I sei mazzi visti da Dog</div>
+    <div class="h2"><span class="tag">//</span> 🧩 I sei mazzi visti da Dog</div>
     <div class="grid g3">${perDeck}</div>
 
-    <div class="h2"><span class="tag">//</span> Tier list a confronto</div>
+    <div class="h2"><span class="tag">//</span> 📊 Tier list a confronto</div>
     <div class="grid g3">
       <div class="panel"><div class="h3" style="margin-top:0;color:var(--gold)">${esc(M.tierlist.dog.titolo)}</div><div class="prose">${M.tierlist.dog.c}</div></div>
       <div class="panel"><div class="h3" style="margin-top:0;color:var(--green)">${esc(M.tierlist.raphterra.titolo)}</div><div class="prose">${M.tierlist.raphterra.c}</div></div>
@@ -699,7 +742,7 @@ views.decklist = () => {
   let statsHtml = "";
   if(dk.stats && dk.stats.curva){
     const cv = dk.stats.curva; const maxv = Math.max(...Object.values(cv));
-    statsHtml = `<div class="h2"><span class="tag">//</span> Statistiche lista</div>
+    statsHtml = `<div class="h2"><span class="tag">//</span> 📊 Statistiche lista</div>
     <div class="grid g2">
       <div class="panel"><div class="h3" style="margin-top:0">Curva dei costi</div>
         <div class="bars">${Object.entries(cv).map(([k,v])=>`<div class="bar">
@@ -725,7 +768,7 @@ views.decklist = () => {
     </div>
     <div class="deck-grid">${cards}</div>
     ${statsHtml}
-    ${note?`<div class="h2"><span class="tag">//</span> Card by card — le motivazioni</div>${note}`:""}
+    ${note?`<div class="h2"><span class="tag">//</span> 🎴 Card by card — le motivazioni</div>${note}`:""}
   </div>`;
 };
 
@@ -806,7 +849,7 @@ views.fondamentali = () => {
         <div class="atk-row" data-tip="${s.attacchi} attacchi potenziali su 12 max">${atk}</div>
         <div class="prose" style="font-size:13.5px">${s.piano||""}</div></div>`;
     }).join("");
-    restand = `<div class="h2"><span class="tag">//</span> La matematica del restand</div>
+    restand = `<div class="h2"><span class="tag">//</span> 🔄 La matematica del restand</div>
       <div class="callout gold"><div class="ct">Requisiti</div>${esc(F.restand.requisiti||"")}</div>
       <div class="grid g3" style="margin-top:12px">${scen}</div>
       <div class="grid g2" style="margin-top:12px">
@@ -839,10 +882,10 @@ views.fondamentali = () => {
     <div class="eyebrow">Dottrina</div>
     <h1 class="title">Fondamentali <span class="dim">— come si pilota</span></h1>
 
-    <div class="h2"><span class="tag">//</span> Identità</div>
+    <div class="h2"><span class="tag">//</span> 🧬 Identità</div>
     <div class="grid g3">${ident}</div>
 
-    <div class="h2"><span class="tag">//</span> Il Leader</div>
+    <div class="h2"><span class="tag">//</span> 👑 Il Leader</div>
     <div class="panel corner" style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap">
       <img src="${cardImg("leader","full")}" style="width:190px;border-radius:10px;border:1px solid var(--line2)" loading="lazy">
       <div style="flex:1;min-width:260px">
@@ -853,28 +896,28 @@ views.fondamentali = () => {
     </div>
     ${carat?`<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-top:14px">${carat}</div>`:""}
 
-    <div class="h2"><span class="tag">//</span> Il piano partita</div>
+    <div class="h2"><span class="tag">//</span> 🗺️ Il piano partita</div>
     <div class="grid g3">${fasi}</div>
     ${boards}
 
-    <div class="h2"><span class="tag">//</span> Regole d'oro</div>
+    <div class="h2"><span class="tag">//</span> 💡 Regole d'oro</div>
     <div class="grid g2">${regole}</div>
 
-    <div class="h2"><span class="tag">//</span> Mulligan</div>
+    <div class="h2"><span class="tag">//</span> 🃏 Mulligan</div>
     ${mull}
 
-    <div class="h2"><span class="tag">//</span> Le combo firmate</div>
+    <div class="h2"><span class="tag">//</span> 🔗 Le combo firmate</div>
     ${combos}
 
     ${restand}
 
-    ${avanzati?`<div class="h2"><span class="tag">//</span> Concetti avanzati</div><div class="grid g3">${avanzati}</div>`:""}
-    ${trucchi?`<div class="h2"><span class="tag">//</span> Trucchi carta per carta</div><div class="grid g2">${trucchi}</div>`:""}
+    ${avanzati?`<div class="h2"><span class="tag">//</span> 🧠 Concetti avanzati</div><div class="grid g3">${avanzati}</div>`:""}
+    ${trucchi?`<div class="h2"><span class="tag">//</span> 🎴 Trucchi carta per carta</div><div class="grid g2">${trucchi}</div>`:""}
 
-    <div class="h2"><span class="tag">//</span> Turn order</div>
+    <div class="h2"><span class="tag">//</span> 🎲 Turn order</div>
     ${to}
 
-    <div class="h2"><span class="tag">//</span> Regole trappola (vissute in torneo)</div>
+    <div class="h2"><span class="tag">//</span> ⚠️ Regole trappola (vissute in torneo)</div>
     <div class="grid g2">${trap}</div>
   </div>`;
 };
@@ -903,11 +946,32 @@ views.matchup = () => {
     <div class="eyebrow">Operazioni</div>
     <h1 class="title">Matchup Hub <span class="dim">— ${ids.length} dossier</span></h1>
     <div class="lead">Ogni dossier aggrega TUTTO quello che le fonti dicono su quel matchup: verdetti a confronto, consenso, dibattiti, piano di gioco e le sezioni integrali di ogni voce.</div>
-    <div class="h2"><span class="tag">//</span> I sei del meta</div>
+    <div class="h2"><span class="tag">//</span> ⚔️ I sei del meta</div>
     <div class="hub">${meta.map(mk).join("")}</div>
-    ${field.length?`<div class="h2"><span class="tag">//</span> Il field</div><div class="hub">${field.map(mk).join("")}</div>`:""}
+    ${field.length?`<div class="h2"><span class="tag">//</span> 🌍 Il field</div><div class="hub">${field.map(mk).join("")}</div>`:""}
   </div>`;
 };
+
+/* carte chiave: le carte del mazzo (con immagine) più citate nel dossier */
+function keyCards(m, n){
+  const txt = JSON.stringify(m).toLowerCase();
+  const counts = {};
+  for(const [alias, key] of Object.entries(aliasMap)){
+    const c = D.carte && D.carte[key];
+    if(!c || !c.img || key==="leader") continue;
+    let i = -1, hits = 0;
+    while((i = txt.indexOf(alias, i+1)) !== -1) hits++;
+    if(hits) counts[key] = (counts[key]||0) + hits;
+  }
+  return Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0, n||6).map(e=>e[0]);
+}
+/* estrae il lead in grassetto dai punti di consenso */
+function leadsFromConsenso(m, n){
+  return (m.consenso||[]).map(c=>{
+    const mm = /<strong>(.*?)<\/strong>/.exec(c);
+    return mm ? mm[1].replace(/<[^>]+>/g,"").replace(/[.:]\s*$/,"") : null;
+  }).filter(Boolean).slice(0, n||5);
+}
 
 /* PAGINA MATCHUP */
 views.matchupDetail = (id) => {
@@ -921,20 +985,33 @@ views.matchupDetail = (id) => {
   const deb = (m.dibattiti||[]).map(d=>`<div class="callout gold"><div class="ct">☍ Dibattito — ${esc(d.tema)}</div>
     ${(d.posizioni||[]).map(p=>`<div style="display:flex;gap:9px;margin:7px 0;align-items:flex-start">
       <div style="flex:none;margin-top:1px">${srcBadge(p.fonte)}</div><div style="font-size:13.5px">${p.testo}</div></div>`).join("")}</div>`).join("");
-  const tl = m.timeline?`<div class="h2"><span class="tag">//</span> L'evoluzione della posizione</div><div class="tl">
+  const tl = m.timeline?`<div class="h2"><span class="tag">//</span> 🎲 L'evoluzione della posizione</div><div class="tl">
     ${m.timeline.map(t=>`<div class="tl-item"><div class="when">${esc(t.tappa)}</div>
       <div class="pos">${esc(t.posizione)}</div><div class="why">${t.motivo||""}</div></div>`).join("")}</div>`:"";
-  const gp = m.gameplan?`<div class="h2"><span class="tag">//</span> Piano di gioco</div><div class="grid g3">
-    <div class="phase early"><div class="ph-h">Early<span class="don">0-4 DON</span></div><div class="ph-b prose">${m.gameplan.early||""}</div></div>
-    <div class="phase mid"><div class="ph-h">Mid<span class="don">5-8 DON</span></div><div class="ph-b prose">${m.gameplan.mid||""}</div></div>
-    <div class="phase late"><div class="ph-h">Late<span class="don">9+ DON</span></div><div class="ph-b prose">${m.gameplan.late||""}</div></div>
+  const kc = keyCards(m, 6);
+  const leads = leadsFromConsenso(m, 5);
+  const cheat = (kc.length||leads.length||dadi)?`<div class="cheat">
+    <div>
+      ${dadi?`<div class="zone" style="margin-bottom:14px"><div class="zt">🎲 Dado</div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap">${dadi}</div></div>`:""}
+      ${leads.length?`<div class="zone"><div class="zt">💡 In breve</div>
+        <ul class="inbreve prose" style="margin:0">${leads.map(l=>`<li>${esc(l)}</li>`).join("")}</ul></div>`:""}
+    </div>
+    ${kc.length?`<div class="zone"><div class="zt">🗝️ Le tue carte chiave qui</div>
+      <div class="keycards">${kc.map(k=>`<img src="${cardImg(k,"full")}" alt="${esc(D.carte[k].nome)}" title="${esc(D.carte[k].nome)} — ${esc(D.carte[k].ruolo||"")}" loading="lazy">`).join("")}</div>
+      <div style="font-family:var(--mono);font-size:9px;color:var(--ink3);letter-spacing:1px;margin-top:8px">LE PIÙ CITATE DALLE FONTI IN QUESTO DOSSIER</div></div>`:""}
   </div>`:"";
-  const carte=(m.carteAvversarie||[]).length?`<div class="h2"><span class="tag">//</span> Le loro carte da rispettare</div>
+  const gp = m.gameplan?`<div class="h2"><span class="tag">//</span> 🗺️ Piano di gioco</div><div class="grid g3">
+    <div class="phase early"><div class="ph-h">🌱 Early<span class="don">0-4 DON</span></div><div class="ph-b prose">${m.gameplan.early||""}</div></div>
+    <div class="phase mid"><div class="ph-h">⚔️ Mid<span class="don">5-8 DON</span></div><div class="ph-b prose">${m.gameplan.mid||""}</div></div>
+    <div class="phase late"><div class="ph-h">👑 Late<span class="don">9+ DON</span></div><div class="ph-b prose">${m.gameplan.late||""}</div></div>
+  </div>`:"";
+  const carte=(m.carteAvversarie||[]).length?`<div class="h2"><span class="tag">//</span> ⚠️ Le loro carte da rispettare</div>
     <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(230px,1fr))">${m.carteAvversarie.map(c=>`
       <div class="panel" style="padding:11px 14px"><strong style="color:var(--danger)">${esc(c.nome)}</strong>
       <div style="font-size:12.5px;color:var(--ink2);margin-top:3px">${c.nota||""}</div></div>`).join("")}</div>`:"";
   const lt = m.leaderText?`<div class="callout" style="margin-top:12px"><div class="ct">Abilità del loro Leader</div><div style="font-size:13.5px">${m.leaderText}</div></div>`:"";
-  const pf=(m.perFonte||[]).length?`<div class="h2"><span class="tag">//</span> Il dossier completo, fonte per fonte</div>
+  const pf=(m.perFonte||[]).length?`<div class="h2"><span class="tag">//</span> 📚 Il dossier completo, fonte per fonte</div>
     <div class="lead" style="margin-bottom:10px;font-size:13.5px">Tutto quello che ogni voce dice su questo matchup — integrale, tradotto, ordinato.</div>
     ${accordion(m.perFonte,true)}`:"";
   return `<div class="view">
@@ -945,9 +1022,9 @@ views.matchupDetail = (id) => {
         <div class="eyebrow" style="color:${m.colorHex||"var(--blue)"}">${esc(m.sigla||"")} · ${esc(m.colore||"")}</div>
         <h1 class="title" style="margin-bottom:6px">vs ${esc(m.nome)}</h1>
         <div style="color:var(--ink2);max-width:60ch">${esc(m.tagline||"")}</div>
-        ${dadi?`<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"><span class="chip" style="border:none;color:var(--ink3)">DADO →</span>${dadi}</div>`:""}
       </div>
     </div>
+    ${cheat}
     ${spectrum(m.verdetti)}
     <div style="margin-top:14px">${cons}${deb}</div>
     ${tl}${gp}${lt}${carte}${pf}
