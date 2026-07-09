@@ -154,6 +154,16 @@ p.chicca, .chicca{border:1px dashed var(--gold);border-radius:8px;background:var
 .src{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;
   letter-spacing:1.2px;text-transform:uppercase;padding:3px 11px;border-radius:4px;font-weight:600;
   border:1px solid;background:rgba(10,16,24,.65)}
+.tierpip{display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);
+  font-size:9px;font-weight:800;letter-spacing:.3px;min-width:15px;height:15px;padding:0 4px;margin-left:5px;
+  border-radius:4px;border:1px solid;background:rgba(10,16,24,.55);cursor:help;vertical-align:middle}
+.tierpip.spot{border-style:dashed}
+/* pannello fonti raggruppate per tier */
+.tier-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:26px 0 12px}
+.tier-badge{display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);
+  font-size:15px;font-weight:800;width:30px;height:30px;border-radius:6px;border:1.5px solid;background:rgba(10,16,24,.5)}
+.tier-head .tl{font-weight:800;font-size:16px}
+.tier-head .tn{font-size:12.5px;color:var(--ink2)}
 
 /* ---------- hub matchup ---------- */
 .hub{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
@@ -482,7 +492,7 @@ table.simple td:first-child{color:var(--ink);font-weight:600}
     <div class="nav-item" data-r="dibattiti"><span class="ico">☍</span> Dibattiti aperti</div>
     <div class="nav-item" data-r="fonti"><span class="ico">✎</span> Fonti</div>
   </div>
-  <div class="foot">IMPEL DOWN TACTICAL HUD<br>6 fonti · 13 matchup · offline</div>
+  <div class="foot">IMPEL DOWN TACTICAL HUD<br>8 fonti · 13 matchup · offline</div>
 </nav>
 
 <main id="main"><div id="app"></div></main>
@@ -514,8 +524,9 @@ const PROC = ASSETS + "/cards/proc";
 const IMG  = ASSETS + "/IMG";
 
 // colori marks (palette validata, ordine fisso serie)
-const CHART = { dog:"#BC8A22", impactnoob:"#2196B5", adam:"#E86A3C", equinby:"#9C79E8", raphterra:"#1FB06C", dogcoach:"#B0813A" };
-const SRC_ORDER = ["dog","raphterra","adam","dogcoach","impactnoob","equinby"];
+const CHART = { dog:"#BC8A22", impactnoob:"#2196B5", adam:"#E86A3C", equinby:"#9C79E8", raphterra:"#1FB06C", dogcoach:"#B0813A", madoka:"#F45D9A", hrvoje:"#17B8A6" };
+// ordinato per tier di valore (S → C): l'utente vuole che il sito rifletta che alcune voci pesano di più
+const SRC_ORDER = ["equinby","impactnoob","hrvoje","madoka","dogcoach","dog","raphterra","adam"];
 const MU_ORDER = ["mirror","teach","rosinante","nami","yamato","enel","lucy","rbace","shanks","sengoku","redace","mihawk","kalgara"];
 
 const $ = s => document.querySelector(s);
@@ -534,7 +545,7 @@ function normalizeData(){
   });
 }
 
-const SHORT = { dog:"Dog", raphterra:"Raphterra", adam:"Adam", dogcoach:"Dog·Coach", impactnoob:"Impact", equinby:"Equinby" };
+const SHORT = { dog:"Dog", raphterra:"Raphterra", adam:"Adam", dogcoach:"Dog·Coach", impactnoob:"Impact", equinby:"Equinby", madoka:"Madoka", hrvoje:"Hrvoje" };
 
 /* icone automatiche per argomento */
 const ICONS = [
@@ -551,9 +562,16 @@ const ICONS = [
 function iconFor(t){ for(const [re,ic] of ICONS){ if(re.test(t||"")) return ic; } return "▸"; }
 function fonte(id){ return (D.fonti && D.fonti[id]) || { nome:id, colore:"#9FB2CC", sotto:"" }; }
 function corto(id){ return SHORT[id] || fonte(id).nome; }
-function srcBadge(id, small){
+function tierMeta(tier){ return (D.pesoScale||[]).find(p=>p.tier===tier) || null; }
+function tierPip(id){
+  const f = fonte(id); if(!f.tier) return "";
+  const tm = tierMeta(f.tier); const col = tm ? tm.colore : "#9FB2CC";
+  const tip = `${tm?tm.label:("Tier "+f.tier)}${f.spot?" · fonte spot: solo "+f.spot:""}${f.tierNota?" — "+f.tierNota:""}`;
+  return `<span class="tierpip${f.spot?" spot":""}" style="color:${col};border-color:${col}66" data-tip="${esc(tip)}">${esc(f.tier)}${f.spot?"·spot":""}</span>`;
+}
+function srcBadge(id, small, noTier){
   const f = fonte(id);
-  return `<span class="src" style="color:${f.colore};border-color:${f.colore}55">${small?"":"● "}${esc(f.nome)}</span>`;
+  return `<span class="src" style="color:${f.colore};border-color:${f.colore}55">${small?"":"● "}${esc(f.nome)}</span>${noTier?"":tierPip(id)}`;
 }
 function cardImg(key, kind){ return `${PROC}/${key}__${kind||"full"}.png`; }
 function leadArt(key){ return `${PROC}/${key}__art.png`; }
@@ -734,7 +752,7 @@ views.home = () => {
       <div class="inner">
         <div class="eyebrow">Impel Down Tactical Ops Manual</div>
         <h1>L'AGGRO KING<br>È <span class="g">TORNATO</span></h1>
-        <div class="sub">Tutto quello che 6 voci diverse — 2 guide premium, un top 8 regional, 3 coach — hanno detto su <strong>Blue/Green Monkey D. Luffy (OP16-022)</strong>. Ordinato, attribuito, con i disaccordi in bella vista.</div>
+        <div class="sub">Tutto quello che 8 voci diverse — 2 guide premium, un top 8 regional, coaching e l'intervista a un <em>3× champion</em> — hanno detto su <strong>Blue/Green Monkey D. Luffy (OP16-022)</strong>. Ordinato, attribuito, <strong>pesato per valore</strong>, con i disaccordi in bella vista.</div>
         <div class="cta">
           <div class="btn primary" onclick="location.hash='#/matchup'">⚔ Matchup Hub</div>
           <div class="btn" onclick="location.hash='#/fondamentali'">✦ Fondamentali</div>
@@ -758,7 +776,7 @@ views.home = () => {
       <div class="callout gold"><div class="ct">Win condition</div><strong>Boa Hancock</strong> (9k Unblockable + freeze) e <strong>Let's Go! To the Navy HQ</strong>: con 5 nomi diversi sul campo, restand totale → fino a <strong>12 attacchi</strong> in un turno.</div>
       <div class="callout"><div class="ct">Il principio (Equinby)</div>«Luffy non perde prendendo danni. Perde quando muore la board o quando finisce il gas.» <strong>Prendi il danno, tieni le carte.</strong></div>
     </div>
-    <div class="h2"><span class="tag">//</span> 🗣️ Le sei voci</div>
+    <div class="h2"><span class="tag">//</span> 🗣️ Le otto voci</div>
     <div class="grid g3">${srcChips}</div>
   </div>`;
 };
@@ -1227,30 +1245,42 @@ views.dibattiti = () => {
   return `<div class="view">
     <div class="eyebrow">Operazioni</div>
     <h1 class="title">Dibattiti aperti <span class="dim">— dove le fonti non sono d'accordo</span></h1>
-    <div class="lead">La parte più preziosa di avere 6 voci: i punti dove divergono. Ogni posizione è riportata con la sua fonte e il suo momento — decidere sta a te.</div>
+    <div class="lead">La parte più preziosa di avere 8 voci: i punti dove divergono. Ogni posizione è riportata con la sua fonte e il suo momento — decidere sta a te.</div>
     <div class="grid" style="grid-template-columns:1fr">${cards}</div>
   </div>`;
 };
 
 /* FONTI */
 views.fonti = () => {
-  const cards = SRC_ORDER.map(id=>{
-    const f=fonte(id);
+  const card = (id)=>{
+    const f=fonte(id); const tm = tierMeta(f.tier); const tcol = tm?tm.colore:"#9FB2CC";
+    const spotNote = f.spot ? `<span class="chip" style="border-color:${tcol}66;color:${tcol}">SPOT · solo ${esc(f.spot)}</span>` : "";
     return `<div class="panel corner">
-      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">${srcBadge(id)}<span class="chip">${esc(f.tipo||"")}</span></div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">${srcBadge(id)}<span class="chip">${esc(f.tipo||"")}</span>${spotNote}</div>
       <div style="font-weight:700;font-size:17px;margin:10px 0 2px">${esc(f.sotto||"")}</div>
       <div style="font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.5px">${esc(f.persona||"")}</div>
+      ${f.tierNota?`<div class="callout" style="margin:10px 0;border-color:${tcol}55"><div class="ct" style="color:${tcol}">Perché tier ${esc(f.tier)}${tm?" · "+esc(tm.label):""}</div><div style="font-size:13px">${esc(f.tierNota)}</div></div>`:""}
       <div class="callout" style="margin:10px 0"><div class="ct">Credenziali</div><div style="font-size:13px">${esc(f.credenziali||"")}</div></div>
       <div class="prose" style="font-size:13.5px">${esc(f.descr||"")}</div>
       <div style="font-family:var(--mono);font-size:10.5px;color:var(--cyan);margin-top:10px;letter-spacing:.5px">⌁ ${esc(f.link||"")}</div>
       <div style="font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:6px;letter-spacing:1px">COPRE: ${esc(f.copre||"")}</div>
     </div>`;
+  };
+  const groups = (D.pesoScale||[]).map(tm=>{
+    const ids = SRC_ORDER.filter(id=>fonte(id).tier===tm.tier);
+    if(!ids.length) return "";
+    return `<div class="tier-head">
+        <span class="tier-badge" style="color:${tm.colore};border-color:${tm.colore}">${esc(tm.tier)}</span>
+        <span class="tl" style="color:${tm.colore}">${esc(tm.label)}</span>
+        <span class="tn">${esc(tm.nota||"")}</span>
+      </div>
+      <div class="grid g2">${ids.map(card).join("")}</div>`;
   }).join("");
   return `<div class="view">
-    <div class="eyebrow">Bibliografia</div>
-    <h1 class="title">Le fonti <span class="dim">— chi parla in questa guida</span></h1>
-    <div class="lead">Due guide premium Metafy trascritte capitolo per capitolo, un tournament report dal Top 8 di Mexico City, e tre serie di coaching/gameplay commentato. Ogni affermazione sul sito è attribuita.</div>
-    <div class="grid g2">${cards}</div>
+    <div class="eyebrow">Bibliografia · pesata</div>
+    <h1 class="title">Le fonti <span class="dim">— chi parla, e quanto pesa</span></h1>
+    <div class="lead">Otto voci: due guide premium Metafy, un tournament report dal Top 8 di Mexico City, coaching/gameplay commentato e l'intervista a un <em>3× champion</em> (una fonte è <em>reverse-engineered dal lato avversario</em>). Ogni affermazione sul sito è attribuita — e non tutte le opinioni valgono uguale: sono ordinate per <strong>valore d'insight</strong>, dal tier S al tier C. Passa sul badge <span class="tierpip" style="color:#FFD447;border-color:#FFD44766">S</span> di ogni fonte per il perché.</div>
+    ${groups}
   </div>`;
 };
 

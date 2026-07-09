@@ -27,7 +27,8 @@ window.DATA.matchups["mirror"] = {
     "<strong>Attacco conservativo:</strong> swinga solo con corpi che puoi rimpiazzare, non committare tutta la board (Dog, Raphterra, Equinby col bluff del restand).",
     "<strong>Galdino (Mr.3) è fortissimo nel mirror</strong> in tutte le sue versioni: 2k, freeze e rest (Impact & Noob, Equinby, Raphterra come tech).",
     "<strong>Traccia il loro restand:</strong> monitora costantemente quanto l'avversario è vicino ad abilitarlo (4-5 personaggi con nomi diversi bastano) e rompi il suo setup (Dog, Raphterra, Equinby).",
-    "<strong>Matchup di skill e fondamentali:</strong> vince chi sbaglia meno linee (Dog, Impact & Noob, Raphterra)."
+    "<strong>Matchup di skill e fondamentali:</strong> vince chi sbaglia meno linee (Dog, Impact & Noob, Raphterra).",
+    "<strong>Dibattito Gravity Blade (Hrvoje vs Elijah):</strong> Hrvoje la ODIA nel mirror — «fa giocare entrambi meno una partita vera, e non è neanche buona: se sei even e la giochi, loro ridevelopano e tu ti sei invalidato un intero turno. È buona solo se sei GIÀ avanti sul board». Perché sia forte «devi clearare gli attivi e poi usare i tuoi corpi per uccidere i loro rested». La tiene solo per obbligo di meta. <strong>Elijah dissente</strong> (decente se usata con criterio; molti la overplayano). Vedi il tribunale delle Tech card."
   ],
   dibattiti: [
     { tema: "Primo o secondo?", posizioni: [
@@ -155,7 +156,8 @@ window.DATA.matchups["teach"] = {
     "Gioca attorno ai Trigger, specie il Teach da 8: swinga prima i 4/5-cost (Dog, Raphterra, Adam col «7 con Buggy»).",
     "Tieni una Boa Hancock per il Teach da 10: gli neghi i turni e anche l'effetto Blocker (Dog, Dog coaching, Raphterra).",
     "Mantieni ~3 life (range 2-3) counterando in modo proattivo quando la mano è sana: lo Zehahaha da 8 può rubarti una life card (Dog coaching, Raphterra).",
-    "Non trascinare la partita: il deck è troppo veloce perché Teach si stabilizzi (Dog, Raphterra, Adam)."
+    "Non trascinare la partita: il deck è troppo veloce perché Teach si stabilizzi (Dog, Raphterra, Adam).",
+    "<strong>Croc è il primo slot da limare se prepari pesante Teach (Hrvoje):</strong> qui «è whatever», hanno pochi target dove il bounce/blocker conta davvero. <strong>Jet Culverin</strong> può bottomare un <strong>Rau</strong> o un <strong>Burgess</strong> super-buffato, ma il matchup è già favorevole e non vale costruirci sopra la lista."
   ],
   dibattiti: [
     { tema: "L'ordine degli swing", posizioni: [

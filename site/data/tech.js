@@ -27,7 +27,8 @@ window.DATA.tech = [
       { fonte: "raphterra", verdetto: "dipende", testo: "0-2 copie a preferenza: hand advantage vero (bounce di un tuo 2c → pesca 2, scarta 1) e resta come blocker, ma «a volte è difficile incastrarla nelle curve ottimali». Ruolo diverso dal Croc: lei è puro deck digging e filtro brick, lui presenza sul board" },
       { fonte: "adam", verdetto: "out", testo: "non raccomandata: filtra ma è troppo costosa sul 5 DON, quando dovresti sviluppare board con Croc o Buggy. Rebecca fa il lavoro di filtro meglio, costa meno e ha pure il trigger" },
       { fonte: "impactnoob", verdetto: "in", testo: "promossa dopo le sessioni ladder: «buona in quasi tutte le partite». Nel mirror hanno vinto un game senza mai calare Buggy gestendo il card advantage proprio con lei; la definiscono il miglior modo del mazzo per guadagnare un turno extra" },
-      { fonte: "equinby", verdetto: "out", testo: "scettico dopo 25-30 game: «l'ho pescata 25 volte; l'ho messa sul board zero volte». Ne capisce la teoria (filtrare per trovare counter e sopravvivere un turno extra) ma «quella situazione non capita abbastanza spesso» — pur dichiarandosi aperto a sbagliarsi" }
+      { fonte: "equinby", verdetto: "out", testo: "scettico dopo 25-30 game: «l'ho pescata 25 volte; l'ho messa sul board zero volte». Ne capisce la teoria (filtrare per trovare counter e sopravvivere un turno extra) ma «quella situazione non capita abbastanza spesso» — pur dichiarandosi aperto a sbagliarsi" },
+      { fonte: "hrvoje", verdetto: "in", testo: "1-of «insurance / brick management», un mainstay di ogni BG Luffy: «il deck non ha tanta libertà nel gestire i brick; anche moulligando perfetto a volte una carta si incastra, la curva è troppo stretta». Ti lascia anche scartare un HQ extra quando ne peschi due" }
     ],
     trend: "Il caso più spaccato del tribunale: bocciata da Dog, Adam ed Equinby, promossa sul campo da Impact+Noob — dibattito esplicitamente aperto" },
 
@@ -47,7 +48,8 @@ window.DATA.tech = [
       { fonte: "raphterra", verdetto: "in", testo: "×2 nella GAO: finisher primario late game — Double Unblockable con Boa (13k + 15k nello stesso turno) e On Play che resta anche i DON attivi avversari per negare i counter event. «Chiude le partite cogliendo gli avversari di sorpresa»; nel cap.4: piano B affidabile se il percorso del restand viene chiuso" },
       { fonte: "adam", verdetto: "in", testo: "×2, la sua carta preferita: lethal creativi (9-9-9 con due Brook), nega l'«I love you» di Rosinante, e ruba partite andando dritto alle vite quando la board fight è persa. «Non scendere a ×1: se voglio vederne uno, ne gioco due». Attenzione: NON è Impel Down — con lui solo in campo il Leader non attiva (i giudici l'hanno fermato in stream)" },
       { fonte: "equinby", verdetto: "test", testo: "ne vuole 1 ma fatica a trovare lo slot: «se fosse un torneo con decklist aperte giocherei Brook di sicuro — e potrei farlo comunque». Buono quando il board è bloccato" },
-      { fonte: "impactnoob", verdetto: "out", testo: "«fa schifo»: Boa finisce quasi sempre neutralizzata in ogni matchup rilevante — mirror e Nami la freezano col Galdino, Ace la freeza, Enel la uccide, Teach la redirige — quindi il suo bersaglio ideale sparisce. Servirebbe solo vs Rosinante, matchup già stravinto col terzo Gravity Blade in lista" }
+      { fonte: "impactnoob", verdetto: "out", testo: "«fa schifo»: Boa finisce quasi sempre neutralizzata in ogni matchup rilevante — mirror e Nami la freezano col Galdino, Ace la freeza, Enel la uccide, Teach la redirige — quindi il suo bersaglio ideale sparisce. Servirebbe solo vs Rosinante, matchup già stravinto col terzo Gravity Blade in lista" },
+      { fonte: "hrvoje", verdetto: "test", testo: "×1, «non ne sono innamorato»: «ti uccide negli stessi spot di HQ/DMG — spesso non conta che sia proprio Brook — ma ci sono casi limite in cui è l'unico lethal disperato che passa». Lo tiene per top cut: sovraccarica il conteggio dell'avversario (Usahachi + DMG + Brook + HQ = «noi comuni mortali non li contiamo tutti»)" }
     ],
     trend: "Dalle guide ×2 come finisher di lusso al «fa schifo» di Impact: la sua sorte dipende tutta da quanto sopravvive Boa" },
 
@@ -75,14 +77,16 @@ window.DATA.tech = [
       { fonte: "dog", verdetto: "test", testo: "«potrebbe vedere gioco come 1-of in futuro, a seconda di quanto difensivo diventa il meta»: negare due blocker, o un blocker più un DON aperto, è rilevante in diverse situazioni; uso molto simile a Brook per sbloccare i turni lethal" },
       { fonte: "raphterra", verdetto: "dipende", testo: "0-2 copie: «la tech più consistente con cui sostituirei la Gravity Blade» — board control, pezzo di lethal (resta i blocker di Enel/Rosinante o i DON dei counter event) e nel worst case 3k counter sul Leader" },
       { fonte: "adam", verdetto: "test", testo: "non testata prima del torneo, quindi fuori lista: «potrebbe avere potenziale, da esplorare nelle sessioni successive»" },
-      { fonte: "impactnoob", verdetto: "out", testo: "ritenuta ok ma meno affidabile del restand OTK: sorprendentemente «è più facile montare il restand OTK che soddisfare le condizioni di Dead Man's», nonostante sulla carta sembri il contrario" }
+      { fonte: "impactnoob", verdetto: "out", testo: "ritenuta ok ma meno affidabile del restand OTK: sorprendentemente «è più facile montare il restand OTK che soddisfare le condizioni di Dead Man's», nonostante sulla carta sembri il contrario" },
+      { fonte: "hrvoje", verdetto: "in", testo: "«Il miglior tool di lethal del deck», ma non ci si affida (spesso non serve; alcuni deck pianificano di bloccarlo con doppio Borsalino). Ottimo anche come control mid-game: con dei corpi (idealmente la ball) tappi qualunque cosa sul loro board — «un Force Hodi in forma di evento»" }
     ],
     trend: "L'eterna promessa: tutti la rispettano, nessuna delle fonti la gioca davvero" },
 
   { key: "ivankov3c", nome: "Emporio Ivankov (3c)", domanda: "Il 3-cost di ridondanza ha un posto?",
     verdetti: [
       { fonte: "dog", verdetto: "out", testo: "«più la testavo, più sentivo che non serviva affatto»: i pochi 2-cost del deck negano quasi sempre il primo effetto On Play, e col build Samurai il secondo non scattava mai; corpo 4k non ideale. «Non sono un fan, e non credo verrà giocata in futuro»" },
-      { fonte: "impactnoob", verdetto: "in", testo: "riabilitata come pura ridondanza per il turno 3 andando primi (prima non c'era un buon 3-drop). La search «non colpisce mai» (~26% reale, percepito zero) e va benissimo così: è comunque un 4k che swinga e pesca una carta, difficile da punire; se la search colpisce «spesso vinci la partita all'istante»" }
+      { fonte: "impactnoob", verdetto: "in", testo: "riabilitata come pura ridondanza per il turno 3 andando primi (prima non c'era un buon 3-drop). La search «non colpisce mai» (~26% reale, percepito zero) e va benissimo così: è comunque un 4k che swinga e pesca una carta, difficile da punire; se la search colpisce «spesso vinci la partita all'istante»" },
+      { fonte: "hrvoje", verdetto: "in", testo: "2-3 copie: «la gente lo legge male — non lo giochi per colpire un 2-cost (irrealistico, ~20% senza setup)». Cos'è davvero: un 3c 4k con scry 1 che pesca quando attacca — fa in due step ciò che fanno le tue carte migliori, ed è una copia extra della prima curva (la tua più debole), quindi la migliori. Il 2° al Treasure Cup ne giocava 4" }
     ],
     trend: "Contraddizione frontale: bocciata a inizio formato da Dog, riabilitata dal campo con aspettative ridimensionate" },
 
@@ -96,6 +100,7 @@ window.DATA.tech = [
       { fonte: "raphterra", verdetto: "in", testo: "×3 nella GAO (2 nel core): «2-3 copie; 4 è rischioso» perché è counterless e brick nell'early. Must-have contro i leader che si autopompano (Blue-Yellow Nami, Red-Blue Ace)" },
       { fonte: "adam", verdetto: "in", testo: "«LA carta più rotta del mazzo»: 9k unblockable che freeza tutto «tranne suo marito». Con il Galdino 4c è l'unico modo di stare in partita contro Enel. Conteggio ricostruito ×2 (forse 3)" },
       { fonte: "impactnoob", verdetto: "in", testo: "ma solo ×2: Impact si autodefinisce «il più grande hater di Boa di sempre» — meno necessaria di quanto si pensi in molti matchup; si vince anche senza mai calarla. Il co-host concorda su 2, altri (incluso Elijah) preferiscono 3" },
+      { fonte: "hrvoje", verdetto: "in", testo: "×2 (scesa da 3): «la amo ma è un brick». Più importante nel Nami (immune ai trigger, buchi i Leader da 7k); molto rilevante anche vs mirror ed Enel (nel mirror forse non la cali se hai di meglio). Sammy ne gioca 1 e regge, ma 2 è la sua baseline" },
       { fonte: "dogcoach", verdetto: "in", testo: "vs Nami è priorità assoluta: «tutto ciò che facciamo negli altri matchup non funziona — cala Boa APPENA puoi»; vs Rosinante serve soprattutto a spegnere il blocker; nel mirror vale la «Boa War»: mai proattivi, «più riesci a ritardarla, meglio è»" }
     ],
     trend: "Nessuno la taglia: la guerra è sul conteggio — 3 per le guide, 2 per le voci dal campo" },
@@ -115,9 +120,10 @@ window.DATA.tech = [
       { fonte: "dog", verdetto: "in", testo: "×4: «una delle mie carte preferite... molti provano a tagliarla, ma più giochi il deck più capisci che è una delle migliori risorse». Ho provato 3 copie, ora 4 e mi sento confident" },
       { fonte: "raphterra", verdetto: "in", testo: "×4 nella GAO (2 nel core anti-intasamento): «credo fermamente che vada a 4 in questo build restand-heavy» — enabler fantastico dei turni lethal perché tiene i personaggi attivi e al sicuro, e il Blocker serve per fare fortress assemblando i pezzi" },
       { fonte: "adam", verdetto: "in", testo: "×4: «uno dei miei preferiti quando hai bisogno di ciclare». Da preferire a Buggy sul 5 DON quando vuoi swingare face senza esporre il board o proteggere un pezzo chiave (es. Mr.2)" },
-      { fonte: "equinby", verdetto: "dipende", testo: "back-and-forth continuo tra 3 e 4: nei due fail-mode del deck è sempre imputato — senza 2-drop è un brick, e a fine game è il brick più difficile da smaltire (hard-block da 4 DON = un corpo in meno sul board). Top 4 Mexico giocava 3; «le stats dicono 4»" }
+      { fonte: "equinby", verdetto: "dipende", testo: "back-and-forth continuo tra 3 e 4: nei due fail-mode del deck è sempre imputato — senza 2-drop è un brick, e a fine game è il brick più difficile da smaltire (hard-block da 4 DON = un corpo in meno sul board). Top 4 Mexico giocava 3; «le stats dicono 4»" },
+      { fonte: "hrvoje", verdetto: "in", testo: "«È un 4-of, folle giocarne meno» — «il bounce-play da 5-cost di OP1 ma più economico (4-6 invece di 5-6)», restanda, cheata swing da 8k/9k, protegge Bon Clay. Ha girato a 3 solo preparando pesante vs Teach (dove «è whatever») e per spazio, e ha fatto Top 4 con 3: «prova vivente che il best 50 non conta, conta il giocatore»" }
     ],
-    trend: "Consenso totale sul ruolo; il dibattito residuo è solo sul quarto slot" },
+    trend: "Consenso totale sul ruolo; il dibattito residuo è solo sul quarto slot (Hrvoje: «è un 4-of», ma Top 4 con 3)" },
 
   { key: "mr3", nome: "Mr.3 Galdino (4c)", domanda: "Il 4-of più condiviso del formato... o un 1-of?",
     verdetti: [
@@ -153,9 +159,10 @@ window.DATA.tech = [
       { fonte: "raphterra", verdetto: "in", testo: "×1 nella GAO: «la mia pet card... high-risk/high-reward»: blowout totali su board pari o in vantaggio, partite letteralmente rubate a Red Ace e Yellow Kalgara. «Massimo 1 copia se il meta non lo esige: raramente ne casti più di una a partita». Brilla nel mirror e vs Ace, Teach, Rosinante" },
       { fonte: "adam", verdetto: "in", testo: "×2 e ne voleva 3: «LA tech del weekend» (idea originale di Enrico/Dog, presa il giovedì prima del torneo): «la migliore carta quando ce l'hai, contro OGNI matchup tranne Enel». Ci ha battuto Santiago, futuro vincitore del regional; il trigger da vita è «rotto»" },
       { fonte: "equinby", verdetto: "in", testo: "×1 accanto a 2 Luna: game-winner nel mirror e vs Rosinante — «quando ti Gravity Bladeano puoi stringergli la mano: game over, hanno lasciato troppo value sul tavolo». Dead vs Enel, per questo solo 1-of; «se ti aspetti tantissimi mirror ne giocherei di più: è il nuts»" },
-      { fonte: "impactnoob", verdetto: "in", testo: "fino a ×3 in lista: broken nel mirror, vs Nami e vs Rosinante (che col terzo Gravity Blade «non ha counterplay reale»); inutile solo vs Teach (già vinto), mediocre vs Enel ma col trigger che vale comunque. Inserita per mirror/Rosinante — la scoperta vs Nami è arrivata dopo: «se becco la Gravity Blade su uno dei loro turni a 7 DON, la partita è semplicemente finita»" }
+      { fonte: "impactnoob", verdetto: "in", testo: "fino a ×3 in lista: broken nel mirror, vs Nami e vs Rosinante (che col terzo Gravity Blade «non ha counterplay reale»); inutile solo vs Teach (già vinto), mediocre vs Enel ma col trigger che vale comunque. Inserita per mirror/Rosinante — la scoperta vs Nami è arrivata dopo: «se becco la Gravity Blade su uno dei loro turni a 7 DON, la partita è semplicemente finita»" },
+      { fonte: "hrvoje", verdetto: "dipende", testo: "La prima voce forte CONTRO, almeno nel mirror: la ODIA. «Nel mirror fa giocare entrambi meno una partita vera, e non è neanche buona lì — solo se sei già avanti sul board. Se sei even e loro ridevelopano, ti sei invalidato un intero turno.» La tiene ×1 solo per obbligo di meta (se non ce l'hai e loro sì, ti freghi): «alla prima scusa la taglio». Vs Nami «non ha mai trovato uno spot» per usarla — preferisce più corpi / attach. NB: Elijah (l'intervistatore) dissente apertamente e la considera forte contro tutto tranne Enel" }
     ],
-    trend: "Traiettoria unica: assente nella guida di Dog, nasce come pet card e diventa consenso totale — da 1 copia (Raphterra/Equinby) a 2 (Adam) a 3 (Impact)" },
+    trend: "Consenso quasi totale sul giocarla (1→3 copie da Raphterra a Impact), ma Hrvoje rompe il coro: è il primo a dire che nel mirror è sopravvalutata e la tiene solo per obbligo — dibattito aperto con Elijah" },
 
   // ==========================================================================
   // VERDETTI PIÙ UNIFORMI
@@ -180,9 +187,10 @@ window.DATA.tech = [
   { key: "champrifle", nome: "Gum-Gum Champion Rifle (event)", domanda: "Il KO a sorpresa è affidabile?",
     verdetti: [
       { fonte: "dog", verdetto: "out", testo: "«hypata all'inizio del set, ma non credo sia una buona carta... penso sia semplicemente brutta»: quasi ogni deck ha personaggi piccoli da lasciare sul board per negarla, il payoff è troppo random, e tenere un DON aperto in questo deck è rarissimo" },
-      { fonte: "adam", verdetto: "dipende", testo: "«se l'avversario se l'aspetta: inutile. Se non se l'aspetta: fenomenale. Tutto lì»" }
+      { fonte: "adam", verdetto: "dipende", testo: "«se l'avversario se l'aspetta: inutile. Se non se l'aspetta: fenomenale. Tutto lì»" },
+      { fonte: "hrvoje", verdetto: "test", testo: "RIVALUTATA e giocata ×1 come tech Swiss (niente top cut): «pensavamo fosse cattiva senza darle una vera chance; in teoria facile giocarci attorno, in pratica no — non sul momento». Gli ha vinto il game vs Lucy (bounce del Sabo attivo, danni in faccia). ⚠️ Liability vs Enel (scelgono Enel / si riprendono un quest = carta gratis): usala molto presto lì, solo per il 2k value" }
     ],
-    trend: "Tech da metagame reads pure: nessuna fonte la gioca stabilmente" },
+    trend: "Da bocciata (Dog) a metagame read (Adam) a sorpresa-Swiss vinta sul campo (Hrvoje): sale se il field è pieno di board deck e povero di Enel" },
 
   { key: "houndblaze", nome: "Hound Blaze (event)", domanda: "La rimozione da mirror vale gli slot?",
     verdetti: [
@@ -210,9 +218,10 @@ window.DATA.tech = [
 
   { key: "jetculverin", nome: "Gum-Gum Jet Culverin (3c event)", domanda: "Il bottom-deck economico anti-Enel serve?",
     verdetti: [
-      { fonte: "raphterra", verdetto: "dipende", testo: "0-2 copie «strettamente in base a quanta Purple Enel ti aspetti»: a 3 DON manda a fondo mazzo Holly o Reiju mantenendo lo sviluppo grazie ai 2 DON del Leader. Fuori da quel matchup è counterless e rischia di restare in mano come brick" }
+      { fonte: "raphterra", verdetto: "dipende", testo: "0-2 copie «strettamente in base a quanta Purple Enel ti aspetti»: a 3 DON manda a fondo mazzo Holly o Reiju mantenendo lo sviluppo grazie ai 2 DON del Leader. Fuori da quel matchup è counterless e rischia di restare in mano come brick" },
+      { fonte: "hrvoje", verdetto: "in", testo: "REFRAME: per Hrvoje NON è anti-Enel — anzi lì è debole. È removal generico che bottoma un base-4-cost, e overperforma (forse 2-of): Rau/Law, Burgess/Frankie buffati, Croc nel mirror, Galdino pre-giocato vs Nami (=swing da 4 carte), Cavendish vs Lucy (stoppa lo snowball), Hibari vs Kobe, il Luffy 7k vs Red Ace. «Il removal è tra le cose più forti nei TCG»" }
     ],
-    trend: "Silver bullet dichiarata: vive e muore con la quota di Enel nel field" },
+    trend: "Doppia lettura: silver bullet anti-Enel per Raphterra, ma per Hrvoje è removal tuttofare da base-4-cost (mirror/Nami/Lucy/field) — sale a 2-of" },
 
   { key: "mr2_4c", nome: "Mr.2 Bon Clay (4c)", domanda: "Il rest offensivo da 4 costi ha un ruolo?",
     verdetti: [

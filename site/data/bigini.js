@@ -56,23 +56,27 @@ window.DATA.bigini = {
     mulligan: "Weenie ripetuti (Equinby) o <strong>Luffy</strong> 1c / <strong>Mr.2 Bon Clay</strong> / <strong>Daz Bones</strong> / <strong>Buggy</strong>+<strong>Prisoner</strong>; secondi, doppia <strong>Electrical Luna</strong> = snap keep.",
     fai: [
       "Drena la mano: 5-5 forza più scarti di un singolo 8 (Dog coaching).",
+      "Vai <strong>7k+</strong> o wide: un 6k singolo lo prendono gratis (Madoka).",
+      "Tieni la mano ≥ 5 carte: sotto, il tuo <strong>Mr.1</strong> non guadagna l'attacco (Madoka).",
       "Baita il loro blocker 8k a bloccare, poi freezalo con <strong>Boa Hancock</strong> e <strong>Galdino</strong>.",
       "Giudica la partita sulla loro hand size, non sui life: hanno double heal."
     ],
     nonFare: [
       "Non fare full swing se non sei al sicuro: poke con Leader e sacrificabili.",
       "Non lasciare corpi rested a caso: 8k, Sakazuki e Gum-Gum Lightning li puliscono.",
-      "Non andare wide quando i loro blocker counterano gratis (Dog coaching)."
+      "Non temporeggiare: se va per le lunghe «Rosinante vince di sicuro» — sei tu sul clock (Madoka).",
+      "Non affidarti a un solo 4-cost: <strong>Flame Split</strong> lo resta/uccide a 0 DON!! (Madoka)."
     ],
     rispetta: [
       { nome: "Rosinante & Law (6c)", perche: "la loro unica vera fonte di valore" },
-      { nome: "I Love You (1c)", perche: "«cheata fuori i 2k»: attacca a 7k+" },
-      { nome: "Law (4c)", perche: "con 7+ carte in mano scarti 2" },
+      { nome: "I Love You (1c)", perche: "«cheata fuori i 2k»: vale 2 counter, attacca a 7k+" },
+      { nome: "Flame Split (OP07)", perche: "tech anti-Luffy: resta/uccide un tuo 4-cost a 0 DON!! (Madoka)" },
+      { nome: "Mamaragan", perche: "uccide il tuo Luffy 1c e rompe i 5 nomi del restand (Madoka)" },
       { nome: "Sakazuki (7c)", perche: "spegne quasi ogni tuo personaggio rested" },
-      { nome: "Noro Noro Beam Sword (2c)", perche: "counter del late: attacca comunque a 7k+" }
+      { nome: "Law (4c)", perche: "con 7+ carte in mano scarti 2" }
     ],
-    lossCondition: "Perdi se accetti la guerra di board control invece di svuotargli la mano: loro non scalano, tu sì.",
-    lineaLethal: "Poke a 9/10 DON!!: se usano i blocker, all-in + restand; <strong>Gravity Blade</strong> il turno prima del push manda due Rosinante & Law a fondo mazzo."
+    lossCondition: "Perdi se accetti la guerra di board control invece di svuotargli la mano — o se temporeggi lasciandoli concatenare carte (Madoka: se va lungo, vincono loro). Grindali MENTRE sei avanti sulla board.",
+    lineaLethal: "Conta gli attacchi: devi superare <strong>blocker + (life×2) + carte in mano + (I Love You×2)</strong> (Madoka). Svuota mano e blocker PRIMA del push; poi all-in + restand. <strong>Gravity Blade</strong> il turno prima manda due Rosinante & Law a fondo mazzo. Occhio: <strong>Gum-Gum Lightning + Mamaragan</strong> spengono il restand — sovraccarica di nomi."
   },
 
   "nami": {

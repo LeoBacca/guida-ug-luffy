@@ -14,7 +14,8 @@ window.DATA.matchups["lucy"] = {
   consenso: [
     "Piano wide standard: due o più personaggi a turno e attacchi continui a 6k o più — RB Lucy fatica a difendersi dalla pressione costante a 6000.",
     "Le loro removal sono affidabili ma in genere tolgono una sola minaccia per turno: una board molto ampia li lascia sempre indietro.",
-    "Nel late game congela la loro board con i freeze event, ma tieni SEMPRE in conto un possibile <strong>10C Roger</strong> per non buttare il vantaggio."
+    "Nel late game congela la loro board con i freeze event, ma tieni SEMPRE in conto un possibile <strong>10C Roger</strong> per non buttare il vantaggio.",
+    "<strong>Hrvoje lo considera «imperdibile».</strong> Anche una delle sue mani più brickate di sempre ha vinto: <strong>Champion Rifle</strong> (bounce) del <strong>Sabo</strong> attivo gli ha rubato il game (danni in faccia + un turno di respiro), e <strong>Jet Culverin</strong> bottoma <strong>Cavendish</strong> per stoppare lo snowball di card advantage. Occhio: <strong>Let's Go to Navy HQ</strong> è punibile se triggerano out un tuo corpo — non forzarla se hai già lethal senza."
   ],
   dibattiti: [],
   gameplan: {
@@ -63,7 +64,8 @@ window.DATA.matchups["rbace"] = {
   consenso: [
     "Vai wide dal turno uno: il power base 6000 di RB Ace non è un problema, perché tutti i tuoi personaggi attaccano a 6k senza sforzo.",
     "Aggro attraverso il mid-game, portali a 0 vite il più in fretta possibile, poi chiudi con <strong>7C Boa + 6C Brook</strong>.",
-    "Non andare in tunnel vision su <strong>7C Boa</strong>: RB Ace ora gioca <strong>6C Boa</strong> e <strong>4C Galdino</strong> per freezare le tue carte — tieni pronte le win condition alternative."
+    "Non andare in tunnel vision su <strong>7C Boa</strong>: RB Ace ora gioca <strong>6C Boa</strong> e <strong>4C Galdino</strong> per freezare le tue carte — tieni pronte le win condition alternative.",
+    "<strong>Bon Clay rende gestibile il matchup (Hrvoje):</strong> senza Bon Clay un Ace che si pompa il Leader sarebbe dura, ma Bon Clay <strong>copia il power del Leader avversario</strong> e resta rilevante anche quando diventano grossi. Piano: erodi la loro mano presto con gli swing da 6k, poi quando salgono di power hai i Bon Clay per continuare a prendergli carte."
   ],
   dibattiti: [],
   gameplan: {

@@ -1,5 +1,5 @@
 /* UG Luffy — service worker: cache-first con precache della shell e runtime cache per immagini */
-const V = "ug-luffy-v2";
+const V = "ug-luffy-v3";
 const CORE = [
   "./", "index.html", "manifest.webmanifest",
   "data/sources.js", "data/cards.js", "data/meta.js", "data/decklists.js", "data/tech.js",

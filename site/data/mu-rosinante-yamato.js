@@ -1,6 +1,7 @@
 // Dati matchup — PY Rosinante & Black Yamato
 // Fonti: Dog of Wisdom (Matchups Bible §5.3 e §5.5), Raphterra (Cap. 7.3 e 8.4),
-// Adam "RayDeospirata" (intervista Mexico, file 07), Dog Coaching (file 08), Equinby (file 11).
+// Adam "RayDeospirata" (intervista Mexico, file 07), Dog Coaching (file 08), Equinby (file 11),
+// Madoka (coaching Rosinante reverse-engineered, file 13 — SOLO Rosinante).
 window.DATA = window.DATA || {}; window.DATA.matchups = window.DATA.matchups || {};
 
 /* ============================================================
@@ -22,18 +23,22 @@ window.DATA.matchups["rosinante"] = {
     { fonte: "raphterra", label: "Leggermente favorito", pos: 0.75, winrate: null, dado: "primo",
       nota: "Piccolo conflitto interno alla guida: il cheat sheet dice EVEN, il testo dice Slightly Favored. Andare primi toglie loro la sequenza Law (4c) → Rosinante & Law (6c)." },
     { fonte: "adam", label: "Misto / favorito con Gravity Blade", pos: 0.75, winrate: null, dado: null,
-      nota: "Gravity Blade ≈ partita gratis se la vedi. Senza Gravity Blade dipende molto dal dado." }
+      nota: "Gravity Blade ≈ partita gratis se la vedi. Senza Gravity Blade dipende molto dal dado." },
+    { fonte: "madoka", label: "Even — ma sei tu sul clock", pos: 0, winrate: null, dado: "primo",
+      nota: "Reverse-engineering dal lato Rosinante: «se la partita va lunga, Rosinante vince di sicuro → Luffy deve chiudere». Ciò che il Rosinante teme davvero è la minaccia di restand e la Gravity Blade." }
   ],
 
   consenso: [
     { testo: "<strong>Vai primo.</strong> Dog: più pressione e loro più lenti. Raphterra: prendi l'iniziativa aggressiva e neghi la sequenza <strong>Law (4c)</strong> → <strong>Rosinante & Law (6c)</strong>. Adam: senza Gravity Blade il dado pesa molto.", fonti: ["dog", "raphterra", "adam"] },
-    { testo: "<strong>Card advantage &gt; danno.</strong> Dog: guarda la loro hand size più dei life (hanno double heal). Dog coaching: «l'unica cosa che conta contro Rosie è la card advantage — danno costante, lento ma inesorabile». Raphterra: poke costante per drenare la mano prima dello standoff finale.", fonti: ["dog", "dogcoach", "raphterra"] },
+    { testo: "<strong>Card advantage &gt; danno.</strong> Dog: guarda la loro hand size più dei life (hanno double heal). Dog coaching: «l'unica cosa che conta contro Rosie è la card advantage — danno costante, lento ma inesorabile». Raphterra: poke costante per drenare la mano prima dello standoff finale. <strong>Madoka lo conferma dal loro lato:</strong> «i life servono ad assorbire lo swing più grosso; contano le carte, non i counter (filtriamo con lo Stage)» — un <strong>6k singolo lo prendono volentieri</strong>, non è pressione.", fonti: ["dog", "dogcoach", "raphterra", "madoka"] },
     { testo: "<strong>Vai wide.</strong> Dog: vai largo presto e forza più carte possibili dalla loro mano. Adam: «vai il più wide possibile, sennò usano <strong>Gum-Gum Lightning</strong> e Suki». Raphterra: sviluppa una board larga e paziente.", fonti: ["dog", "adam", "raphterra"] },
     { testo: "<strong>Freeza i blocker con Boa Hancock e Galdino (Mr.3).</strong><ul><li><strong>Dog:</strong> baita <strong>Rosinante & Law (6c)</strong> a bloccare, poi freezalo con un altro Blocker per più turni.</li><li><strong>Dog coaching:</strong> Boa qui serve soprattutto a negare il blocker, non il Leader.</li><li><strong>Raphterra:</strong> stalla gli 8k con Galdino/Boa e nel late combina i freeze event per bloccare 3+ attaccanti.</li></ul>", fonti: ["dog", "dogcoach", "raphterra"] },
     { testo: "<strong>Win condition: Let's Go!! to the Navy Headquarters.</strong> Rosinante non ha molti modi di interagire con la board stante: imposta 5 nomi diversi e minaccia il restand dal turno dei 9 DON!! in poi.", fonti: ["dog", "raphterra"] },
     { testo: "<strong>Rispetta i tool difensivi economici:</strong> <strong>I Love You (1c)</strong>, <strong>Noro Noro Beam Sword (2c)</strong> e <strong>Borsalino (5c)</strong>. Dog coaching: «I Love You è cheating: cheata fuori i 2k». Raphterra: se lasciano DON!! attivi, attacca a 7k+ per forzare almeno due carte.", fonti: ["dog", "dogcoach", "raphterra"] },
     { testo: "<strong>Il deck bricka e non scala.</strong> Dog: se non partono con 2k bodies o searcher, puniscili. Dog coaching: «non c'è late game plan, fanno sempre le stesse cose» — trascina con i freeze e vinci di risorse.", fonti: ["dog", "dogcoach"] },
-    { testo: "<strong>Gravity Blade è la carta del matchup.</strong> Adam: partita quasi gratis. Raphterra: giocala il turno prima del push per rimuovere due <strong>Rosinante & Law (6c)</strong>. Equinby: «quando ti Gravity-Bladeano puoi stringere la mano: game over».", fonti: ["adam", "raphterra", "equinby"] }
+    { testo: "<strong>Gravity Blade è la carta del matchup.</strong> Adam: partita quasi gratis. Raphterra: giocala il turno prima del push per rimuovere due <strong>Rosinante & Law (6c)</strong>. Equinby: «quando ti Gravity-Bladeano puoi stringere la mano: game over». <strong>Madoka (dal lato che la subisce):</strong> la sua sola minaccia li deforma — sequenziano <strong>Sakazuki + Mamaragan</strong> «per giocare attorno alla Gravity Blade» e attaccano prima di sviluppare per paura del trigger.", fonti: ["adam", "raphterra", "equinby", "madoka"] },
+    { testo: "<strong>«Con lo stun event in mano non possono vincere».</strong> Madoka lo insegna testualmente al suo allievo Rosinante: i tuoi freeze (<strong>Electrical Luna</strong>, <strong>I Know You're Strong…</strong>, <strong>All Out</strong>) sono ciò che li terrorizza — devono baitarteli fuori. Tienili, minacciali (anche da bluff): board attiva + minaccia freeze = decisioni impossibili per loro (Raphterra dice lo stesso dall'altro lato).", fonti: ["madoka", "raphterra"] },
+    { testo: "<strong>Proteggi la tua hand size: sotto le 5 carte il tuo Mr.1 si spegne.</strong> Madoka: «quando scendono sotto le 5 carte — e capita spesso — il loro <strong>Mr.1</strong> non guadagna l'attacco». Rosinante prova a portarti sotto le 5 carte apposta: non svuotarti in counter difensivi se ti servono gli swing di Mr.1.", fonti: ["madoka"] }
   ],
 
   dibattiti: [
@@ -53,6 +58,12 @@ window.DATA.matchups["rosinante"] = {
       posizioni: [
         { fonte: "dog", testo: "Gioca «quasi come glass cannon» ma ristabilendo sempre una board resiliente: Rosinante soffre la pressione costante con swing multipli." },
         { fonte: "raphterra", testo: "Patient poking: attacca solo con Leader e corpi sacrificabili, lascia il grosso della board attiva per minacciare il restand — la minaccia psicologica a 9/10 DON!! vince da sola." }
+      ] },
+    { tema: "Chi vince se la partita va per le lunghe?",
+      posizioni: [
+        { fonte: "dog", testo: "Rosinante non scala: «non c'è un late game plan, fanno sempre le stesse cose». Trascina la partita con i freeze e vinci di risorse — il tempo lavora per te." },
+        { fonte: "dogcoach", testo: "Stesso avviso: «questo deck non scala nel late game, è come un Popolino». Grindali e alla fine vinci." },
+        { fonte: "madoka", testo: "Dal loro lato la lettura è OPPOSTA: «se la partita va lunga, Rosinante vince di sicuro — ogni turno diventa più difficile da uccidere. Quindi Luffy deve chiudere il prima possibile». Sei tu sul clock." }
       ] }
   ],
 
@@ -68,11 +79,38 @@ window.DATA.matchups["rosinante"] = {
     { nome: "Law (4c)", nota: "On Play: ti fa scartare 2 carte se hai 7+ carte in mano. Con una mano forte, counter gli attacchi early per restare sotto la soglia; con una mano debole prendi i life e accetta il rischio (Raphterra). La curva 2k bodies → Law da 4 è il loro start migliore (Dog)." },
     { nome: "Sakazuki (7c)", nota: "Riduzione di potenza che spegne quasi ogni tuo personaggio (Dog). Parte del pacchetto clear se lasci corpi rested con leggerezza (Raphterra). Un Sakazuki early gli cheata DON!!: aspettati double Borsalino con DON!! aperto per I Love You (Dog)." },
     { nome: "Borsalino (5c)", nota: "Tool difensivo/heal economico da rispettare (Dog). Con il double heal la loro vita è ingannevole: giudica la partita sulla loro mano, non sui life." },
-    { nome: "Gum-Gum Lightning (2c)", nota: "Removal event: spegne i tuoi corpi se non vai abbastanza wide (Adam: «sennò usano Gum-Gum Lightning e Suki»). Con Sakazuki e gli 8k è il motivo per cui non devi lasciare corpi rested a caso (Raphterra)." },
-    { nome: "Noro Noro Beam Sword (2c)", nota: "Counter event del late game: se lasciano DON!! attivi, mettila in conto e attacca a 7k+ così devono comunque spendere almeno due carte (Raphterra)." }
+    { nome: "Gum-Gum Lightning (2c)", nota: "Removal event: spegne i tuoi corpi se non vai abbastanza wide (Adam: «sennò usano Gum-Gum Lightning e Suki»). Con Sakazuki e gli 8k è il motivo per cui non devi lasciare corpi rested a caso (Raphterra). <strong>Madoka:</strong> combinata con <strong>Mamaragan</strong> è come <em>spengono il tuo restand</em> — uccidono due corpi per farti scendere sotto i 5 nomi diversi. Sovraccarica di corpi/nomi." },
+    { nome: "Mamaragan", nota: "Removal per corpi piccoli / 0-power. Madoka: il primo bersaglio è il tuo <strong>Luffy (1c)</strong> («0 di power, è il più sicuro») perché è l'enabler del restand; poi si combina con Gum-Gum Lightning per rompere i 5 nomi. Proteggi/ripesca il Luffy da 1." },
+    { nome: "Flame Split (evento OP07, ~1c giallo)", nota: "Tech che i Rosinante europei aggiungono APPOSTA contro Luffy (Madoka). Dà +1000 al loro Leader e <strong>resta un tuo personaggio a 0 DON!!</strong> (come un Drake economico); col pump può <strong>uccidere un tuo 4-cost</strong> ed è ottima sul loro turno di lethal. Non affidarti a un singolo 4-cost (Galdino, Crocodile): te lo restano/uccidono nel momento peggiore." },
+    { nome: "Noro Noro Beam Sword (2c)", nota: "Counter event del late game: se lasciano DON!! attivi, mettila in conto e attacca a 7k+ così devono comunque spendere almeno due carte (Raphterra)." },
+    { nome: "The Stage", nota: "Filtro che gli permette di tenere le carte-counter e scartare la spazzatura (Madoka: «il valore di counter non conta quanto la carta in mano, filtro con lo Stage»). Per questo la metrica giusta è quante CARTE gli fai spendere, non i counter." }
   ],
 
   perFonte: [
+    {
+      fonte: "madoka",
+      origine: "Coaching Rosinante reverse-engineered (file 13)",
+      sezioni: [
+        { t: "Il quadro: sei tu sul clock",
+          c: "<p>Questo dossier è <strong>reverse-engineering</strong>: Madoka insegna a un allievo a pilotare <strong>PY Rosinante</strong> contro Goofy (= UG Luffy). Ogni sua istruzione, ribaltata, è una tua contromossa.</p><p class=\"chicca\">«Se la partita va per le lunghe, <strong>Rosinante vince di sicuro</strong> — ogni turno diventa più difficile da uccidere. Quindi Luffy deve chiudere il prima possibile.» → Ribalta la narrazione «loro non scalano, tu li grindi»: dal loro lato <strong>il tempo lavora per LORO</strong>. Non durdlare aspettando di grindarli — piazza la spallata mentre la board è tua.</p>" },
+        { t: "Come teccano contro di te (Flame Split &amp; co.)",
+          c: "<p>Contro Luffy la lista Rosinante si adatta apposta:</p><ul><li><strong>Wiper (5c) + Flame Split</strong> entrano per il matchup: «se vuoi massimizzare contro Goofy, metti la Flame Split, è forte».</li><li><strong>4× Crocodile</strong> — «non giocare 4 Croc è trollare»: loop che ricicla i 2-cost.</li><li><strong>Più 2k counter possibili</strong>, non tech di nicchia: «rende il deck più consistente».</li></ul><p class=\"chicca\"><strong>Flame Split</strong> (evento OP07, ~1c giallo): +1000 al loro Leader e <strong>resta un tuo personaggio a 0 DON!!</strong>; col pump <strong>uccide un tuo 4-cost</strong> ed è ottima sul loro turno di lethal. → Non affidarti a un singolo 4-cost come perno difensivo: <strong>Galdino</strong> e <strong>Crocodile</strong> possono essere restati/uccisi per 0 DON!! nel momento peggiore. Mettila nel conto del loro lethal.</p>" },
+        { t: "«Con lo stun in mano non possono vincere»",
+          c: "<p class=\"chicca\">Testuale di Madoka al suo allievo: «Alcuni provano a giocare attorno allo stun event e non bloccano. È <strong>strettamente sbagliato</strong>: quando hanno lo stun in mano <strong>non puoi mai vincere</strong>. Devi farglielo uscire dalla mano.»</p><p>→ È la prova, dal campo nemico, che i tuoi freeze (<strong>Electrical Luna</strong>, <strong>I Know You're Strong…</strong>, <strong>All Out</strong>) sono la carta che li terrorizza. <strong>Tienili</strong>, gioca in modo che debbano rispettarli, e nel board standoff il freeze chiude. Funziona anche <strong>da bluff</strong>: board attiva + minaccia freeze = per loro decisioni impossibili.</p>" },
+        { t: "Life management ribaltato: il 6k singolo è gratis",
+          c: "<p class=\"chicca\">«I life servono ad assorbire lo swing più grosso. Questo deck Goofy non può fare tanti 5k: se ho un 1k inutile countero il loro 5k; ma se aprono con un <strong>6k lo prendo</strong>, non posso counterare tutti i 6k. Prendo <strong>sempre</strong> tutti i free block.»</p><p>→ Tre contromosse:</p><ul><li>Un <strong>6k singolo non è pressione</strong>: lo prendono volentieri. Per drenare carte vai <strong>7k+</strong> (li obblighi a 2 carte) o vai <strong>così wide</strong> che non counterano tutto.</li><li><strong>Free-blockano sempre</strong>: attacchi gratis dentro i blocker sono sprecati.</li><li>Contano le <strong>carte</strong>, non i counter (filtrano con lo <strong>Stage</strong>): la metrica è quante carte gli fai spendere.</li></ul>" },
+        { t: "Mr.1 sotto le 5 carte: proteggi la mano",
+          c: "<p class=\"chicca\">«Quando scendono sotto le 5 carte — e capita spesso — il loro <strong>Mr.1</strong> non guadagna l'attacco.»</p><p>→ Insight nuovo: il tuo <strong>Mr.1 (Daz Bones)</strong> guadagna il boost <strong>solo con 5+ carte in mano</strong>, e Rosinante prova a portarti sotto le 5 apposta. Quando ti servono gli swing di Mr.1, <strong>non svuotarti in counter difensivi</strong>: tieni la mano ≥ 5.</p>" },
+        { t: "La matematica del loro lethal-defense",
+          c: "<p>La «scorciatoia» che Madoka insegna per calcolare se sopravvive al tuo restand:</p><p class=\"chicca\">Ogni <strong>carta in mano</strong> = 1 counter · ogni <strong>blocker</strong> = 1 attacco bloccato · ogni <strong>life</strong> = <strong>2 attacchi</strong> (ne prendi 1 e counteri con la carta che peschi) · <strong>I Love You</strong> = <strong>2 swing</strong>.</p><p>→ Il tuo conto di lethal: devi superare <strong>blocker + (life × 2) + carte in mano + (I Love You × 2)</strong>. Quindi: ogni <strong>I Love You</strong> vale doppio (falli spendere prima); <strong>svuota mano e blocker</strong> prima del turno di restand; puntare ai loro life è il piano meno efficiente (valgono doppio in difesa).</p>" },
+        { t: "Come spengono il tuo restand (e come giocarci attorno)",
+          c: "<p class=\"chicca\">«Come punisce il Rosie il restand? <strong>Gum-Gum Lightning</strong> per uccidere un corpo + <strong>Mamaragan</strong> per un altro → il restand è spento» (richiede <strong>5 nomi diversi</strong>). Sul turno di restand mirano al <strong>Luffy (1c)</strong>: «0 di power, è il più sicuro» — è l'enabler.</p><p>→ Contromosse: <strong>sovraccarica di nomi/corpi</strong> così che le due removal non bastino a scendere sotto i 5; <strong>proteggi/ripesca il Luffy da 1</strong>; tieni un <strong>piano B</strong> di lethal (DMG, Brook, doppio swing con Hancock).</p>" },
+        { t: "Gravity Blade li deforma (dal lato che la subisce)",
+          c: "<p>Conferma da campo nemico di ciò che dicono Adam ed Equinby.</p><ul><li>Madoka fa sequenziare <strong>Sakazuki + Mamaragan</strong> «perché <strong>devi giocare attorno alla Gravity Blade</strong>».</li><li>«Dovrei attaccare prima di sviluppare perché il <strong>trigger di Gravity Blade</strong> può fregarti.»</li></ul><p>→ La <strong>sola minaccia</strong> di Gravity Blade (in mano o in life) li costringe a sequenze subottimali. Oltre a rimuovere due <strong>Rosinante &amp; Law</strong> a fondo mazzo il turno prima del push, vale come deterrente permanente.</p>" },
+        { t: "Sopravvivi al loro turno più pericoloso",
+          c: "<p class=\"chicca\">«Questo è di solito il turno più pericoloso del Rosie [il ~7 DON!! con <strong>Saka Mama</strong> o <strong>doppio Rosinante &amp; Law</strong>]. Se Goofy sopravvive a questo turno e poi concatena le sue carte buone, <strong>starà bene</strong>.»</p><p>→ Identifica e sopravvivi al grande turno di clear del mid (~7 DON!!): tieni un cuscino di life/counter per quel turno. Superato quello, se concateni i tuoi payoff (freeze, Hancock, restand) stabilizzi.</p>" }
+      ]
+    },
     {
       fonte: "dog",
       origine: "Matchups Bible §5.3",
@@ -199,7 +237,8 @@ window.DATA.matchups["yamato"] = {
     { testo: "<strong>Boa Hancock + Galdino (Mr.3) comprano il turno che ti manca.</strong> Dog: danno tempo nel mid game, chiudi il mid con almeno una Hancock che nega un loro 6k swing. Raphterra: stunna le copie di <strong>Yamato (8c)</strong> con Boa e Galdino mentre imposti il restand. Dog coaching: «più Boa concateni, più diventa facile».", fonti: ["dog", "raphterra", "dogcoach"] },
     { testo: "<strong>Free block col cervello:</strong> conta sempre gli attacchi rimasti prima di prenderlo. Raphterra: aprono coi 5k del Leader/personaggi per baitare il block, poi lo Yamato da 8k (magari con <strong>Otama (2c)</strong>) entra nel tuo blocker per ucciderlo. Dog: se attaccano un tuo 6k rested di solito va bene — ha già dato valore e fa da pseudo-blocker.", fonti: ["raphterra", "dog"] },
     { testo: "<strong>Hanno tanti 2k counter:</strong> i 6k swing non sono sempre i più efficienti. Dog: spesso meglio 5k + 7k che due 6k. Dog coaching: «se hai la possibilità di andare 5 e 7, vai 5 e 7 (se non hanno blocker)».", fonti: ["dog", "dogcoach"] },
-    { testo: "<strong>Curva prevedibilissima:</strong> Kurikomon → Yamato → 8k/combo dei 9 DON!!. Dog: «Yamato è molto prevedibile, guarda la partita dal loro lato». Se mancano <strong>Kin'emon (4c)</strong> o <strong>Yamato (6c)</strong> on curve, hai il tempo di impostare il tuo lethal (Raphterra).", fonti: ["dog", "raphterra", "dogcoach"] }
+    { testo: "<strong>Curva prevedibilissima:</strong> Kurikomon → Yamato → 8k/combo dei 9 DON!!. Dog: «Yamato è molto prevedibile, guarda la partita dal loro lato». Se mancano <strong>Kin'emon (4c)</strong> o <strong>Yamato (6c)</strong> on curve, hai il tempo di impostare il tuo lethal (Raphterra).", fonti: ["dog", "raphterra", "dogcoach"] },
+    { testo: "<strong>La reach di lethal di Navy HQ è assurda (Hrvoje).</strong> In torneo ha ucciso uno Yamato <strong>andando primi</strong> (la curva peggiore) impostando <strong>Let's Go to Navy HQ</strong> e sparandola sul turno da 9 DON!! da <strong>4 vite e 4 carte in mano</strong> — «cosa fai contro 12 swing?» (ogni vita ≈ 2 swing). La sola minaccia ti fa vincere: gioca <strong>2 copie di HQ</strong>, non 1. L'<strong>Ivankov green</strong> è ottimo qui per impostare i nomi diversi, specie andando primi.", fonti: ["hrvoje"] }
   ],
 
   dibattiti: [
