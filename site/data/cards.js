@@ -30,7 +30,7 @@ window.DATA.carte = {
   jetculverin:{ code:"OP11-061", nome:"Jet Culverin",             ruolo:"Bottom-deck un personaggio ≤4c", costo:"3", img:false },
   galdinorest:{ code:"OP16-037", nome:"Galdino (2c Rest)",        ruolo:"On Play: resta un personaggio ≤5c", costo:"2", img:false },
   rebecca:    { code:"—",        nome:"Rebecca",                  ruolo:"Filtro anti-brick (tech last-minute di Adam)", costo:"—", img:false },
-  ivankov3c:  { code:"—",        nome:"Emporio Ivankov (3c)",     ruolo:"Tech scartata: corpo 4k debole", costo:"3", img:false },
+  ivankov3c:  { code:"—",        nome:"Emporio Ivankov (3c)",     ruolo:"Ridondanza sul turno 3 andando primi (Impact)", costo:"3", img:false },
   croc6c:     { code:"ST30-010", nome:"Crocodile (6c)",           ruolo:"Blocker + freeze · troppo lento", costo:"6", img:false },
   mr2_4c:     { code:"—",        nome:"Mr.2 Bon Kurei (4c)",      ruolo:"Tech scartata: troppo clunky", costo:"4", img:false },
   luffy4c:    { code:"—",        nome:"Monkey D. Luffy (4c)",     ruolo:"Tech scartata: Blocker troppo costoso", costo:"4", img:false },

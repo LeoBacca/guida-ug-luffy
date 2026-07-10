@@ -461,6 +461,49 @@ strong .cardlink, .cardlink strong{color:var(--cyan)}
   .eyebrow{color:#555}.eyebrow::after{display:none}
   h1.title{color:#000}h1.title .dim{color:#666}
 }
+/* ---------- layer CORE (Impact & Elijah) ---------- */
+.nav-sec.core-sec{color:var(--gold)}
+.vchip{display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);
+  font-size:10px;font-weight:800;min-width:17px;height:17px;padding:0 4px;border-radius:50%;
+  border:1.5px solid;background:rgba(10,16,24,.6);cursor:help;vertical-align:middle;margin-left:4px}
+.vchip.last{box-shadow:0 0 7px -1px currentColor}
+.core-rule{border:1px solid rgba(255,194,61,.45);border-left:3px solid var(--gold);border-radius:8px;
+  background:linear-gradient(90deg,var(--gold-glow),rgba(16,26,40,.4));padding:13px 17px;margin:14px 0}
+.core-rule .ct{font-family:var(--mono);font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
+/* cronologia video core */
+.chrono{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:11px;margin:14px 0}
+.chrono .cv{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:12px 14px;position:relative}
+.chrono .cv.last{border-color:rgba(255,194,61,.55);box-shadow:0 0 22px -12px var(--gold)}
+.chrono .cv .n{font-family:var(--mono);font-size:20px;font-weight:800;color:var(--ink3)}
+.chrono .cv.last .n{color:var(--gold)}
+.chrono .cv .t{font-weight:650;font-size:13px;line-height:1.3;margin:3px 0 5px}
+.chrono .cv .f{font-size:11.5px;color:var(--ink2);line-height:1.4}
+.chrono .cv .lk{font-family:var(--mono);font-size:9px;color:var(--ink3);letter-spacing:.5px;margin-top:7px;word-break:break-all}
+/* catena evoluzione conflitto */
+.evo{border:1px solid var(--line);border-radius:11px;background:var(--surface);padding:16px 18px;margin:12px 0}
+.evo .et{font-size:16px;font-weight:700;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.evo-step{display:flex;gap:12px;padding:9px 0;border-top:1px dashed var(--line);align-items:flex-start}
+.evo-step:first-of-type{border-top:none}
+.evo-step .who{flex:none;min-width:120px}
+.evo-step .pos{font-size:13.5px;color:var(--ink3)}
+.evo-step.vale .pos{color:var(--ink)}
+.evo-step.vale{background:linear-gradient(90deg,var(--gold-glow),transparent);border-radius:8px;padding:9px 10px;border-top:none;margin-top:4px}
+.vale-badge{font-family:var(--mono);font-size:9px;font-weight:800;letter-spacing:1.5px;border-radius:4px;
+  padding:2px 8px;background:rgba(255,194,61,.16);color:var(--gold);border:1px solid rgba(255,194,61,.5);flex:none;margin-top:2px}
+.old-badge{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:1.5px;border-radius:4px;
+  padding:2px 8px;background:rgba(95,115,145,.12);color:var(--ink3);border:1px solid var(--line2);flex:none;margin-top:2px}
+.stato-pill{font-family:var(--mono);font-size:9.5px;font-weight:800;letter-spacing:1.5px;border-radius:4px;padding:2px 9px;border:1px solid}
+.stato-pill.risolto{color:var(--green);border-color:rgba(39,224,138,.45);background:rgba(39,224,138,.1)}
+.stato-pill.movimento{color:var(--cyan);border-color:rgba(63,224,255,.4);background:rgba(63,224,255,.08)}
+.stato-pill.aperto{color:var(--gold);border-color:rgba(255,194,61,.45);background:rgba(255,194,61,.1)}
+/* verdetti lista core */
+.lv-card{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:14px 16px}
+.lv-card .lh{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.lv-card .ln{font-size:15px;font-weight:700}
+.lv-card .copie{font-family:var(--mono);font-size:12px;color:var(--gold);font-weight:700}
+.lv-card .storia{font-family:var(--mono);font-size:10px;color:var(--ink3);letter-spacing:.4px;margin-top:8px;border-top:1px dashed var(--line);padding-top:7px}
+.lv-card .storia::before{content:"⏱ ";color:var(--cyan)}
+
 table.simple{width:100%;border-collapse:collapse;font-size:13px}
 table.simple th{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3);
   text-align:left;padding:8px 10px;border-bottom:1px solid var(--line2)}
@@ -479,20 +522,23 @@ table.simple td:first-child{color:var(--ink);font-weight:600}
     <button id="burger" aria-label="menu">☰</button>
   </div>
   <div class="navwrap">
-    <div class="nav-sec">Briefing</div>
+    <div class="nav-sec core-sec">Il Core · Impact &amp; Elijah</div>
     <div class="nav-item" data-r="home"><span class="ico">⌂</span> Home</div>
+    <div class="nav-item" data-r="corefond"><span class="ico">✦</span> Fondamentali core</div>
+    <div class="nav-item" data-r="coremu"><span class="ico">⚔</span> Matchup core</div>
+    <div class="nav-item" data-r="lista"><span class="ico">▦</span> La Lista · verdetti</div>
+    <div class="nav-item" data-r="conflitti"><span class="ico">⏱</span> Vince il più recente</div>
+    <div class="nav-sec">Archivio · altre fonti (valide)</div>
     <div class="nav-item" data-r="meta"><span class="ico">◈</span> Meta OP16</div>
-    <div class="nav-sec">Arsenale</div>
     <div class="nav-item" data-r="decklist"><span class="ico">▦</span> Decklist</div>
     <div class="nav-item" data-r="tech"><span class="ico">⚖</span> Tech · Il Tribunale</div>
-    <div class="nav-item" data-r="fondamentali"><span class="ico">✦</span> Fondamentali</div>
-    <div class="nav-sec">Operazioni</div>
-    <div class="nav-item" data-r="matchup"><span class="ico">⚔</span> Matchup Hub</div>
+    <div class="nav-item" data-r="fondamentali"><span class="ico">✦</span> Fondamentali (tutte)</div>
+    <div class="nav-item" data-r="matchup"><span class="ico">⚔</span> Matchup Hub (tutte)</div>
     <div class="nav-item" data-r="regole"><span class="ico">⭐</span> Regole d'oro</div>
     <div class="nav-item" data-r="dibattiti"><span class="ico">☍</span> Dibattiti aperti</div>
     <div class="nav-item" data-r="fonti"><span class="ico">✎</span> Fonti</div>
   </div>
-  <div class="foot">IMPEL DOWN TACTICAL HUD<br>8 fonti · 13 matchup · offline</div>
+  <div class="foot">IMPEL DOWN TACTICAL HUD<br>core: Impact &amp; Elijah · vince il più recente</div>
 </nav>
 
 <main id="main"><div id="app"></div></main>
@@ -503,6 +549,7 @@ table.simple td:first-child{color:var(--ink);font-weight:600}
 <!-- ============ DATI ============ -->
 <script src="data/sources.js"></script>
 <script src="data/cards.js"></script>
+<script src="data/core.js"></script>
 <script src="data/meta.js"></script>
 <script src="data/decklists.js"></script>
 <script src="data/tech.js"></script>
@@ -723,61 +770,80 @@ function bindDataTips(root){
 /* ---------- VISTE ---------- */
 const views = {};
 
-/* HOME */
+/* HOME — centrata sul core Impact & Elijah */
 views.home = () => {
-  const nMu = Object.keys(D.matchups||{}).length;
-  const nDeck = (D.decklists||[]).length;
-  const nTech = (D.tech||[]).length;
-  const srcChips = SRC_ORDER.map(id=>{
-    const f=fonte(id);
-    return `<div class="panel" style="padding:14px 16px">
-      <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">${srcBadge(id)}<span class="chip">${esc(f.tipo||"")}</span></div>
-      <div style="font-size:12.5px;color:var(--ink2);margin-top:8px">${esc(f.credenziali||"")}</div>
-      <div style="font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:8px;letter-spacing:1px">${esc(f.copre||"")}</div>
-    </div>`;
+  const C = coreD();
+  const CMU = C.matchups||{};
+  const quick = CORE_MU_ORDER.filter(id=>CMU[id]).map(id=>{
+    const m = CMU[id];
+    const qa = m.leaderImg
+      ? `<div class="qa" style="background-image:url('${PROC}/${m.leaderImg}__art.png')"></div>`
+      : `<div class="qa txt">${esc((m.sigla||m.nome||"?").slice(0,2).toUpperCase())}</div>`;
+    return `<div class="ql" style="--accent:${m.colorHex||"#2E8BFF"}" onclick="location.hash='#/coremu/${id}'">
+      ${qa}<div class="qn">${esc(m.nome)}</div><div class="qs">${esc(m.verdetto&&m.verdetto.label||m.sigla||"")}</div></div>`;
   }).join("");
   const MU = D.matchups||{};
-  const quick = MU_ORDER.filter(id=>MU[id]).map(id=>{
+  const altri = MU_ORDER.filter(id=>MU[id] && !CORE_MU_ORDER.includes(id)).map(id=>{
     const m = MU[id];
     const qa = m.leaderImg
       ? `<div class="qa" style="background-image:url('${PROC}/${m.leaderImg}__art.png')"></div>`
       : `<div class="qa txt">${esc((m.sigla||m.nome||"?").slice(0,2).toUpperCase())}</div>`;
     return `<div class="ql" style="--accent:${m.colorHex||"#2E8BFF"}" onclick="location.hash='#/matchup/${id}/bigino'">
-      ${qa}<div class="qn">${esc(m.nome)}</div><div class="qs">${esc(m.sigla||"")}</div></div>`;
+      ${qa}<div class="qn">${esc(m.nome)}</div><div class="qs">archivio</div></div>`;
   }).join("");
+  const coreSrc = ["equinby","impactnoob"].map(id=>{
+    const f=fonte(id);
+    return `<div class="panel corner" style="padding:15px 17px">
+      <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">${srcBadge(id)}<span class="chip big" style="color:var(--gold);border-color:rgba(255,194,61,.45)">FONTE CORE</span></div>
+      <div style="font-size:13px;color:var(--ink2);margin-top:8px">${esc(f.credenziali||"")}</div>
+      <div style="font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:8px;letter-spacing:1px">${esc(f.copre||"")}</div>
+    </div>`;
+  }).join("");
+  const nConf = (C.conflitti||[]).length;
+  const risolti = (C.conflitti||[]).filter(c=>c.stato==="risolto").length;
   return `<div class="view">
     <div class="hero">
       <div class="art" style="background-image:url('${leadArt("leader")}')"></div>
       <div class="scrim"></div>
       <div class="inner">
         <div class="eyebrow">Impel Down Tactical Ops Manual</div>
-        <h1>L'AGGRO KING<br>È <span class="g">TORNATO</span></h1>
-        <div class="sub">Tutto quello che 8 voci diverse — 2 guide premium, un top 8 regional, coaching e l'intervista a un <em>3× champion</em> — hanno detto su <strong>Blue/Green Monkey D. Luffy (OP16-022)</strong>. Ordinato, attribuito, <strong>pesato per valore</strong>, con i disaccordi in bella vista.</div>
+        <h1>LA GUIDA <span class="g">CORE</span><br>IMPACT &amp; ELIJAH</h1>
+        <div class="sub">Il modo di giocare <strong>Blue/Green Monkey D. Luffy (OP16-022)</strong> secondo le due voci che contano: <strong>Impact &amp; Noob</strong> ed <strong>Elijah (Equinby)</strong> — sei sessioni distillate in ordine cronologico. Quando si contraddicono, <strong>vale il più recente</strong>. Le guide di Dog e Raphterra restano valide, nell'archivio.</div>
         <div class="cta">
-          <div class="btn primary" onclick="location.hash='#/matchup'">⚔ Matchup Hub</div>
-          <div class="btn" onclick="location.hash='#/fondamentali'">✦ Fondamentali</div>
-          <div class="btn" onclick="location.hash='#/regole'">⭐ Regole d'oro</div>
+          <div class="btn primary" onclick="location.hash='#/coremu'">⚔ Matchup core</div>
+          <div class="btn" onclick="location.hash='#/corefond'">✦ Fondamentali core</div>
+          <div class="btn" onclick="location.hash='#/lista'">▦ La Lista</div>
+          <div class="btn" onclick="location.hash='#/conflitti'">⏱ Vince il più recente</div>
         </div>
       </div>
     </div>
+    ${ruleCallout()}
     ${quick?`<div class="h2" style="margin-top:8px"><span class="tag">//</span> ⚡ Contro chi giochi?</div>
-    <div style="font-size:13px;color:var(--ink3);margin:-8px 0 4px">Un tap → il bigino da 30 secondi del matchup.</div>
+    <div style="font-size:13px;color:var(--ink3);margin:-8px 0 4px">I cinque matchup coperti dal core — un tap e sei nel dossier di Impact &amp; Elijah.</div>
     <div class="quick">${quick}</div>`:""}
+    ${altri?`<div style="font-size:12px;color:var(--ink3);margin:10px 0 4px;font-family:var(--mono);letter-spacing:1px">ALTRI LEADER → BIGINI DELL'ARCHIVIO (TUTTE LE FONTI)</div>
+    <div class="quick">${altri}</div>`:""}
     <div class="tiles">
-      <div class="tile-s"><div class="tv">${nMu||13}</div><div class="tl2">Matchup coperti</div></div>
-      <div class="tile-s"><div class="tv">6</div><div class="tl2">Fonti indipendenti</div></div>
-      <div class="tile-s"><div class="tv">${nDeck||4}</div><div class="tl2">Decklist a confronto</div></div>
-      <div class="tile-s"><div class="tv">${nTech||"20+"}</div><div class="tl2">Tech a processo</div></div>
-      <div class="tile-s"><div class="tv">12<span>×</span></div><div class="tl2">Attacchi max col restand</div></div>
+      <div class="tile-s"><div class="tv">6</div><div class="tl2">Sessioni core distillate</div></div>
+      <div class="tile-s"><div class="tv">${CORE_MU_ORDER.filter(id=>CMU[id]).length}</div><div class="tl2">Matchup core</div></div>
+      <div class="tile-s"><div class="tv">${risolti}<span>/${nConf}</span></div><div class="tl2">Conflitti risolti</div></div>
+      <div class="tile-s"><div class="tv">${(C.lista||[]).length}</div><div class="tl2">Verdetti carta per carta</div></div>
+      <div class="tile-s"><div class="tv">3<span>×</span></div><div class="tl2">Gravity Blade — the new norm</div></div>
     </div>
-    <div class="h2"><span class="tag">//</span> 🧬 Il mazzo in una riga</div>
+    <div class="h2"><span class="tag">//</span> 🧬 Il mazzo in tre righe (dette da loro)</div>
     <div class="grid g3">
-      <div class="callout green"><div class="ct">Identità</div>Aggro a <strong>valore sostenuto</strong>: va wide, ricicla tutto, e ogni turno il Leader rimette in piedi 2 DON!!. Non un glass cannon — un motore che non si ferma.</div>
-      <div class="callout gold"><div class="ct">Win condition</div><strong>Boa Hancock</strong> (9k Unblockable + freeze) e <strong>Let's Go! To the Navy HQ</strong>: con 5 nomi diversi sul campo, restand totale → fino a <strong>12 attacchi</strong> in un turno.</div>
-      <div class="callout"><div class="ct">Il principio (Equinby)</div>«Luffy non perde prendendo danni. Perde quando muore la board o quando finisce il gas.» <strong>Prendi il danno, tieni le carte.</strong></div>
+      <div class="callout"><div class="ct">Il principio (Elijah)</div>«Luffy non perde prendendo danni. Perde quando muore la board o quando finisce il gas.» <strong>Prendi il danno, tieni le carte.</strong></div>
+      <div class="callout green"><div class="ct">Il tempo (Impact)</div><strong>Sviluppato QUANDO conta</strong> — con i DON!!, non al turno 1. Cinque 5k con 10 DON!! sono un bomb; con 0 DON!! sono niente.</div>
+      <div class="callout gold"><div class="ct">La chiusura (entrambi)</div>Mille tagli per limare la mano, poi uno dei <strong>tre OTK</strong>: Brook+Boa, Dead Man's+Galdino, o il restand di Navy HQ. «Get lower, swing higher.»</div>
     </div>
-    <div class="h2"><span class="tag">//</span> 🗣️ Le otto voci</div>
-    <div class="grid g3">${srcChips}</div>
+    <div class="h2"><span class="tag">//</span> 🗣️ Le due voci core</div>
+    <div class="grid g2">${coreSrc}</div>
+    <div class="h2"><span class="tag">//</span> 🗂️ L'archivio (valido, ma non comanda)</div>
+    <div class="grid g3">
+      <div class="panel" style="padding:14px 16px;cursor:pointer" onclick="location.hash='#/fondamentali'"><strong>✦ Fondamentali — tutte le fonti</strong><div style="font-size:12.5px;color:var(--ink2);margin-top:5px">Le guide Metafy di Dog e Raphterra: gameplan per fasi, curve turno per turno, la matematica del restand.</div></div>
+      <div class="panel" style="padding:14px 16px;cursor:pointer" onclick="location.hash='#/matchup'"><strong>⚔ Matchup Hub — 13 dossier</strong><div style="font-size:12.5px;color:var(--ink2);margin-top:5px">Ogni matchup con TUTTE le voci a confronto (incluse Hrvoje, Madoka, Adam, Dog coaching) + i bigini stampabili.</div></div>
+      <div class="panel" style="padding:14px 16px;cursor:pointer" onclick="location.hash='#/fonti'"><strong>✎ Le fonti — chi parla e quanto pesa</strong><div style="font-size:12.5px;color:var(--ink2);margin-top:5px">Otto voci pesate per valore d'insight, con le due core in evidenza.</div></div>
+    </div>
   </div>`;
 };
 
@@ -1255,8 +1321,9 @@ views.fonti = () => {
   const card = (id)=>{
     const f=fonte(id); const tm = tierMeta(f.tier); const tcol = tm?tm.colore:"#9FB2CC";
     const spotNote = f.spot ? `<span class="chip" style="border-color:${tcol}66;color:${tcol}">SPOT · solo ${esc(f.spot)}</span>` : "";
+    const coreNote = f.core ? `<span class="chip big" style="color:var(--gold);border-color:rgba(255,194,61,.45)">★ FONTE CORE</span>` : "";
     return `<div class="panel corner">
-      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">${srcBadge(id)}<span class="chip">${esc(f.tipo||"")}</span>${spotNote}</div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">${srcBadge(id)}<span class="chip">${esc(f.tipo||"")}</span>${coreNote}${spotNote}</div>
       <div style="font-weight:700;font-size:17px;margin:10px 0 2px">${esc(f.sotto||"")}</div>
       <div style="font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.5px">${esc(f.persona||"")}</div>
       ${f.tierNota?`<div class="callout" style="margin:10px 0;border-color:${tcol}55"><div class="ct" style="color:${tcol}">Perché tier ${esc(f.tier)}${tm?" · "+esc(tm.label):""}</div><div style="font-size:13px">${esc(f.tierNota)}</div></div>`:""}
@@ -1279,8 +1346,209 @@ views.fonti = () => {
   return `<div class="view">
     <div class="eyebrow">Bibliografia · pesata</div>
     <h1 class="title">Le fonti <span class="dim">— chi parla, e quanto pesa</span></h1>
-    <div class="lead">Otto voci: due guide premium Metafy, un tournament report dal Top 8 di Mexico City, coaching/gameplay commentato e l'intervista a un <em>3× champion</em> (una fonte è <em>reverse-engineered dal lato avversario</em>). Ogni affermazione sul sito è attribuita — e non tutte le opinioni valgono uguale: sono ordinate per <strong>valore d'insight</strong>, dal tier S al tier C. Passa sul badge <span class="tierpip" style="color:#FFD447;border-color:#FFD44766">S</span> di ogni fonte per il perché.</div>
+    <div class="lead">La guida è costruita attorno a <strong>due fonti core</strong> — <strong>Elijah (Equinby)</strong> e <strong>Impact &amp; Noob</strong> — che comandano le sezioni «Il Core» e, in caso di contraddizione, seguono la regola del <em>vince il più recente</em>. Le altre sei voci (guide premium Metafy, tournament report, coaching, l'intervista a un <em>3× champion</em>) restano valide e vivono nell'archivio. Ogni affermazione sul sito è attribuita e pesata per <strong>valore d'insight</strong>, dal tier S al tier C. Passa sul badge <span class="tierpip" style="color:#FFD447;border-color:#FFD44766">S</span> di ogni fonte per il perché.</div>
     ${groups}
+  </div>`;
+};
+
+/* ============================================================
+   LAYER CORE — Impact & Noob + Elijah, con regola di recenza
+   ============================================================ */
+const CORE_MU_ORDER = ["nami","mirror","enel","teach","rosinante"];
+function coreD(){ return D.core || {}; }
+function coreVideo(id){ return (coreD().chrono||[]).find(v=>v.id===id) || null; }
+function vchip(id){
+  const v = coreVideo(id); if(!v) return "";
+  const f = fonte(v.fonte);
+  const tip = `${v.n}/6 · ${f.nome} — ${v.titolo}${v.ultimo?" · ★ IL VIDEO PIÙ RECENTE: in caso di conflitto vale lui":""}`;
+  return `<span class="vchip${v.ultimo?" last":""}" style="color:${f.colore};border-color:${f.colore}88" data-tip="${esc(tip)}">${v.n}</span>`;
+}
+function vchips(item){ return vchip(item.video) + (item.video2 ? vchip(item.video2) : ""); }
+function statoPill(stato){
+  const lab = stato==="risolto" ? "✓ RISOLTO" : stato==="movimento" ? "◈ IN MOVIMENTO" : "☍ APERTO";
+  return `<span class="stato-pill ${esc(stato)}">${lab}</span>`;
+}
+function evoBlock(c){
+  const steps = (c.tappe||[]).map(t=>{
+    const v = coreVideo(t.video); const f = v ? fonte(v.fonte) : null;
+    return `<div class="evo-step${t.vale?" vale":""}">
+      ${t.vale?`<span class="vale-badge">▶ VALE</span>`:`<span class="old-badge">${v?"VIDEO "+v.n:"—"}</span>`}
+      <div class="who">${v?`<span class="src" style="color:${f.colore};border-color:${f.colore}55">${esc(corto(v.fonte))}</span>${vchip(t.video)}`:""}</div>
+      <div class="pos">${t.pos||""}</div>
+    </div>`;
+  }).join("");
+  return `<div class="evo" id="c-${esc(c.id)}">
+    <div class="et">☍ ${esc(c.tema)} ${statoPill(c.stato)}</div>
+    <div style="margin:8px 0 4px;font-size:14px">Oggi vale: ${c.attuale||"—"} ${c.attualeVideo?vchip(c.attualeVideo):""}</div>
+    ${steps}
+    ${c.nota?`<div class="trend" style="margin-top:8px">▸ ${esc(c.nota)}</div>`:""}
+  </div>`;
+}
+function chronoStrip(){
+  const C = coreD();
+  return `<div class="chrono">${(C.chrono||[]).map(v=>{
+    const f = fonte(v.fonte);
+    return `<div class="cv${v.ultimo?" last":""}">
+      <div style="display:flex;align-items:baseline;justify-content:space-between">
+        <span class="n">${v.n}${v.ultimo?" ★":""}</span>
+        <span class="src" style="color:${f.colore};border-color:${f.colore}55;font-size:9.5px">${esc(corto(v.fonte))}</span>
+      </div>
+      <div class="t">${esc(v.titolo)}</div>
+      <div class="f">${esc(v.focus||"")}</div>
+      <div class="lk">▶ ${esc(v.link||"")}</div>
+    </div>`;
+  }).join("")}</div>`;
+}
+function ruleCallout(){
+  const C = coreD();
+  return `<div class="core-rule"><div class="ct">⏱ La regola della guida</div>${esc(C.regolaRecenza||"In caso di conflitto vale l'informazione più recente.")}</div>`;
+}
+
+/* FONDAMENTALI CORE */
+views.corefond = () => {
+  const C = coreD();
+  if(!C.principi) return `<div class="view"><div class="empty">DATI CORE NON DISPONIBILI</div></div>`;
+  const gruppi = (C.principi||[]).map(g=>{
+    const items = (g.items||[]).map(p=>`<div class="panel" style="padding:15px 17px">
+      <div style="display:flex;gap:9px;align-items:center;flex-wrap:wrap">
+        <strong style="font-size:14.5px">${esc(p.nome)}</strong>${srcBadge(p.fonte,false,true)}${vchips(p)}
+      </div>
+      <div class="prose" style="font-size:13.5px;margin-top:7px">${p.c||""}</div>
+    </div>`).join("");
+    return `<div class="h2"><span class="tag">//</span> ${g.icona||"✦"} ${esc(g.gruppo)}</div><div class="grid g2">${items}</div>`;
+  }).join("");
+  const M = C.mulligan||{};
+  const mullRegole = (M.regole||[]).map(r=>`<div class="panel" style="padding:13px 16px">
+    <strong style="font-size:14px">${esc(r.t)}</strong>
+    <div class="prose" style="font-size:13px;margin-top:4px"><p>${r.c||""}</p></div></div>`).join("");
+  const mullRows = (M.perMatchup||[]).map(r=>`<tr><td>${esc(r.mu)}</td><td>${esc(r.primo)}</td><td>${esc(r.secondo)}</td></tr>`).join("");
+  return `<div class="view">
+    <div class="eyebrow">Il core · dottrina</div>
+    <h1 class="title">Fondamentali core <span class="dim">— solo Impact &amp; Noob + Elijah</span></h1>
+    <div class="lead">I fondamentali del mazzo come li insegnano le due voci scelte, distillati da sei sessioni in ordine cronologico. I numerini <span class="vchip" style="color:var(--cyan);border-color:rgba(63,224,255,.5)">n</span> dicono da quale video viene ogni regola — passa sopra per i dettagli.</div>
+    ${ruleCallout()}
+    <div class="h2"><span class="tag">//</span> 🎬 Le sei sessioni, in ordine</div>
+    ${chronoStrip()}
+    ${gruppi}
+    <div class="h2"><span class="tag">//</span> 🃏 Mulligan — le regole di Elijah ${vchip(M.video||"v11")}</div>
+    <div class="callout"><div class="ct">Criteri generali</div><div class="prose">${M.generali||""}</div></div>
+    <div class="grid g3" style="margin-top:12px">${mullRegole}</div>
+    <div class="panel" style="margin-top:12px;overflow-x:auto">
+      <table class="simple"><thead><tr><th>Matchup</th><th>Andando primi</th><th>Andando secondi</th></tr></thead>
+      <tbody>${mullRows}</tbody></table>
+    </div>
+  </div>`;
+};
+
+/* MATCHUP CORE — HUB */
+views.coremu = () => {
+  const MU = (coreD().matchups)||{};
+  const cards = CORE_MU_ORDER.filter(id=>MU[id]).map(id=>{
+    const m = MU[id];
+    const art = m.leaderImg?`<div class="art" style="background-image:url('${PROC}/${m.leaderImg}__art.png')"></div>`:`<div class="tile">${esc((m.sigla||"?").slice(0,2).toUpperCase())}</div>`;
+    return `<div class="mu-card" style="--accent:${m.colorHex||"#2E8BFF"}" onclick="location.hash='#/coremu/${id}'">
+      ${art}<div class="scrim"></div>
+      <div class="inner">
+        <div class="sig">${esc(m.sigla||"")}</div>
+        <div class="nm">${esc(m.nome)}</div>
+        <div class="tg">${esc(m.verdetto&&m.verdetto.label||"")}</div>
+        <div class="vchips">${(m.inBreve||[]).slice(0,2).map(x=>`<span class="vc">${esc(x)}</span>`).join("")}</div>
+      </div></div>`;
+  }).join("");
+  return `<div class="view">
+    <div class="eyebrow">Il core · operazioni</div>
+    <h1 class="title">Matchup core <span class="dim">— quello che dicono LORO</span></h1>
+    <div class="lead">I cinque matchup coperti da Impact &amp; Noob ed Elijah, con le loro regole esatte, i blueprint di lethal e i conflitti risolti per recenza. Per gli altri leader (Yamato, Lucy, il field…) c'è il <a href="#/matchup">Matchup Hub dell'archivio</a>.</div>
+    ${ruleCallout()}
+    <div class="hub">${cards}</div>
+  </div>`;
+};
+
+/* MATCHUP CORE — DETTAGLIO */
+views.coremuDetail = (id) => {
+  const m = ((coreD().matchups)||{})[id];
+  if(!m) return `<div class="view"><div class="crumb" onclick="location.hash='#/coremu'">← MATCHUP CORE</div><div class="empty">MATCHUP CORE "${esc(id)}" NON DISPONIBILE</div></div>`;
+  const art = m.leaderImg?`<div class="art" style="background-image:url('${PROC}/${m.leaderImg}__art.png')"></div>`:"";
+  const inBreve = (m.inBreve||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+  const regole = (m.regole||[]).map(r=>`<div class="panel" style="padding:14px 16px">
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><strong style="font-size:14.5px">${esc(r.t)}</strong>${vchips(r)}</div>
+    <div class="prose" style="font-size:13.5px;margin-top:6px">${r.c||""}</div></div>`).join("");
+  const bps = (m.blueprints||[]).map(b=>`<div class="combo"><div class="cn">${esc(b.nome)} ${vchips(b)}</div>
+    <div class="prose" style="font-size:13.5px">${b.c||""}</div></div>`).join("");
+  const confl = (m.conflitti||[]).map(cid=>{
+    const c = (coreD().conflitti||[]).find(x=>x.id===cid);
+    return c ? evoBlock(c) : "";
+  }).join("");
+  const hasArchive = (D.matchups||{})[id];
+  return `<div class="view">
+    <div class="crumb" onclick="location.hash='#/coremu'">← MATCHUP CORE</div>
+    <div class="mu-hero" style="--accent:${m.colorHex||"#2E8BFF"}">
+      ${art}<div class="scrim"></div>
+      <div class="inner">
+        <div class="eyebrow" style="color:${m.colorHex||"var(--blue)"}">${esc(m.sigla||"")} · core dossier</div>
+        <h1 class="title" style="margin-bottom:6px">vs ${esc(m.nome)}</h1>
+        <div style="color:var(--ink2);max-width:62ch">${m.verdetto?`<strong style="color:var(--ink)">${esc(m.verdetto.label)}.</strong> ${esc(m.verdetto.nota||"")}`:""}</div>
+        <div style="margin-top:14px;display:flex;gap:9px;flex-wrap:wrap">
+          ${hasArchive?`<div class="btn" onclick="location.hash='#/matchup/${id}/bigino'">⚡ Bigino 30 sec</div>
+          <div class="btn" onclick="location.hash='#/matchup/${id}'">📚 Dossier archivio (tutte le fonti)</div>`:""}
+        </div>
+      </div>
+    </div>
+    <div class="grid g2">
+      <div class="callout gold"><div class="ct">🎯 La formula</div><div style="font-size:14px">${m.formula||"—"}</div></div>
+      <div class="callout"><div class="ct">🎲 Dado</div><div style="font-size:14px"><strong>${esc(m.dado&&m.dado.scelta||"—")}</strong> ${m.dado&&m.dado.video?vchip(m.dado.video):""}</div>
+        ${m.dado&&m.dado.nota?`<div style="font-size:12.5px;color:var(--ink2);margin-top:5px">${m.dado.nota}</div>`:""}</div>
+    </div>
+    ${inBreve?`<div class="callout green" style="margin-top:12px"><div class="ct">💡 In breve</div><ul style="margin:4px 0 0 18px">${inBreve}</ul></div>`:""}
+    <div class="h2"><span class="tag">//</span> 📜 Le regole del matchup</div>
+    <div class="grid g2">${regole}</div>
+    ${bps?`<div class="h2"><span class="tag">//</span> 👑 Blueprint di lethal</div>${bps}`:""}
+    ${m.comePerdi?`<div class="h2"><span class="tag">//</span> 💀 Come si perde</div><div class="callout red"><div class="prose">${m.comePerdi}</div></div>`:""}
+    ${confl?`<div class="h2"><span class="tag">//</span> ⏱ I conflitti (vince il più recente)</div>${confl}`:""}
+  </div>`;
+};
+
+/* LA LISTA — verdetti attuali */
+views.lista = () => {
+  const C = coreD();
+  if(!C.lista) return `<div class="view"><div class="empty">DATI CORE NON DISPONIBILI</div></div>`;
+  const badge = s => s==="in" ? `<span class="vbadge in">IN</span>` : s==="out" ? `<span class="vbadge out">OUT</span>`
+    : s==="test" ? `<span class="vbadge test">TEST</span>` : `<span class="vbadge dipende">APERTO</span>`;
+  const cards = (C.lista||[]).map(l=>{
+    const info = (D.carte||{})[l.key]||{};
+    const img = info.img?`<img src="${cardImg(l.key,"art")}" style="width:52px;height:52px;object-fit:cover;border-radius:8px;border:1px solid var(--line2);flex:none" loading="lazy">`:"";
+    return `<div class="lv-card">
+      <div class="lh">${img}${badge(l.stato)}<span class="ln">${esc(l.nome)}</span>
+        <span class="copie">${esc(l.copie||"")}</span>${l.video?vchip(l.video):""}
+        ${l.conflitto?`<span style="margin-left:auto;font-family:var(--mono);font-size:9.5px;color:var(--cyan);cursor:pointer;letter-spacing:1px" onclick="location.hash='#/conflitti';setTimeout(()=>{const el=document.getElementById('c-${esc(l.conflitto)}');if(el)el.scrollIntoView({behavior:'smooth',block:'center'})},80)">STORIA →</span>`:""}
+      </div>
+      <div class="prose" style="font-size:13px;margin-top:8px"><p>${l.attuale||""}</p></div>
+      ${l.storia?`<div class="storia">${esc(l.storia)}</div>`:""}
+    </div>`;
+  }).join("");
+  return `<div class="view">
+    <div class="eyebrow">Il core · arsenale</div>
+    <h1 class="title">La Lista <span class="dim">— il verdetto di OGGI, carta per carta</span></h1>
+    <div class="lead">Lo stato attuale di ogni slot discusso da Impact &amp; Noob ed Elijah — aggiornato all'ultima parola detta in ordine cronologico. La riga ⏱ in fondo a ogni carta è la storia del verdetto.</div>
+    ${ruleCallout()}
+    <div class="grid g2">${cards}</div>
+    ${C.notaLista?`<div class="callout" style="margin-top:14px"><div class="ct">Il dubbio ancora aperto</div>${esc(C.notaLista)}</div>`:""}
+  </div>`;
+};
+
+/* CONFLITTI — vince il più recente */
+views.conflitti = () => {
+  const C = coreD();
+  if(!C.conflitti) return `<div class="view"><div class="empty">DATI CORE NON DISPONIBILI</div></div>`;
+  return `<div class="view">
+    <div class="eyebrow">Il core · arbitrato</div>
+    <h1 class="title">⏱ Vince il più recente <span class="dim">— i conflitti, risolti</span></h1>
+    <div class="lead">Dove Impact &amp; Noob ed Elijah si sono contraddetti (o hanno cambiato idea da soli). Ogni catena mostra l'evoluzione in ordine cronologico: la riga dorata <span class="vale-badge">▶ VALE</span> è la posizione che conta oggi. Le altre restano come storia — mai come consiglio.</div>
+    ${ruleCallout()}
+    <div class="h2"><span class="tag">//</span> 🎬 La cronologia che fa da giudice</div>
+    ${chronoStrip()}
+    <div class="h2"><span class="tag">//</span> ☍ Le catene</div>
+    ${(C.conflitti||[]).map(evoBlock).join("")}
   </div>`;
 };
 
@@ -1342,6 +1610,7 @@ function route(){
   let html;
   if(r==="matchup" && arg && sub==="bigino") html = views.bigino(arg);
   else if(r==="matchup" && arg) html = views.matchupDetail(arg);
+  else if(r==="coremu" && arg) html = views.coremuDetail(arg);
   else if(views[r]) html = views[r]();
   else html = views.home();
   app.innerHTML = html;
