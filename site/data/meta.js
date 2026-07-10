@@ -54,7 +54,7 @@ window.DATA.dibattiti = [
   {
     id: "miss-olive",
     tema: "Miss Olive: promossa o bocciata?",
-    contesto: "Dibattito esplicitamente aperto tra le fonti — stessa carta, esperienze opposte.",
+    contesto: "Era il dibattito più spaccato tra le fonti — chiuso dal campo: sparita dalle liste.",
     timeline: false,
     posizioni: [
       { fonte:"impactnoob", quando:"File 10", testo:"<strong>PRO</strong>: promossa, «buona in quasi ogni partita»; ha carrieato un mirror vinto senza vedere un solo Buggy. L'«Olive» (pesca 3 scarta 1) è anche il modo migliore di comprarsi un turno vs Nami (rimuove una Prank)." },
@@ -62,7 +62,7 @@ window.DATA.dibattiti = [
       { fonte:"dog", quando:"Guida (cap. 3 tech pool)", testo:"<strong>CONTRO</strong>: un Crocodile 4c peggiore; ha counter e cicla ma il corpo costa troppo; lo slot da 5 appartiene a Buggy." },
       { fonte:"adam", quando:"File 07", testo:"<strong>CONTRO</strong>: troppo costosa — il filtraggio lo fa meglio Rebecca." }
     ],
-    takeaway: "3 contro 1 per il taglio, ma Impact la difende con risultati concreti in mano. Provala prima di decidere."
+    takeaway: "RISOLTO (lug 2026): OUT — non la gioca più nessuno. Il campo ha dato ragione ai 3 contro; la difesa di Impact non ha retto alla prova del meta."
   },
   {
     id: "luna-gb",

@@ -20,7 +20,7 @@ window.DATA.core = {
     { id:"v10", n:2, fonte:"impactnoob", titolo:"Ladder Session pt.2 + deck discussion",
       link:"youtube.com/watch?v=u_q6tf3FmwI", file:"Updates/10",
       focus:"mirror, vs Nami (Wiper) — e la discussione lista più densa",
-      novita:["dado vs Nami rivisto: primi (paura della loro Gravity Blade)", "tutti i Galdino broken nel mirror, ma 1-of", "Miss Olive promossa", "blueprint lethal 7-7-8-9 → 9-9-10", "«Get lower, swing higher»"] },
+      novita:["dado vs Nami rivisto: primi (paura della loro Gravity Blade)", "tutti i Galdino broken nel mirror, ma 1-of", "Miss Olive promossa (poi bocciata dal campo)", "blueprint lethal 7-7-8-9 → 9-9-10", "«Get lower, swing higher»"] },
     { id:"v11", n:3, fonte:"equinby", titolo:"Coaching: mulligan + VOD review (Teach, mirror)",
       link:"youtube.com/watch?v=cM6ECq9K7_o", file:"Updates/11",
       focus:"la sessione mulligan interattiva + il principio cardine della guida",
@@ -212,8 +212,8 @@ window.DATA.core = {
           c:"<p>Nel mirror è corretto <strong>giocare sopra i tuoi stessi weenie</strong>: vuoi che i tuoi attacchi restino validi il turno dopo. Se ti attaccano i weenie, quei corpi non swingano più — giocaci sopra e tieni personaggi attivi.</p>" },
         { t:"Ivankov nudo = turno sprecato", video:"v09",
           c:"<p>Il «double nude Ivankov» (giocato senza swingare) è un turno buttato: devi giocare Ivankov E swingare nello stesso turno.</p>" },
-        { t:"Miss Olive e il piano B", video:"v10",
-          c:"<p>Nel mirror si può vincere anche <strong>senza mai giocare Buggy+Prisoner</strong>, gestendo il card advantage (Impact & Noob l'hanno fatto con Miss Olive) e mantenendo più Galdino dell'avversario. Nota: su Miss Olive Elijah dissente — vedi il conflitto aperto.</p>" },
+        { t:"Il piano B: vincere di card advantage", video:"v10",
+          c:"<p>Nel mirror si può vincere anche <strong>senza mai giocare Buggy+Prisoner</strong>, gestendo il card advantage e mantenendo più Galdino dell'avversario. (Impact & Noob l'hanno fatto con Miss Olive — carta poi sparita dalle liste: il concetto resta, la carta no. Vedi il conflitto risolto.)</p>" },
         { t:"Jet Culverin ha utility qui", video:"v16",
           c:"<p>Oltre che tech anti-Enel, <strong>Jet Culverin</strong> colpisce Croc/Daz Bones rested nel mirror.</p>" }
       ],
@@ -370,14 +370,15 @@ window.DATA.core = {
       ],
       nota:"Non più bocciato secco: in test. Legato al dubbio «11 o 12 2k» che Elijah dichiara aperto." },
 
-    { id:"missolive", tema:"Miss Olive: consistente o inutile?", stato:"aperto",
-      attuale:"<strong>Dibattito aperto</strong> — due voci, nessuna ritrattazione", attualeVideo:null,
+    { id:"missolive", tema:"Miss Olive: consistente o inutile?", stato:"risolto",
+      attuale:"<strong>OUT</strong> — sparita dalle liste: non la gioca più nessuno", attualeVideo:null,
       tappe:[
         { video:"v09", pos:"Impact & Noob la scoprono: «il miglior modo per guadagnare un turno extra nel mazzo» + garantisce un 2k via combo Buggy+Prisoner." },
         { video:"v10", pos:"Promossa dopo la sessione: «buona in quasi tutte le partite» — hanno vinto un mirror senza mai calare Buggy grazie a lei." },
-        { video:"v11", pos:"Elijah è scettico: «l'ho pescata 25 volte, l'ho messa sul board zero volte». Capisce la teoria (trova counter, evita hard-block), non la vede in pratica. «Sono aperto a sbagliarmi.»" }
+        { video:"v11", pos:"Elijah è scettico: «l'ho pescata 25 volte, l'ho messa sul board zero volte». Capisce la teoria (trova counter, evita hard-block), non la vede in pratica. «Sono aperto a sbagliarmi.»" },
+        { chi:"DAL CAMPO", pos:"Il meta ha deciso (luglio 2026): <strong>non la gioca più nessuno</strong>. La nicchia teorizzata da Impact & Noob non si è mai concretizzata nelle liste — la lettura di Elijah era quella giusta.", vale:true }
       ],
-      nota:"Qui la regola della recenza NON si applica: sono due persone diverse e nessuna è tornata sul tema dopo. Provala tu e decidi." },
+      nota:"Tra i video la recenza non bastava (due persone diverse, nessuna ritrattazione) — ha chiuso il campo: fuori dalle liste, 100%." },
 
     { id:"dmg", tema:"Dead Man's Game: inaffidabile o OTK?", stato:"movimento",
       attuale:"<strong>Rivalutato: è l'OTK n.2 del deck</strong> (DMG + Galdino, di fatto gratis con due 6k)", attualeVideo:"v16",
@@ -408,9 +409,9 @@ window.DATA.core = {
     { key:"jinbe", nome:"Jinbe (2c)", stato:"test", copie:"0-1×", video:"v16", conflitto:"jinbe",
       attuale:"In riconsiderazione come 12° 2k per la consistenza — dopo essere stato bocciato senza appello.",
       storia:"«voglio che quei Jinbe siano Galdini» → riconsiderato" },
-    { key:"missolive", nome:"Miss Olive", stato:"aperto", copie:"?", video:null, conflitto:"missolive",
-      attuale:"Impact & Noob: «buona in quasi tutte le partite». Elijah: «pescata 25 volte, giocata 0». Dibattito aperto — provala e decidi.",
-      storia:"promossa (Impact & Noob) ↔ scettico (Elijah)" },
+    { key:"missolive", nome:"Miss Olive", stato:"out", copie:"0×", video:null, conflitto:"missolive",
+      attuale:"Fuori: non la gioca più nessuno. Impact & Noob l'avevano promossa in ladder, ma la nicchia non si è mai concretizzata — Elijah («pescata 25 volte, giocata 0») aveva ragione, e il campo ha chiuso il dibattito.",
+      storia:"promossa (Impact & Noob) ↔ scettico (Elijah) → sparita dal meta" },
     { key:"rushluffy", nome:"Rush Luffy (4c)", stato:"test", copie:"0-2×", video:"v12",
       attuale:"Entrambi la amano («that card is nuts» — Elijah; «I like Rush Luffy a lot» — Impact) ma è IL brick assoluto a fine partita. Impact non trova lo slot; Elijah ne vorrebbe 1-2. Stabilizza il turno 4-5 DON!! («10 hit sul quattro»).",
       storia:"desiderata da entrambi, frenata dal rischio brick" },

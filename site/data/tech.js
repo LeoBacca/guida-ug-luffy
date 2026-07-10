@@ -30,7 +30,7 @@ window.DATA.tech = [
       { fonte: "equinby", verdetto: "out", testo: "scettico dopo 25-30 game: «l'ho pescata 25 volte; l'ho messa sul board zero volte». Ne capisce la teoria (filtrare per trovare counter e sopravvivere un turno extra) ma «quella situazione non capita abbastanza spesso» — pur dichiarandosi aperto a sbagliarsi" },
       { fonte: "hrvoje", verdetto: "in", testo: "1-of «insurance / brick management», un mainstay di ogni BG Luffy: «il deck non ha tanta libertà nel gestire i brick; anche moulligando perfetto a volte una carta si incastra, la curva è troppo stretta». Ti lascia anche scartare un HQ extra quando ne peschi due" }
     ],
-    trend: "Il caso più spaccato del tribunale: bocciata da Dog, Adam ed Equinby, promossa sul campo da Impact+Noob — dibattito esplicitamente aperto" },
+    trend: "CHIUSO (lug 2026): sparita dalle liste — non la gioca più nessuno. Il campo ha dato ragione agli scettici (Dog, Adam, Equinby); la nicchia vista da Impact+Noob in ladder non si è mai concretizzata" },
 
   { key: "luna", nome: "Electrical Luna (3c event)", domanda: "Il freeze di massa vale il rischio brick?",
     verdetti: [

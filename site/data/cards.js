@@ -23,7 +23,7 @@ window.DATA.carte = {
   // ------ tech / citate (senza immagine) ------
   gravityblade:{ code:"OP06-058", nome:"Gravity Blade: Raging Tiger", ruolo:"Bottom-deck 2 personaggi ≤6c", costo:"7", img:false },
   rushluffy:  { code:"ST30-012", nome:"Monkey D. Luffy (Rush)",   ruolo:"6k Rush · resta un Blocker quando attacca", costo:"4", img:false },
-  missolive:  { code:"OP16-050", nome:"Miss Olive",               ruolo:"Blocker 6k · bounce → pesca 2 scarta 1", costo:"5", img:false },
+  missolive:  { code:"OP16-050", nome:"Miss Olive",               ruolo:"Blocker 6k · bounce → pesca 2 scarta 1 — sparita dalle liste", costo:"5", img:false },
   luna:       { code:"OP08-036", nome:"Electrical Luna",          ruolo:"Freeza tutti i rested ≤7c · senza counter", costo:"3", img:false },
   allout:     { code:"OP13-040b", nome:"All Out (1c)",            ruolo:"Freeza fino a 2 rested ≤7c · counter 3k", costo:"1", img:false },
   dmg:        { code:"OP12-037", nome:"Dead Man's Game",          ruolo:"Resta 2 tra personaggi/DON!! avversari", costo:"1", img:false },

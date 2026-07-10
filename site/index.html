@@ -1371,9 +1371,11 @@ function statoPill(stato){
 function evoBlock(c){
   const steps = (c.tappe||[]).map(t=>{
     const v = coreVideo(t.video); const f = v ? fonte(v.fonte) : null;
+    const who = v ? `<span class="src" style="color:${f.colore};border-color:${f.colore}55">${esc(corto(v.fonte))}</span>${vchip(t.video)}`
+      : (t.chi ? `<span class="src" style="color:var(--gold);border-color:rgba(255,194,61,.45)">${esc(t.chi)}</span>` : "");
     return `<div class="evo-step${t.vale?" vale":""}">
       ${t.vale?`<span class="vale-badge">▶ VALE</span>`:`<span class="old-badge">${v?"VIDEO "+v.n:"—"}</span>`}
-      <div class="who">${v?`<span class="src" style="color:${f.colore};border-color:${f.colore}55">${esc(corto(v.fonte))}</span>${vchip(t.video)}`:""}</div>
+      <div class="who">${who}</div>
       <div class="pos">${t.pos||""}</div>
     </div>`;
   }).join("");
