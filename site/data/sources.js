@@ -9,25 +9,25 @@ window.DATA.fonti = {
     tipo: "Coaching",
     colore: "#B48CFF",
     tier: "S", peso: 4,
-    tierNota: "★ Il preferito. La fonte dei due principi-cardine della guida: «Luffy non perde prendendo danni — perde quando muore la board o finisce il gas» e «sviluppo = essere sviluppato QUANDO conta (con i DON!!), non al turno 1». Coaching con calcolatrice ipergeometrica: insight profondo e non ovvio, non solo indicazioni generali. Le info più aggiornate della guida (ultimi due video: il gruppo è passato a 3 Gravity Blade).",
-    credenziali: "40+ «chicche» operative su 3 sessioni · approccio matematico (calcolatrice ipergeometrica) · fondamentali di sviluppo/tempo",
-    descr: "Tre sessioni di coaching live. (1) File 11: mulligan interattivo, VOD review vs Teach/mirror, Q&A lista. (2) File 15: coaching sui grandi concetti (development, non giocare a carte scoperte, leggere il counter, quando uccidere i corpi on-KO) + matchup Nami. (3) File 16: breakdown completo del deck (win condition e OTK, motore difensivo) + VOD review a stecca di mirror/Nami/Rosie. È la fonte dei principi più importanti: «Luffy perde quando muore la board o finisce il gas» e «sviluppato QUANDO conta, non al turno 1».",
-    link: "YouTube: cM6ECq9K7_o · NDizxrgpWt8 · 7m0wrtnZhOE",
-    copre: "Principio danni-vs-carte · sviluppo/tempo · regole mulligan · mirror avanzato · Nami raffinato · Gravity Blade 3x"
+    tierNota: "★ Il preferito. La fonte del principio-cardine della guida: «Luffy non perde prendendo danni — perde quando muore la board o finisce il gas». Coaching con calcolatrice ipergeometrica: insight profondo e non ovvio, non solo indicazioni generali. Le info più aggiornate della guida (video più recente: il gruppo è passato a 3 Gravity Blade).",
+    credenziali: "«chicche» operative su 2 sessioni · approccio matematico (calcolatrice ipergeometrica)",
+    descr: "Due sessioni di coaching live. (1) File 11: mulligan interattivo, VOD review vs Teach/mirror, Q&A lista. (2) File 16: breakdown completo del deck (win condition e OTK, motore difensivo) + VOD review a stecca di mirror/Nami/Rosie (nega il draw di Nami, Gravity Blade 3x «la nuova norma»). È la fonte del principio più importante: «Luffy perde quando muore la board o finisce il gas».",
+    link: "YouTube: cM6ECq9K7_o · 7m0wrtnZhOE",
+    copre: "Principio danni-vs-carte · regole mulligan · mirror avanzato · Nami raffinato · Gravity Blade 3x"
   },
   impactnoob: {
     id: "impactnoob",
     nome: "Impact & Noob",
-    sotto: "Ladder sessions + Nami masterclass",
+    sotto: "Ladder + Nami masterclass + coaching fondamentali",
     persona: "Impact (“Josh”) + Noob, coach su YouTube",
     tipo: "Gameplay commentato",
     colore: "#3FE0FF",
     tier: "S", peso: 4,
-    tierNota: "Un gradino sopra le indicazioni generali: blueprint di lethal, timeline primo/secondo, dibattiti tecnici (Miss Olive, Gravity Blade, Boa a 2 copie). Insight più affilato delle guide.",
+    tierNota: "Un gradino sopra le indicazioni generali: blueprint di lethal, timeline primo/secondo, dibattiti tecnici (Miss Olive, Gravity Blade, Boa a 2 copie) e i grandi fondamentali di sviluppo/tempo — «sviluppato QUANDO conta (con i DON!!), non al turno 1». Insight più affilato delle guide.",
     credenziali: "Ratio dichiarati: 9-1 vs Nami · 3-3 vs Enel · mirror ~65% per il più bravo",
-    descr: "Tre video: due ladder session (6 partite commentate a due voci) e una masterclass interamente dedicata al matchup Nami (~6 partite demo con Noob che pilota Nami). È la fonte dei blueprint di lethal e della timeline primo/secondo vs Nami.",
-    link: "YouTube: tAIXJ3HOKQo · u_q6tf3FmwI · 6ghvUvWA7E4",
-    copre: "Blueprint lethal · masterclass Nami · dibattiti su Miss Olive e Gravity Blade"
+    descr: "Quattro video: due ladder session (6 partite a due voci), una masterclass dedicata a Nami (~6 partite demo con Noob su Nami), e una sessione di coaching live sui grandi concetti (sviluppo «quando conta», non giocare a carte scoperte, leggere il counter, box A/B degli on-KO) + matchup Nami dal POV di UG. È la fonte dei blueprint di lethal, della timeline primo/secondo e dei fondamentali di sviluppo.",
+    link: "YouTube: tAIXJ3HOKQo · u_q6tf3FmwI · 6ghvUvWA7E4 · NDizxrgpWt8",
+    copre: "Blueprint lethal · masterclass Nami · fondamentali di sviluppo/tempo · dibattiti su Miss Olive e Gravity Blade"
   },
   hrvoje: {
     id: "hrvoje",

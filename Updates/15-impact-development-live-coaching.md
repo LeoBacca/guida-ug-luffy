@@ -1,11 +1,11 @@
-# Elijah — Live Coaching: Development & il Matchup Nami (OP16)
+# Impact — Live Coaching: Development & il Matchup Nami (OP16)
 
-> **Fonte:** Elijah / Equinby ([YouTube](https://www.youtube.com/watch?v=NDizxrgpWt8))
+> **Fonte:** Impact ([YouTube](https://www.youtube.com/watch?v=NDizxrgpWt8))
 > **Formato:** OP16 — Live coaching di gruppo (chat + studenti in call)
 > **Deck:** Blue/Green UG Luffy ("Goofy")
-> **Contesto:** Elijah gioca/commenta chaos hand submesse dagli studenti e VOD di partite (Nami vs Ace, Goofy vs Nami, Rosie vs Nami), poi Q&A teorico lunghissimo sui grandi concetti.
+> **Contesto:** Impact gioca/commenta chaos hand submesse dagli studenti e VOD di partite (Nami vs Ace, Goofy vs Nami, Rosie vs Nami), poi Q&A teorico lunghissimo sui grandi concetti.
 
-> ⚠️ **NOTA DI ATTRIBUZIONE.** Questo è il video che l'utente chiamava "il video di Impact". In realtà il coach che narra è **Elijah (= Equinby)**: al min. ~34:00 un partecipante gli si rivolge con «Yeah, Elijah, I have a question», e **Josh (= Impact)** è solo un partecipante in call («I'm in a game»). Attribuito quindi a `equinby` (già la fonte tier-S #1). Alcune partite NON sono UG (game 1 = Nami vs Ace; una = Rosinante vs Nami): i concetti universali sono espliciti di Elijah, che li generalizza a UG.
+> ⚠️ **NOTA.** Video di **Impact** (fonte `impactnoob`), confermato dall'utente. Una riga ambigua della trascrizione («Yeah, Elijah, I have a question») mi aveva inizialmente fatto ipotizzare Elijah come coach, ma era con ogni probabilità un partecipante che si presentava prima della domanda: il coach è Impact. Alcune partite NON sono UG (game 1 = Nami vs Ace; una = Rosinante vs Nami): i concetti universali sono espliciti e vengono generalizzati a UG.
 
 ---
 
@@ -33,7 +33,7 @@
 
 ## Parte 1 — I GRANDI CONCETTI (fondamentali, generalizzati a UG)
 
-Questa è la parte d'oro: Elijah interrompe più volte il gameplay per spiegare "il perché" dietro le linee. Insegnamenti universali di One Piece, ma valgono in pieno per UG Luffy.
+Questa è la parte d'oro: Impact interrompe più volte il gameplay per spiegare "il perché" dietro le linee. Insegnamenti universali di One Piece, ma valgono in pieno per UG Luffy.
 
 ### Lo sviluppo è la priorità #1 — ma "sviluppato QUANDO conta"
 
@@ -101,7 +101,7 @@ Questa è la parte d'oro: Elijah interrompe più volte il gameplay per spiegare 
 
 ### Vita face-up → swinga alla Nami
 
-> **[CHICCA]** Se la loro **vita è face-up**, non possono usare l'effetto KO di Nami da quella vita → **swinga alla Nami leader**. (Elijah lo fa notare come "great call" di un partecipante.)
+> **[CHICCA]** Se la loro **vita è face-up**, non possono usare l'effetto KO di Nami da quella vita → **swinga alla Nami leader**. (Notato come "great call" di un partecipante.)
 
 ### Il POV di Nami — cosa UG deve temere/aspettarsi
 
