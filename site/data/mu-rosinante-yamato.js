@@ -195,10 +195,12 @@ window.DATA.matchups["rosinante"] = {
     },
     {
       fonte: "equinby",
-      origine: "Coaching (file 11)",
+      origine: "Coaching + deck breakdown (file 11 · 16)",
       sezioni: [
         { t: "Gravity Blade è il game-winner vs Rosinante",
-          c: "<p class=\"chicca\">Equinby gioca 2 <strong>Electrical Luna</strong> + 1 <strong>Gravity Blade</strong> e considera Gravity Blade game-winning nel mirror e contro Rosinante, proprio quando l'avversario lascia la board standing per il setup del restand: «Quando ti Gravity-Bladeano puoi stringergli la mano. Game over. Hanno lasciato tantissimo valore sul tavolo e tu li hai spazzati via.» (Nota: la tiene 1-of solo perché è dead contro Enel; in un meta pieno di mirror/board standing ne giocherebbe di più.)</p>" },
+          c: "<p class=\"chicca\">Equinby gioca 2 <strong>Electrical Luna</strong> + 1 <strong>Gravity Blade</strong> e considera Gravity Blade game-winning nel mirror e contro Rosinante, proprio quando l'avversario lascia la board standing per il setup del restand: «Quando ti Gravity-Bladeano puoi stringergli la mano. Game over. Hanno lasciato tantissimo valore sul tavolo e tu li hai spazzati via.» <em>(Nel file 11 la teneva 1-of perché dead vs Enel; nel video più recente è passato a <strong>3 Gravity Blade come «nuova norma»</strong> — vedi il tribunale delle Tech.)</em></p>" },
+        { t: "Perché la removal spegne Rosinante (i loro 2 turni di sviluppo)",
+          c: "<p class=\"chicca\">Il razionale della hard removal in un deck aggro (file 16): i deck mid-range spendono <strong>interi turni</strong> a sviluppare corpi da cui si aspettano valore per tutta la partita. Rosinante mette <strong>blocker Promo Law + Rosinante & Law</strong> = <strong>due turni di sviluppo</strong>. La <strong>Gravity Blade</strong> ribalta il matchup perché <strong>rimuove due loro turni in una carta</strong>, e da lì hanno pochissimo da swingarti nel board → tu prendi valore ripetuto coi tuoi corpi. «Rimuovi lo sviluppo multi-turno dell'avversario e prendi valore ripetuto dai tuoi.»</p>" },
         { t: "Mulligan vs Rosinante",
           c: "<p class=\"chicca\">Contro Rosinante vuoi <strong>weenie ripetuti</strong> (Equinby ammette di non avere certezza al 100% sui criteri). Andando secondi vs Rosie: <strong>doppia Electrical Luna = snap keep</strong>.</p>" }
       ]

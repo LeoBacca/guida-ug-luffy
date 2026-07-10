@@ -9,11 +9,11 @@ window.DATA.fonti = {
     tipo: "Coaching",
     colore: "#B48CFF",
     tier: "S", peso: 4,
-    tierNota: "★ Il preferito. La fonte del principio-cardine della guida: «Luffy non perde prendendo danni — perde quando muore la board o finisce il gas». Coaching con calcolatrice ipergeometrica: insight profondo e non ovvio, non solo indicazioni generali.",
-    credenziali: "33 «chicche» operative · approccio matematico (calcolatrice ipergeometrica)",
-    descr: "Sessione live: mulligan interattivo, VOD review vs Teach e nel mirror, Q&A sulla lista. È la fonte del principio più importante della guida: «Luffy non perde prendendo danni: perde quando muore la board o finisce il gas».",
-    link: "YouTube: cM6ECq9K7_o",
-    copre: "Principio danni-vs-carte · regole mulligan · mirror avanzato"
+    tierNota: "★ Il preferito. La fonte dei due principi-cardine della guida: «Luffy non perde prendendo danni — perde quando muore la board o finisce il gas» e «sviluppo = essere sviluppato QUANDO conta (con i DON!!), non al turno 1». Coaching con calcolatrice ipergeometrica: insight profondo e non ovvio, non solo indicazioni generali. Le info più aggiornate della guida (ultimi due video: il gruppo è passato a 3 Gravity Blade).",
+    credenziali: "40+ «chicche» operative su 3 sessioni · approccio matematico (calcolatrice ipergeometrica) · fondamentali di sviluppo/tempo",
+    descr: "Tre sessioni di coaching live. (1) File 11: mulligan interattivo, VOD review vs Teach/mirror, Q&A lista. (2) File 15: coaching sui grandi concetti (development, non giocare a carte scoperte, leggere il counter, quando uccidere i corpi on-KO) + matchup Nami. (3) File 16: breakdown completo del deck (win condition e OTK, motore difensivo) + VOD review a stecca di mirror/Nami/Rosie. È la fonte dei principi più importanti: «Luffy perde quando muore la board o finisce il gas» e «sviluppato QUANDO conta, non al turno 1».",
+    link: "YouTube: cM6ECq9K7_o · NDizxrgpWt8 · 7m0wrtnZhOE",
+    copre: "Principio danni-vs-carte · sviluppo/tempo · regole mulligan · mirror avanzato · Nami raffinato · Gravity Blade 3x"
   },
   impactnoob: {
     id: "impactnoob",
